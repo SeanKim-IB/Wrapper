@@ -1,0 +1,86 @@
+_COMMONPUBROOT=$(_PROJECTROOT)\cesysgen
+__PROJROOT=$(_PROJECTROOT)
+RELEASETYPE=LOCAL
+_ISVINCPATH=$(_WINCEROOT)\public\common\sdk\inc;
+_OEMINCPATH=$(_WINCEROOT)\public\common\oak\inc;$(_WINCEROOT)\public\common\sdk\inc
+TARGETNAME=ceusbkwrapperdrv
+FILE_VIEW_ROOT_FOLDER= \
+  StdAfx.cpp \
+  prelink.bat \
+  postlink.bat \
+
+FILE_VIEW_RESOURCE_FOLDER= \
+
+FILE_VIEW_INCLUDES_FOLDER= \
+  StdAfx.h \
+  ceusbkwrapperdrv.h \
+  ..\common\ceusbkwrapper_common.h \
+  drvdbg.h \
+  UsbDeviceList.h \
+  UsbDevice.h \
+  AddressAllocator.h \
+  BusAllocator.h \
+  DeviceContext.h \
+  OpenContext.h \
+  MutexLocker.h \
+  DevicePtr.h \
+  ControlTransfer.h \
+  UserBuffer.h \
+  TransferList.h \
+  Transfer.h \
+  TransferPtr.h \
+  EndianUtils.h \
+  InterfaceClaimers.h \
+  ptrset.h \
+  BulkTransfer.h \
+  ReadWriteMutex.h \
+  ArrayAutoPtr.h \
+
+INCLUDES= \
+  $(_COMMONDDKROOT)\inc; \
+  $(_COMMONOAKROOT)\inc; \
+  ..\common \
+
+SOURCES= \
+  ceusbkwrapperdrv.cpp \
+  UsbDeviceList.cpp \
+  UsbDevice.cpp \
+  AddressAllocator.cpp \
+  BusAllocator.cpp \
+  DeviceContext.cpp \
+  OpenContext.cpp \
+  MutexLocker.cpp \
+  DevicePtr.cpp \
+  UserBuffer.cpp \
+  ControlTransfer.cpp \
+  TransferList.cpp \
+  Transfer.cpp \
+  TransferPtr.cpp \
+  EndianUtils.cpp \
+  InterfaceClaimers.cpp \
+  BulkTransfer.cpp \
+  ReadWriteMutex.cpp \
+
+TARGETTYPE=DYNLINK
+PRECOMPILED_CXX=1
+PRECOMPILED_PCH=StdAfx.pch
+PRECOMPILED_INCLUDE=StdAfx.h
+TARGETLIBS= \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\coredll.lib \
+  $(_PROJECTROOT)\cesysgen\oak\lib\$(_CPUINDPATH)\ceddk.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\ws2.lib \
+
+PRECOMPILED_OBJ=StdAfx.obj
+POSTLINK_PASS_CMD=postlink.bat
+PRELINK_PASS_CMD=prelink.bat
+FILE_VIEW_PARAMETER_FOLDER= \
+  ceusbkwrapperdrv.bib \
+  ceusbkwrapperdrv.reg \
+  ceusbkwrapperdrv.dat \
+  ceusbkwrapperdrv.db \
+  ceusbkwrapperdrv.def \
+  ProjSysgen.bat \
+
+EXCEPTION_CPP=ENABLE_WITH_SEH
+DEFFILE=ceusbkwrapperdrv.def
+CPPBROWSE=1

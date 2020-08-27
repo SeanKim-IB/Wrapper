@@ -1,0 +1,8 @@
+[2020-08-24 17:10:19.924]	>>> fingerAttribute	FINGER [3] Good print, score 100	
+[2020-08-24 17:10:19.949]	Exit	cbp_fp_onPreviewAnalysis	
+[2020-08-24 17:10:20.014]	Enter	cbp_fp_onPreview	
+[2020-08-24 17:10:20.024]	Exit	cbp_fp_onPreview	
+[2020-08-24 17:10:20.027]	Enter	cbp_fp_onPreviewAnalysis	
+[2020-08-24 17:10:20.030]	>>> CollectionType	1 ( collection_flat )	
+[2020-08-24 17:10:20.033]	>>> SlapType	0 ( slap_rightHand )	
+[2020-08-24 17:10:20.035]	>>> fingerAttribute	FINGER [0] Too left, score 0	

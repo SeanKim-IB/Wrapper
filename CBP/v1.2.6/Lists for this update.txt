@@ -1,0 +1,21 @@
+1. The source was integration with the WinCE source. 
+2. Need to add property "ENUM_IBSU_PROPERTY_ROLL_TRIGGER_THRESHOLD"
+   - What happened? Customer is requesting a roll property to change threshold on image size for beginning rolls
+   - Why did it happen? IBScanUltimate makes rolled prints for small children difficult
+   
+3. IBScanSDK for CMT has a feature to write custom data into IB USB device (EEPROM) using IBSCAN_PROPERTY_CMT.
+However, the property of IBScanUltimate does not have same feature yet.
+So if you want it, then I need to add some codes to the property of IBScanUltimate (ex, ENUM_IBSU_PROPERTY_RESERVED_1).
+? Need to revise SDK
+
+4. Idversol want the last release which works with their Columbo firmware.
+	Added enumeration value to IBSU_PropertyId (ENUM_IBSU_PROPERTY_ENABLE_DECIMATION)
+5. Added enumeration value to IBSU_ClientWindowPropertyId (ENUM_IBSU_WINDOW_PROPERTY_SCALE_FACTOR_EX)
+6. To increase speed the draw the image on Java,
+	Added generateZoomOutImageEx() native function, and changed display method from bitmap to TYPE_3BYTE_BGR
+7. Bug fixed, WSQ image was flipped
+8. Old dependence packages version was supported on Linux 32/64bit.
+	Glibc 2.11 version was supported
+9. Bug fixed, _Algo_Sherlock_GetWaterMaskFromFlashMemory() has a wrong logic, so old Sherlock (ex ROIC) was hang which initializing.
+10. Bug fixed, the segment count of Columbo is wrong with other scanners.
+11. Added API function is related to ClientWindow (IBSU_RedrawClientWindow)

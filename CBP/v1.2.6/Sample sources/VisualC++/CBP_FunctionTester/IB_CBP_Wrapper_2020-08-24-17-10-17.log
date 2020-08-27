@@ -1,0 +1,8 @@
+[2020-08-24 17:10:13.994]	Exit	cbp_fp_stopImaging	
+[2020-08-24 17:10:15.422]	>>>	StopPreview - Received Final image	
+[2020-08-24 17:10:15.428]	Enter	cbp_fp_onStopPreview	
+[2020-08-24 17:10:15.437]	Exit	cbp_fp_onStopPreview	
+[2020-08-24 17:10:16.120]	Enter	cbp_fp_capture	handle (0), slapType (0,slap_rightHand), collectionType (1,collection_flat)
+[2020-08-24 17:10:16.124]	Exit	cbp_fp_capture	
+[2020-08-24 17:10:16.136]	Enter	cbp_fp_onCapture	
+[2020-08-24 17:10:16.150]	Exit	cbp_fp_onCapture	

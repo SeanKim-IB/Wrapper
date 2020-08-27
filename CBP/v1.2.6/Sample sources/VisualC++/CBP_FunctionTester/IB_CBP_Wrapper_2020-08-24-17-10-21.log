@@ -1,0 +1,8 @@
+[2020-08-24 17:10:21.049]	Enter	cbp_fp_stopImaging	handle (0)
+[2020-08-24 17:10:21.051]	>>> CollectionType	1 ( collection_flat )	
+[2020-08-24 17:10:21.052]	Exit	cbp_fp_stopImaging	
+[2020-08-24 17:10:21.054]	>>> SlapType	0 ( slap_rightHand )	
+[2020-08-24 17:10:21.059]	>>> fingerAttribute	FINGER [0] Too left, score 0	
+[2020-08-24 17:10:21.062]	>>> fingerAttribute	FINGER [1] Good print, score 100	
+[2020-08-24 17:10:21.065]	>>> fingerAttribute	FINGER [2] Good print, score 100	
+[2020-08-24 17:10:21.068]	>>> fingerAttribute	FINGER [3] Wrong slap, score 100	

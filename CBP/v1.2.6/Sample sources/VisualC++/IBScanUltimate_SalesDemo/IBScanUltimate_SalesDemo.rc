@@ -1,0 +1,417 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\IBScanUltimate_SalesDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ENABLE_SCAN         BITMAP                  "res\\scan_f_btn.bmp"
+IDB_SEQ_442_Rolled      BITMAP                  "res\\Img_3_Preview(4-4-2-rolled).bmp"
+IDB_SCANNER             BITMAP                  "res\\Scanner.bmp"
+IDB_LOGO                BITMAP                  "res\\logo.bmp"
+IDB_Logo_Size           BITMAP                  "res\\logo_small.bmp"
+IDB_SEQ_1               BITMAP                  "res\\Img_1_Preview.bmp"
+IDB_SEQ_3_2             BITMAP                  "res\\Img_3_Preview(separately).bmp"
+IDB_SEQ_3_both          BITMAP                  "res\\Img_3_Preview.bmp"
+IDB_SEQ_10_ROLLED       BITMAP                  "res\\Img_10_Preview(rolled).bmp"
+IDB_SEQ_10_FLAT         BITMAP                  "res\\Img_10_Preview.bmp"
+IDB_SEQ_14_2flat        BITMAP                  "res\\Img_14_Preview(2flats).bmp"
+IDB_SEQ_14_4flat        BITMAP                  "res\\Img_14_Preview(4flats).bmp"
+IDB_SEQ_14_Single       BITMAP                  "res\\Img_14_Preview(flats).bmp"
+IDB_SEQ_14_Rolled       BITMAP                  "res\\Img_14_Preview(rolled).bmp"
+IDB_SEQ_14_Rolled2      BITMAP                  "res\\Img_14_Preview(rolled1_1).bmp"
+IDB_SEQ_16              BITMAP                  "res\\Img_16_Preview.bmp"
+IDB_SEQ_19              BITMAP                  "res\\Img_19_Preview.bmp"
+IDB_SEQ_DEFAULT         BITMAP                  "res\\default.bmp"
+IDB_ENABLE_CAPTURE      BITMAP                  "res\\capture_btn.bmp"
+IDB_DISABLE_CAPTURE     BITMAP                  "res\\capture_btnd.bmp"
+IDB_FOCUS_CAPTURE       BITMAP                  "res\\capture_btnf.bmp"
+IDB_ENABLE_EDIT         BITMAP                  "res\\edit_btn.bmp"
+IDB_DISABLE_EDIT        BITMAP                  "res\\edit_btnd.bmp"
+IDB_FOCUS_EDIT          BITMAP                  "res\\edit_btnf.bmp"
+IDB_DISABLE_CLOSE       BITMAP                  "res\\close_btn.bmp"
+IDB_DISABLE_SAVE        BITMAP                  "res\\save_origind.bmp"
+IDB_ENABLE_SAVE         BITMAP                  "res\\save_origin.bmp"
+IDB_FOCUS_SAVE          BITMAP                  "res\\save_originf.bmp"
+IDB_FOCUS_CLOSE         BITMAP                  "res\\close_btn_f.bmp"
+IDB_FOCUS_SCAN          BITMAP                  "res\\scan_d_btn.bmp"
+IDB_SEQ_442             BITMAP                  "res\\Img_3_Preview(4-4-2).bmp"
+IDB_SEQ_4141            BITMAP                  "res\\Img_3_Preview(4-1-4-1).bmp"
+IDB_FOCUS_MANUAL_CAPTURE BITMAP                  "res\\manual_cap_btn.bmp"
+IDB_ENABLE_MANUAL_CAPTURE BITMAP                  "res\\manual_cap_f_btn.bmp"
+IDB_SEQ_4141_ROLLED     BITMAP                  "res\\Img_3_Preview(4-1-4-1-rolled).bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_Option, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 241
+    END
+
+    IDD_ZOOM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 489
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 344
+    END
+
+    IDD_IBScanUltimate_SalesDemo_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 392
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_MAIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 483
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 249
+    END
+
+    IDD_SCAN_FINGER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 384
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 273
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_Option DIALOGEX 0, 0, 322, 248
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Option"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Image Format",IDC_STATIC,18,12,156,49
+    GROUPBOX        "Customize",IDC_STATIC,18,67,156,143
+    PUSHBUTTON      "Cancel",IDC_BUTTON1,189,217,66,24
+    PUSHBUTTON      "APPLY",IDC_BTN_Accept,66,217,66,24
+    CONTROL         "Minimum Acceptable NFIQ(1-5)",IDC_CHECK_NFIQ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,79,114,16
+    CONTROL         "Finger Duplication Perimission",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,96,113,16
+    EDITTEXT        IDC_EDIT1,144,81,18,18,ES_AUTOHSCROLL
+    CONTROL         "BITMAP",IDC_CHK_BITMAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,24,60,13
+    CONTROL         "WSQ",IDC_CHK_WSQ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,42,66,13
+    CONTROL         "ISO 19794-4",IDC_CHK_ISO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,24,56,13
+    GROUPBOX        "Pre-Annotation",IDC_STATIC,180,11,126,199
+    CONTROL         "Right_Thumb",IDC_CHK_A1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,24,78,12
+    CONTROL         "Right_Index",IDC_CHK_A2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,42,78,12
+    CONTROL         "Right_Middle",IDC_CHK_A3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,60,78,12
+    CONTROL         "Right_Ring",IDC_CHK_A4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,78,78,12
+    CONTROL         "Left_Thumb",IDC_CHK_A6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,114,78,12
+    CONTROL         "Right_Little",IDC_CHK_A5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,96,78,12
+    CONTROL         "Left_Index",IDC_CHK_A7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,132,78,12
+    CONTROL         "Left_Middle",IDC_CHK_A8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,150,78,12
+    CONTROL         "Left_Ring",IDC_CHK_A9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,168,78,12
+    CONTROL         "Left_Little",IDC_CHK_A10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,186,78,12
+    CONTROL         "Smear Detection",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,114,80,16
+    CONTROL         "Fingerprint automatic capture",IDC_CHECK_AUTO_CAPTURE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,168,108,16
+    CONTROL         "Display NFIQ",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,186,64,16
+    CONTROL         "Display NFIQ2",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,95,186,64,16
+    CONTROL         "Wet Finger Detection",IDC_CHECK_WET_DETECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,132,89,16
+    COMBOBOX        IDC_COMBO_WET_LEVEL,127,135,39,136,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Spoof Finger Detection",IDC_CHECK_SPOOF_DETECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,151,89,16
+    COMBOBOX        IDC_COMBO_SPOOF_LEVEL,127,153,39,136,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ZOOM DIALOGEX 0, 0, 496, 351
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_LEFTSCROLLBAR
+CAPTION "ZOOM IN-OUT"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC_ZOOM,"Static",SS_BLACKFRAME,132,6,354,336
+    CONTROL         "Button2",IDC_ZOOM_BTN_1,"Button",BS_OWNERDRAW | WS_TABSTOP,12,6,102,18
+    CONTROL         "Button2",IDC_ZOOM_BTN_2,"Button",BS_OWNERDRAW | WS_TABSTOP,12,24,102,18
+    CONTROL         "Button2",IDC_ZOOM_BTN_3,"Button",BS_OWNERDRAW | WS_TABSTOP,12,42,102,18
+    CONTROL         "Button2",IDC_ZOOM_BTN_4,"Button",BS_OWNERDRAW | WS_TABSTOP,12,60,102,18
+    CONTROL         "Button2",IDC_ZOOM_BTN_5,"Button",BS_OWNERDRAW | WS_TABSTOP,12,78,102,18
+    CONTROL         "Button2",IDC_ZOOM_BTN_6,"Button",BS_OWNERDRAW | WS_TABSTOP,12,96,102,18
+    CONTROL         "Button2",IDC_ZOOM_BTN_7,"Button",BS_OWNERDRAW | WS_TABSTOP,12,114,102,18
+    CONTROL         "Button2",IDC_ZOOM_BTN_8,"Button",BS_OWNERDRAW | WS_TABSTOP,12,132,102,18
+    CONTROL         "Button2",IDC_ZOOM_BTN_9,"Button",BS_OWNERDRAW | WS_TABSTOP,12,150,102,18
+    CONTROL         "Button2",IDC_ZOOM_BTN_10,"Button",BS_OWNERDRAW | WS_TABSTOP,12,168,102,18
+    CONTROL         "Button2",IDC_ZOOM_BTN_11,"Button",BS_OWNERDRAW | WS_TABSTOP,12,186,102,18
+    CONTROL         "Button2",IDC_ZOOM_BTN_12,"Button",BS_OWNERDRAW | WS_TABSTOP,12,204,102,18
+    CONTROL         "Button2",IDC_ZOOM_BTN_13,"Button",BS_OWNERDRAW | WS_TABSTOP,12,222,102,18
+    CONTROL         "Button2",IDC_ZOOM_BTN_14,"Button",BS_OWNERDRAW | WS_TABSTOP,12,240,102,18
+    CONTROL         "Button2",IDC_ZOOM_BTN_15,"Button",BS_OWNERDRAW | WS_TABSTOP,12,258,102,18
+    CONTROL         "Button2",IDC_ZOOM_BTN_16,"Button",BS_OWNERDRAW | WS_TABSTOP,12,276,102,18
+    CONTROL         "Button2",IDC_ZOOM_BTN_17,"Button",BS_OWNERDRAW | WS_TABSTOP,12,294,102,18
+    CONTROL         "Button2",IDC_ZOOM_BTN_18,"Button",BS_OWNERDRAW | WS_TABSTOP,12,312,102,18
+    CONTROL         "Button2",IDC_ZOOM_BTN_19,"Button",BS_OWNERDRAW | WS_TABSTOP,12,330,102,18
+    LTEXT           "Tip) Image Zooming : mouse wheel up/down",IDC_STATIC_Tip1,144,306,126,24
+    LTEXT           "Image moving :Drag Image",IDC_STATIC_Tip2,294,306,90,24
+END
+
+IDD_IBScanUltimate_SalesDemo_DIALOG DIALOGEX 0, 0, 399, 206
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "IBScanUltimate_SalesDemo"
+MENU IDR_MENU1
+FONT 16, "Calibri", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TAB_VIEW,"SysTabControl32",TCS_FIXEDWIDTH,7,36,385,83
+END
+
+IDD_MAIN_DIALOG DIALOGEX 0, 0, 490, 256
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 14, "Calibri", 400, 0, 0x0
+BEGIN
+    CTEXT           "Device List",IDC_STRING_DEVICE_LIST,96,0,28,9
+    COMBOBOX        IDC_DEVICE_LIST,96,8,69,70,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Capture",IDC_START_CAPTURE,"Button",BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,259,0,55,21
+    CTEXT           "Capture Sequences",IDC_STRING_CAPTURE_SEQUENCES,173,0,66,9
+    COMBOBOX        IDC_SEQUENCE_LIST,173,8,69,58,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Edit",IDC_EDIT_CAPTURE,"Button",BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,315,0,54,21
+    CONTROL         "Save",IDC_SAVE_CAPTURE,"Button",BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,371,0,54,12
+    CONTROL         "",IDC_VIEW_0,"Static",SS_BLACKFRAME,210,53,162,127
+    CONTROL         "",IDC_VIEW_1,"Static",SS_BLACKFRAME,102,41,120,156
+    CONTROL         "",IDC_VIEW_2,"Static",SS_BLACKFRAME,234,41,120,156
+    CONTROL         "",IDC_VIEW_3,"Static",SS_BLACKFRAME,366,41,120,156
+    CONTROL         "",IDC_VIEW_4,"Static",SS_BLACKFRAME,114,24,66,54
+    CONTROL         "",IDC_VIEW_5,"Static",SS_BLACKFRAME,186,24,66,54
+    CONTROL         "",IDC_VIEW_6,"Static",SS_BLACKFRAME,258,24,66,54
+    CONTROL         "",IDC_VIEW_7,"Static",SS_BLACKFRAME,331,24,65,54
+    CONTROL         "",IDC_VIEW_8,"Static",SS_BLACKFRAME,402,24,66,54
+    CONTROL         "",IDC_VIEW_9,"Static",SS_BLACKFRAME,114,79,66,54
+    CONTROL         "",IDC_VIEW_91,"Static",SS_BLACKFRAME,186,79,66,54
+    CONTROL         "",IDC_VIEW_92,"Static",SS_BLACKFRAME,258,79,66,54
+    CONTROL         "",IDC_VIEW_93,"Static",SS_BLACKFRAME,330,79,66,54
+    CONTROL         "",IDC_VIEW_94,"Static",SS_BLACKFRAME,402,79,66,54
+    CONTROL         "",IDC_VIEW_95,"Static",SS_BLACKFRAME,114,134,114,48
+    CONTROL         "",IDC_VIEW_98,"Static",SS_BLACKFRAME,354,134,114,48
+    CONTROL         "",IDC_VIEW_96,"Static",SS_BLACKFRAME,234,134,57,48
+    CONTROL         "",IDC_VIEW_97,"Static",SS_BLACKFRAME | SS_CENTERIMAGE,291,134,57,48
+    CONTROL         "",IDC_VIEW_99,"Static",SS_BLACKFRAME,114,183,114,48
+    CONTROL         "",IDC_VIEW_990,"Static",SS_BLACKFRAME,234,183,114,48
+    CONTROL         "",IDC_VIEW_991,"Static",SS_BLACKFRAME,354,183,114,48
+    CONTROL         "",IDC_VIEW_161,"Static",SS_BLACKFRAME,114,134,57,48
+    CONTROL         "",IDC_VIEW_162,"Static",SS_BLACKFRAME,171,134,57,48
+    CONTROL         "",IDC_VIEW_163,"Static",SS_BLACKFRAME,354,134,57,48
+    CONTROL         "",IDC_VIEW_164,"Static",SS_BLACKFRAME,411,134,57,48
+    CONTROL         "",IDC_SEQ_PREVIEW,"Static",SS_BLACKFRAME,6,42,42,36
+    CONTROL         "",IDC_PROGRESS_SAVE,"msctls_progress32",WS_BORDER,372,12,54,6
+    CONTROL         1141,IDC_STATIC_LOGO,"Static",SS_BITMAP,0,0,69,23
+    CONTROL         "",IDC_VIEW_FOUR_1,"Static",SS_BLACKFRAME,105,203,41,46
+    CONTROL         "",IDC_VIEW_FOUR_2,"Static",SS_BLACKFRAME,236,203,48,46
+    CONTROL         "",IDC_VIEW_FOUR_3,"Static",SS_BLACKFRAME,358,200,44,49
+END
+
+IDD_SCAN_FINGER_DIALOG DIALOGEX 0, 0, 391, 280
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 14, "Calibri", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_VIEW,"Static",SS_BLACKFRAME,134,0,14,12
+    CONTROL         "",IDC_FINGER_VIEW,"Static",SS_BLACKFRAME,8,15,8,8
+    CTEXT           "10 fingers - single flat finger",IDC_STRING_FINGER_STATUS,8,0,110,7
+    CONTROL         "Scan Fingers",IDC_SCAN_10_FINGERS,"Button",BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,8,63,58,9
+    CONTROL         "Close",IDC_CLOSE,"Button",BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,204,246,58,11
+    EDITTEXT        IDC_TXT_STATUS,6,270,344,10,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "",IDC_STATIC_QUALITY_1,216,0,14,49
+    CTEXT           "",IDC_STATIC_QUALITY_2,232,0,14,49,0,WS_EX_TRANSPARENT
+    CTEXT           "",IDC_STATIC_QUALITY_3,248,0,14,49,0,WS_EX_TRANSPARENT
+    CTEXT           "",IDC_STATIC_QUALITY_4,264,0,14,49,0,WS_EX_TRANSPARENT
+    CONTROL         "Button1",IDC_BUTTON1,"Button",BS_OWNERDRAW | WS_TABSTOP,0,72,108,12
+    CONTROL         "Button2",IDC_BUTTON2,"Button",BS_OWNERDRAW | WS_TABSTOP,0,84,108,12
+    CONTROL         "Button3",IDC_BUTTON3,"Button",BS_OWNERDRAW | WS_TABSTOP,0,96,108,12
+    CONTROL         "Button4",IDC_BUTTON4,"Button",BS_OWNERDRAW | WS_TABSTOP,0,108,108,12
+    CONTROL         "Button5",IDC_BUTTON5,"Button",BS_OWNERDRAW | WS_TABSTOP,0,120,108,12
+    CONTROL         "Button6",IDC_BUTTON6,"Button",BS_OWNERDRAW | WS_TABSTOP,0,132,108,12
+    CONTROL         "Button7",IDC_BUTTON7,"Button",BS_OWNERDRAW | WS_TABSTOP,0,144,108,12
+    CONTROL         "Button8",IDC_BUTTON8,"Button",BS_OWNERDRAW | WS_TABSTOP,0,156,108,12
+    CONTROL         "Button9",IDC_BUTTON9,"Button",BS_OWNERDRAW | WS_TABSTOP,0,168,108,12
+    CONTROL         "Button10",IDC_BUTTON91,"Button",BS_OWNERDRAW | WS_TABSTOP,0,180,108,12
+    CONTROL         "Button12",IDC_BUTTON93,"Button",BS_OWNERDRAW | WS_TABSTOP,0,204,108,12
+    CONTROL         "Button11",IDC_BUTTON92,"Button",BS_OWNERDRAW | WS_TABSTOP,0,192,108,12
+    CONTROL         "Button13",IDC_BUTTON94,"Button",BS_OWNERDRAW | WS_TABSTOP,0,216,108,12
+    CONTROL         "Button14",IDC_BUTTON95,"Button",BS_OWNERDRAW | WS_TABSTOP,0,228,108,12
+    CONTROL         "Button15",IDC_BUTTON96,"Button",BS_OWNERDRAW | WS_TABSTOP,0,240,108,12
+    CONTROL         "Button16",IDC_BUTTON97,"Button",BS_OWNERDRAW | WS_TABSTOP,0,252,108,12
+    CONTROL         "Button17",IDC_BUTTON98,"Button",BS_OWNERDRAW | WS_TABSTOP,0,264,108,12
+    CONTROL         "Button1",IDC_BUTTON99,"Button",BS_OWNERDRAW | WS_TABSTOP,108,261,108,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "FILE"
+    BEGIN
+        MENUITEM "EXIT",                        ID_EXIT
+    END
+    MENUITEM "Option",                      IDD_Option
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\IBScanUltimate_SalesDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Integrated Biometrics, LLC"
+            VALUE "FileDescription", "IBScanUltimate_SalesDemo++"
+            VALUE "FileVersion", "2, 0, 0, 0"
+            VALUE "InternalName", "IBScanUltimate_SalesDemo.exe"
+            VALUE "LegalCopyright", "Copyright (c) 2011-2015 Integrated Biometrics.  All rights reserved."
+            VALUE "OriginalFilename", "IBScanUltimate_SalesDemo.exe"
+            VALUE "ProductName", "IBScanUltimate_SalesDemo"
+            VALUE "ProductVersion", "2, 0, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\IBScanUltimate_SalesDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

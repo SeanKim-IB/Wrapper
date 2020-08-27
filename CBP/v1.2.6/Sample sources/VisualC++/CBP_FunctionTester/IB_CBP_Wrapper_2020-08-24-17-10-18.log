@@ -1,0 +1,8 @@
+[2020-08-24 17:10:17.692]	Enter	cbp_fp_startImaging	handle (0), slapType (0,slap_rightHand), collectionType (1,collection_flat)
+[2020-08-24 17:10:17.698]	Exit	cbp_fp_startImaging	
+[2020-08-24 17:10:18.232]	Enter	cbp_fp_onPreview	
+[2020-08-24 17:10:18.242]	Exit	cbp_fp_onPreview	
+[2020-08-24 17:10:18.246]	Enter	cbp_fp_onPreviewAnalysis	
+[2020-08-24 17:10:18.249]	>>> CollectionType	1 ( collection_flat )	
+[2020-08-24 17:10:18.251]	>>> SlapType	0 ( slap_rightHand )	
+[2020-08-24 17:10:18.264]	Exit	cbp_fp_onPreviewAnalysis	

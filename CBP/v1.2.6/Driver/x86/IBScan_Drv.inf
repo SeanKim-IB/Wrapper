@@ -1,0 +1,141 @@
+;
+; Copyright (c) 2015-2016 Integrated Biometrics LLC
+; Integrated Biometrics USB-FP and IBScan Fingerprint Sensor driver
+;
+;Module Name:
+;
+;    IBScan_Drv.INF
+;
+;Abstract:
+;    Installation inf for the USB-FP and IBScan Integrated Biometrics Fingerprint sensor
+;
+;
+
+
+ [Version]
+Signature = "$Windows NT$"
+Class=Biometric
+ClassGUID={53D29EF7-377C-4D14-864B-EB3A85769359}
+Provider = %ProviderName%
+CatalogFile=IBScan_Drv.cat
+DriverVer=12/23/2016,1.4.1.0
+
+; ================== Class section ==================
+
+;  Windows XP requires this section name
+[ClassInstall32]
+AddReg=AddRegBiometricClass
+
+[AddRegBiometricClass]
+HKR,,,,%BiometricClassName%
+
+; ========== Manufacturer/Models sections ===========
+
+[Manufacturer]
+%ProviderName% = MyDevice_WinUSB,NTx86,NTamd64
+
+[MyDevice_WinUSB.NTx86]
+%USB\MyDevice.DeviceDesc1% =USB_Install, USB\VID_113F&PID_1005, USB\VID_113F&PID_1006
+%USB\MyDevice.DeviceDesc2% =USB_Install, USB\VID_113F&PID_1010, USB\VID_113F&PID_1011
+%USB\MyDevice.DeviceDesc3% =USB_Install, USB\VID_113F&PID_1020, USB\VID_113F&PID_1021
+%USB\MyDevice.DeviceDesc4% =USB_Install, USB\VID_113F&PID_1100, USB\VID_113F&PID_1101
+%USB\MyDevice.DeviceDesc5% =USB_Install, USB\VID_113F&PID_1200, USB\VID_113F&PID_1201
+%USB\MyDevice.DeviceDesc6% =USB_Install, USB\VID_113F&PID_1300, USB\VID_113F&PID_1301
+%USB\MyDevice.DeviceDesc7% =USB_Install, USB\VID_113F&PID_1400, USB\VID_113F&PID_1401
+%USB\MyDevice.DeviceDesc8% =USB_Install, USB\VID_113F&PID_9000, USB\VID_113F&PID_9001
+%USB\MyDevice.DeviceDesc9% =USB_Install, USB\VID_113F&PID_1500, USB\VID_113F&PID_1501
+%USB\MyDevice.DeviceDesc10% =USB_Install, USB\VID_113F&PID_1600, USB\VID_113F&PID_1601, USB\VID_113F&PID_1700, USB\VID_113F&PID_1701, USB\VID_113F&PD_1800, USB\VID_113F&PID_1801, USB\VID_113F&PID_1900, USB\VID_113F&PID_1901, USB\VID_113F&PID_1A00, USB\VID_113F&PID_1A01, USB\VID_113F&PID_1B00, USB\VID_113F&PID_1B01, USB\VID_113F&PID_1C00, USB\VID_113F&PID_1C01, USB\VID_113F&PID_1D00, USB\VID_113F&PID_1D01, USB\VID_113F&PID_1E00, USB\VID_113F&PID_1E01, USB\VID_113F&PID_1F00, USB\VID_113F&PID_1F01
+
+[MyDevice_WinUSB.NTamd64]
+%USB\MyDevice.DeviceDesc1% =USB_Install, USB\VID_113F&PID_1005, USB\VID_113F&PID_1006
+%USB\MyDevice.DeviceDesc2% =USB_Install, USB\VID_113F&PID_1010, USB\VID_113F&PID_1011
+%USB\MyDevice.DeviceDesc3% =USB_Install, USB\VID_113F&PID_1020, USB\VID_113F&PID_1021
+%USB\MyDevice.DeviceDesc4% =USB_Install, USB\VID_113F&PID_1100, USB\VID_113F&PID_1101
+%USB\MyDevice.DeviceDesc5% =USB_Install, USB\VID_113F&PID_1200, USB\VID_113F&PID_1201
+%USB\MyDevice.DeviceDesc6% =USB_Install, USB\VID_113F&PID_1300, USB\VID_113F&PID_1301
+%USB\MyDevice.DeviceDesc7% =USB_Install, USB\VID_113F&PID_1400, USB\VID_113F&PID_1401
+%USB\MyDevice.DeviceDesc8% =USB_Install, USB\VID_113F&PID_9000, USB\VID_113F&PID_9001
+%USB\MyDevice.DeviceDesc9% =USB_Install, USB\VID_113F&PID_1500, USB\VID_113F&PID_1501
+%USB\MyDevice.DeviceDesc10% =USB_Install, USB\VID_113F&PID_1600, USB\VID_113F&PID_1601, USB\VID_113F&PID_1700, USB\VID_113F&PID_1701, USB\VID_113F&PID_1800, USB\VID_113F&PID_1801, USB\VID_113F&PID_1900, USB\VID_113F&PID_1901, USB\VID_113F&PID_1A00, USB\VID_113F&PID_1A01, USB\VID_113F&PID_1B00, USB\VID_113F&PID_1B01, USB\VID_113F&PID_1C00, USB\VID_113F&PID_1C01, USB\VID_113F&PID_1D00, USB\VID_113F&PID_1D01, USB\VID_113F&PID_1E00, USB\VID_113F&PID_1E01, USB\VID_113F&PID_1F00, USB\VID_113F&PID_1F01
+
+
+
+; =================== Installation ===================
+
+[USB_Install]
+Include=winusb.inf
+Needs=WINUSB.NT
+
+[USB_Install.Services]
+Include=winusb.inf
+AddService=WinUSB,0x00000002,WinUSB_ServiceInstall
+
+[WinUSB_ServiceInstall]
+DisplayName     = %WinUSB_SvcDesc%
+ServiceType     = 1
+StartType       = 3
+ErrorControl    = 1
+ServiceBinary   = %12%\winusb.sys
+
+[USB_Install.Wdf]
+KmdfService=WINUSB, WinUsb_Install
+
+[WinUSB_Install]
+KmdfLibraryVersion=1.9
+
+;[5]
+[USB_Install.HW]
+AddReg=Dev_AddReg
+
+[Dev_AddReg]
+HKR,,DeviceInterfaceGUIDs,0x10000,"{E470DBC6-040A-4C88-9CFF-C008D6B58E89}"
+
+;[6]
+[USB_Install.CoInstallers]
+AddReg=CoInstallers_AddReg
+CopyFiles=CoInstallers_CopyFiles
+
+[CoInstallers_AddReg]
+HKR,,CoInstallers32,0x00010000,"WdfCoInstaller01009.dll,WdfCoInstaller","WinUSBCoInstaller2.dll"
+
+[CoInstallers_CopyFiles]
+WinUSBCoInstaller2.dll
+WdfCoInstaller01009.dll
+
+[DestinationDirs]
+CoInstallers_CopyFiles=11
+
+; ================= Source Media Section =====================
+;[7]
+
+[SourceDisksNames]
+;1 = %DISK_NAME%,,,\i386
+;2 = %DISK_NAME%,,,\amd64
+1 = %DISK_NAME%,,,.
+2 = %DISK_NAME%,,,.
+
+[SourceDisksFiles.x86]
+WinUSBCoInstaller2.dll=1
+WdfCoInstaller01009.dll=1
+
+[SourceDisksFiles.amd64]
+WinUSBCoInstaller2.dll=2
+WdfCoInstaller01009.dll=2
+
+; =================== Strings ===================
+
+[Strings]
+ProviderName="Integrated Biometrics LLC"
+WinUSB_SvcDesc="WinUSB IBScanSeries Driver"
+DISK_NAME="IBScanSeries Install Disk"
+BiometricClassName="Biometric"
+USB\MyDevice.DeviceDesc1="Integrated Biometrics Watson Scanner"
+USB\MyDevice.DeviceDesc2="Integrated Biometrics Sherlock Scanner"
+USB\MyDevice.DeviceDesc3="Integrated Biometrics Watson Mini Scanner"
+USB\MyDevice.DeviceDesc4="Integrated Biometrics Columbo Scanner"
+USB\MyDevice.DeviceDesc5="Integrated Biometrics Holmes Scanner"
+USB\MyDevice.DeviceDesc6="Integrated Biometrics Kojak Scanner"
+USB\MyDevice.DeviceDesc7="Integrated Biometrics IBtap Scanner"
+USB\MyDevice.DeviceDesc8="Integrated Biometrics Wtap Scanner"
+USB\MyDevice.DeviceDesc9="Integrated Biometrics FAP50 Scanner"
+USB\MyDevice.DeviceDesc10="Integrated Biometrics Fingerprint Scanner"

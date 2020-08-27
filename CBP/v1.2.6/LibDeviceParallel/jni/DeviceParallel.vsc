@@ -1,0 +1,26 @@
+# linker script for Linux .so exported functions
+{
+  global:
+
+	device_control_init;
+	device_control_reg_read;
+	device_control_reg_write;
+	device_control_close;
+	device_count;
+	device_init;
+	device_open;
+	device_close;
+	device_parallel_init;
+	device_parallel_bulk_read;
+	device_parallel_close;
+	device_i2c_init;
+	device_i2c_read;
+	device_i2c_write;
+	device_i2c_close;
+	device_spi_init;
+	device_spi_read;
+	device_spi_write;
+	device_spi_close;
+	local: *;
+};
+

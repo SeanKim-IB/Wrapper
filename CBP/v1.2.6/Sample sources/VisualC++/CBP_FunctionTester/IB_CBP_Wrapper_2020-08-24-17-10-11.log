@@ -1,0 +1,9 @@
+[2020-08-24 17:10:10.895]	Exit	cbp_fp_onPreviewAnalysis	
+[2020-08-24 17:10:10.965]	Enter	cbp_fp_onPreview	
+[2020-08-24 17:10:10.973]	Exit	cbp_fp_onPreview	
+[2020-08-24 17:10:10.977]	Enter	cbp_fp_onPreviewAnalysis	
+[2020-08-24 17:10:10.980]	>>> CollectionType	1 ( collection_flat )	
+[2020-08-24 17:10:10.984]	>>> SlapType	0 ( slap_rightHand )	
+[2020-08-24 17:10:10.997]	Exit	cbp_fp_onPreviewAnalysis	
+[2020-08-24 17:10:11.068]	Enter	cbp_fp_onPreview	
+[2020-08-24 17:10:11.078]	Exit	cbp_fp_onPreview	

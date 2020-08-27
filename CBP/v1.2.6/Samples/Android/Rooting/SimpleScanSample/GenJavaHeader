@@ -1,0 +1,1 @@
+javah -d . -classpath /home/osm/Workspace/IBScanDemo/bin/classes com.integratedbiometrics.demo.IBScanDemoActivity

@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CA1D36417E513FD00935678 /* getcomp.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D35C17E513FD00935678 /* getcomp.c */; };
+		9CA1D36517E513FD00935678 /* getnset.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D35D17E513FD00935678 /* getnset.c */; };
+		9CA1D36617E513FD00935678 /* nullihdr.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D35E17E513FD00935678 /* nullihdr.c */; };
+		9CA1D36717E513FD00935678 /* parsihdr.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D35F17E513FD00935678 /* parsihdr.c */; };
+		9CA1D36817E513FD00935678 /* prntihdr.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D36017E513FD00935678 /* prntihdr.c */; };
+		9CA1D36917E513FD00935678 /* readihdr.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D36117E513FD00935678 /* readihdr.c */; };
+		9CA1D36A17E513FD00935678 /* valdcomp.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D36217E513FD00935678 /* valdcomp.c */; };
+		9CA1D36B17E513FD00935678 /* writihdr.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D36317E513FD00935678 /* writihdr.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9CA1D34917E513DA00935678 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9CA1D34B17E513DA00935678 /* libnbis-ihead.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libnbis-ihead.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA1D35C17E513FD00935678 /* getcomp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = getcomp.c; path = ../../getcomp.c; sourceTree = "<group>"; };
+		9CA1D35D17E513FD00935678 /* getnset.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = getnset.c; path = ../../getnset.c; sourceTree = "<group>"; };
+		9CA1D35E17E513FD00935678 /* nullihdr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = nullihdr.c; path = ../../nullihdr.c; sourceTree = "<group>"; };
+		9CA1D35F17E513FD00935678 /* parsihdr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = parsihdr.c; path = ../../parsihdr.c; sourceTree = "<group>"; };
+		9CA1D36017E513FD00935678 /* prntihdr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = prntihdr.c; path = ../../prntihdr.c; sourceTree = "<group>"; };
+		9CA1D36117E513FD00935678 /* readihdr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = readihdr.c; path = ../../readihdr.c; sourceTree = "<group>"; };
+		9CA1D36217E513FD00935678 /* valdcomp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = valdcomp.c; path = ../../valdcomp.c; sourceTree = "<group>"; };
+		9CA1D36317E513FD00935678 /* writihdr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = writihdr.c; path = ../../writihdr.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CA1D34817E513DA00935678 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CA1D34217E513DA00935678 = {
+			isa = PBXGroup;
+			children = (
+				9CA1D35017E513DA00935678 /* nbis-ihead */,
+				9CA1D34D17E513DA00935678 /* Frameworks */,
+				9CA1D34C17E513DA00935678 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CA1D34C17E513DA00935678 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CA1D34B17E513DA00935678 /* libnbis-ihead.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CA1D34D17E513DA00935678 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CA1D35017E513DA00935678 /* nbis-ihead */ = {
+			isa = PBXGroup;
+			children = (
+				9CA1D35C17E513FD00935678 /* getcomp.c */,
+				9CA1D35D17E513FD00935678 /* getnset.c */,
+				9CA1D35E17E513FD00935678 /* nullihdr.c */,
+				9CA1D35F17E513FD00935678 /* parsihdr.c */,
+				9CA1D36017E513FD00935678 /* prntihdr.c */,
+				9CA1D36117E513FD00935678 /* readihdr.c */,
+				9CA1D36217E513FD00935678 /* valdcomp.c */,
+				9CA1D36317E513FD00935678 /* writihdr.c */,
+			);
+			path = "nbis-ihead";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CA1D34A17E513DA00935678 /* nbis-ihead */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA1D35917E513DA00935678 /* Build configuration list for PBXNativeTarget "nbis-ihead" */;
+			buildPhases = (
+				9CA1D34717E513DA00935678 /* Sources */,
+				9CA1D34817E513DA00935678 /* Frameworks */,
+				9CA1D34917E513DA00935678 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "nbis-ihead";
+			productName = "nbis-ihead";
+			productReference = 9CA1D34B17E513DA00935678 /* libnbis-ihead.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CA1D34317E513DA00935678 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Brian Nagel";
+			};
+			buildConfigurationList = 9CA1D34617E513DA00935678 /* Build configuration list for PBXProject "nbis-ihead" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9CA1D34217E513DA00935678;
+			productRefGroup = 9CA1D34C17E513DA00935678 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CA1D34A17E513DA00935678 /* nbis-ihead */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CA1D34717E513DA00935678 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA1D36417E513FD00935678 /* getcomp.c in Sources */,
+				9CA1D36517E513FD00935678 /* getnset.c in Sources */,
+				9CA1D36617E513FD00935678 /* nullihdr.c in Sources */,
+				9CA1D36717E513FD00935678 /* parsihdr.c in Sources */,
+				9CA1D36817E513FD00935678 /* prntihdr.c in Sources */,
+				9CA1D36917E513FD00935678 /* readihdr.c in Sources */,
+				9CA1D36A17E513FD00935678 /* valdcomp.c in Sources */,
+				9CA1D36B17E513FD00935678 /* writihdr.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9CA1D35717E513DA00935678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../include,
+					../../../../../commonnbis/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-D__android__",
+					"-D__NBISLE__",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9CA1D35817E513DA00935678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../include,
+					../../../../../commonnbis/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = (
+					"-D__android__",
+					"-D__NBISLE__",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CA1D35A17E513DA00935678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/nbis_ihead.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nbis-ihead/nbis-ihead-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				OTHER_CFLAGS = (
+					"-D__android__",
+					"-D__NBISLE__",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9CA1D35B17E513DA00935678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/nbis_ihead.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nbis-ihead/nbis-ihead-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				OTHER_CFLAGS = (
+					"-D__android__",
+					"-D__NBISLE__",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CA1D34617E513DA00935678 /* Build configuration list for PBXProject "nbis-ihead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA1D35717E513DA00935678 /* Debug */,
+				9CA1D35817E513DA00935678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA1D35917E513DA00935678 /* Build configuration list for PBXNativeTarget "nbis-ihead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA1D35A17E513DA00935678 /* Debug */,
+				9CA1D35B17E513DA00935678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CA1D34317E513DA00935678 /* Project object */;
+}

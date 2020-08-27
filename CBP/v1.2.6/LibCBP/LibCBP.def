@@ -1,0 +1,25 @@
+; LibCBP.def : Declares the module parameters for the DLL.
+
+LIBRARY      "CBP_FP_Wrapper"
+
+EXPORTS
+    ; Explicit exports can go here
+	cbp_fp_calibrate					@01
+	cbp_fp_capture						@02
+	cbp_fp_close						@03
+	cbp_fp_configure					@04
+	cbp_fp_enumDevices					@05
+	cbp_fp_getDirtiness					@06
+	cbp_fp_getLockInfo					@07
+	cbp_fp_getProperty					@08
+	cbp_fp_initialize					@09
+	cbp_fp_lock							@10
+	cbp_fp_open							@11
+	cbp_fp_powerSave					@12
+	cbp_fp_registerCallBacks			@13
+	cbp_fp_setProperty					@14
+	cbp_fp_startImaging					@15
+	cbp_fp_stopImaging					@16
+	cbp_fp_uninitialize					@17
+	cbp_fp_unlock						@18
+

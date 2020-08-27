@@ -1,0 +1,7 @@
+[2020-08-24 17:10:18.918]	>>> CollectionType	1 ( collection_flat )	
+[2020-08-24 17:10:18.921]	>>> SlapType	0 ( slap_rightHand )	
+[2020-08-24 17:10:18.924]	>>> fingerAttribute	FINGER [0] Too left, score 0	
+[2020-08-24 17:10:18.927]	>>> fingerAttribute	FINGER [1] Too light, score 75	
+[2020-08-24 17:10:18.930]	>>> fingerAttribute	FINGER [2] Too light, score 75	
+[2020-08-24 17:10:18.933]	>>> fingerAttribute	FINGER [3] Too light, score 75	
+[2020-08-24 17:10:18.957]	Exit	cbp_fp_onPreviewAnalysis	

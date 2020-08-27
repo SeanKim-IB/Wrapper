@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Images">
+        <file>Scanner.bmp</file>
+        <file>IB_logo.bmp</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,280 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\IBScanUltimate_TenScanSampleForVC.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\IBScanUltimate_TenScanSampleForVC.ico"
+IDI_START_CAPTURE       ICON                    "res\\start_capture.ico"
+IDI_EDIT                ICON                    "res\\edit.ico"
+IDI_SAVE                ICON                    "res\\save.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,8,0,0
+ PRODUCTVERSION 1,8,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Integrated Biometrics, LLC"
+            VALUE "FileDescription", "IBScanUltimate_TenScanSampleForVC++"
+            VALUE "FileVersion", "1, 8, 0, 0"
+            VALUE "InternalName", "IBScanUltimate_TenScanSampleForVC.exe"
+            VALUE "LegalCopyright", "Copyright (c) 2011-2013 Integrated Biometrics.  All rights reserved."
+            VALUE "OriginalFilename", "IBScanUltimate_TenScanSampleForVC.exe"
+            VALUE "ProductName", "IBScanUltimate_TenScanSampleForVC"
+            VALUE "ProductVersion", "1, 8, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_IBSCANULTIMATE_TENSCANSAMPLEFORVC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 392
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_MAIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 385
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_SCAN_FINGER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 384
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 247
+    END
+
+    IDD_ZOOM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_IBSCANULTIMATE_TENSCANSAMPLEFORVC_DIALOG DIALOGEX 0, 0, 399, 172
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "IBScanUltimate_TenScanSampleForVC"
+FONT 16, "Calibri", 400, 0, 0x0
+BEGIN
+    CONTROL         135,IDC_STATIC_LOGO,"Static",SS_BITMAP,7,7,385,25
+    CONTROL         "",IDC_TAB_VIEW,"SysTabControl32",TCS_FIXEDWIDTH,7,36,385,83
+END
+
+IDD_MAIN_DIALOG DIALOGEX 0, 0, 392, 212
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 14, "Calibri", 400, 0, 0x0
+BEGIN
+    CTEXT           "Device List",IDC_STRING_DEVICE_LIST,0,6,28,9
+    COMBOBOX        IDC_DEVICE_LIST,0,14,69,142,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_VIEW_0,"Static",SS_BLACKFRAME,0,88,21,16
+    CONTROL         "",IDC_VIEW_1,"Static",SS_BLACKFRAME,76,88,21,16
+    CONTROL         "",IDC_VIEW_2,"Static",SS_BLACKFRAME,152,88,21,16
+    CONTROL         "",IDC_VIEW_3,"Static",SS_BLACKFRAME,229,88,21,16
+    CONTROL         "",IDC_VIEW_4,"Static",SS_BLACKFRAME,305,88,21,16
+    CONTROL         "",IDC_VIEW_5,"Static",SS_BLACKFRAME,0,123,21,16
+    CONTROL         "",IDC_VIEW_6,"Static",SS_BLACKFRAME,76,123,21,16
+    CONTROL         "",IDC_VIEW_7,"Static",SS_BLACKFRAME,152,123,21,16
+    CONTROL         "",IDC_VIEW_8,"Static",SS_BLACKFRAME,229,123,21,16
+    CONTROL         "",IDC_VIEW_9,"Static",SS_BLACKFRAME,305,123,21,16
+    PUSHBUTTON      "Capture",IDC_START_CAPTURE,163,6,55,21
+    CTEXT           "Capture Sequences",IDC_STRING_CAPTURE_SEQUENCES,77,6,66,9
+    COMBOBOX        IDC_SEQUENCE_LIST,77,14,69,142,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Erase",IDC_EDIT_CAPTURE,219,6,54,21
+    PUSHBUTTON      "Save",IDC_SAVE_CAPTURE,275,6,54,21
+    CTEXT           "Static",IDC_STRING_VIEW_0,0,81,13,9
+    CTEXT           "Static",IDC_STRING_VIEW_1,76,81,13,9
+    CTEXT           "Static",IDC_STRING_VIEW_2,152,81,13,9
+    CTEXT           "Static",IDC_STRING_VIEW_3,229,79,13,9
+    CTEXT           "Static",IDC_STRING_VIEW_4,304,80,13,9
+    CTEXT           "Static",IDC_STRING_VIEW_5,0,115,13,9
+    CTEXT           "Static",IDC_STRING_VIEW_6,76,115,13,9
+    CTEXT           "Static",IDC_STRING_VIEW_7,153,115,13,9
+    CTEXT           "Static",IDC_STRING_VIEW_8,229,115,13,9
+    CTEXT           "Static",IDC_STRING_VIEW_9,304,116,13,9
+    CONTROL         "Split multiple-finger images into single-finger images",IDC_USE_AUTO_SPLIT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,31,236,9
+END
+
+IDD_SCAN_FINGER_DIALOG DIALOGEX 0, 0, 391, 254
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 14, "Calibri", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_VIEW,"Static",SS_BLACKFRAME,134,0,14,17
+    CONTROL         "",IDC_FINGER_VIEW,"Static",SS_BLACKFRAME,8,15,8,8
+    CTEXT           "10 fingers - single flat finger",IDC_STRING_FINGER_STATUS,8,0,110,7
+    PUSHBUTTON      "Scan Fingers",IDC_SCAN_10_FINGERS,8,63,58,23
+    PUSHBUTTON      "Close",IDC_CLOSE,8,86,58,23
+    EDITTEXT        IDC_TXT_STATUS,11,237,344,10,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         133,IDC_FINGER_QUALITY,"Static",SS_BITMAP | SS_REALSIZEIMAGE,9,121,120,104
+    CTEXT           "Finger Quality",IDC_STRING_FINGER_QUALITY,8,111,82,7
+    PUSHBUTTON      "Scan Selected Finger",IDC_SCAN_SELECTED_FINGER,67,63,58,23
+    LTEXT           "",IDC_STATIC_QUALITY_1,18,135,14,49
+    LTEXT           "",IDC_STATIC_QUALITY_2,34,135,14,49
+    LTEXT           "",IDC_STATIC_QUALITY_3,50,135,14,49
+    LTEXT           "",IDC_STATIC_QUALITY_4,66,135,14,49
+END
+
+IDD_ZOOM_DIALOG DIALOGEX 0, 0, 254, 222
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Zoom In/Out"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SCANNER             BITMAP                  "res\\Scanner.bmp"
+IDB_LOGO                BITMAP                  "res\\newlogo.bmp"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\IBScanUltimate_TenScanSampleForVC.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

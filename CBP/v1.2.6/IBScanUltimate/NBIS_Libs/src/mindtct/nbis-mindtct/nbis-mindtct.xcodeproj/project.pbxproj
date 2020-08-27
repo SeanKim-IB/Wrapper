@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CA1D44B17E518A400935678 /* binar.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D42C17E518A400935678 /* binar.c */; };
+		9CA1D44C17E518A400935678 /* block.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D42D17E518A400935678 /* block.c */; };
+		9CA1D44D17E518A400935678 /* chaincod.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D42E17E518A400935678 /* chaincod.c */; };
+		9CA1D44E17E518A400935678 /* contour.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D42F17E518A400935678 /* contour.c */; };
+		9CA1D44F17E518A400935678 /* detect.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D43017E518A400935678 /* detect.c */; };
+		9CA1D45017E518A400935678 /* dft.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D43117E518A400935678 /* dft.c */; };
+		9CA1D45117E518A400935678 /* free.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D43217E518A400935678 /* free.c */; };
+		9CA1D45217E518A400935678 /* getmin.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D43317E518A400935678 /* getmin.c */; };
+		9CA1D45317E518A400935678 /* globals.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D43417E518A400935678 /* globals.c */; };
+		9CA1D45417E518A400935678 /* imgutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D43517E518A400935678 /* imgutil.c */; };
+		9CA1D45517E518A400935678 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D43617E518A400935678 /* init.c */; };
+		9CA1D45617E518A400935678 /* isempty.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D43717E518A400935678 /* isempty.c */; };
+		9CA1D45717E518A400935678 /* line.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D43817E518A400935678 /* line.c */; };
+		9CA1D45817E518A400935678 /* link.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D43917E518A400935678 /* link.c */; };
+		9CA1D45917E518A400935678 /* log.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D43A17E518A400935678 /* log.c */; };
+		9CA1D45A17E518A400935678 /* loop.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D43B17E518A400935678 /* loop.c */; };
+		9CA1D45B17E518A400935678 /* maps.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D43C17E518A400935678 /* maps.c */; };
+		9CA1D45C17E518A400935678 /* matchpat.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D43D17E518A400935678 /* matchpat.c */; };
+		9CA1D45D17E518A400935678 /* minutia.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D43E17E518A400935678 /* minutia.c */; };
+		9CA1D45E17E518A400935678 /* morph.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D43F17E518A400935678 /* morph.c */; };
+		9CA1D45F17E518A400935678 /* mytime.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D44017E518A400935678 /* mytime.c */; };
+		9CA1D46017E518A400935678 /* quality.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D44117E518A400935678 /* quality.c */; };
+		9CA1D46117E518A400935678 /* remove.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D44217E518A400935678 /* remove.c */; };
+		9CA1D46217E518A400935678 /* results.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D44317E518A400935678 /* results.c */; };
+		9CA1D46317E518A400935678 /* ridges.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D44417E518A400935678 /* ridges.c */; };
+		9CA1D46417E518A400935678 /* shape.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D44517E518A400935678 /* shape.c */; };
+		9CA1D46517E518A400935678 /* sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D44617E518A400935678 /* sort.c */; };
+		9CA1D46617E518A400935678 /* to_type9.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D44717E518A400935678 /* to_type9.c */; };
+		9CA1D46717E518A400935678 /* update.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D44817E518A400935678 /* update.c */; };
+		9CA1D46817E518A400935678 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D44917E518A400935678 /* util.c */; };
+		9CA1D46917E518A400935678 /* xytreps.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D44A17E518A400935678 /* xytreps.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9CA1D41917E5187E00935678 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9CA1D41B17E5187E00935678 /* libnbis-mindtct.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libnbis-mindtct.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA1D42C17E518A400935678 /* binar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = binar.c; path = ../../src/lib/mindtct/binar.c; sourceTree = "<group>"; };
+		9CA1D42D17E518A400935678 /* block.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = block.c; path = ../../src/lib/mindtct/block.c; sourceTree = "<group>"; };
+		9CA1D42E17E518A400935678 /* chaincod.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = chaincod.c; path = ../../src/lib/mindtct/chaincod.c; sourceTree = "<group>"; };
+		9CA1D42F17E518A400935678 /* contour.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = contour.c; path = ../../src/lib/mindtct/contour.c; sourceTree = "<group>"; };
+		9CA1D43017E518A400935678 /* detect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = detect.c; path = ../../src/lib/mindtct/detect.c; sourceTree = "<group>"; };
+		9CA1D43117E518A400935678 /* dft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = dft.c; path = ../../src/lib/mindtct/dft.c; sourceTree = "<group>"; };
+		9CA1D43217E518A400935678 /* free.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = free.c; path = ../../src/lib/mindtct/free.c; sourceTree = "<group>"; };
+		9CA1D43317E518A400935678 /* getmin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = getmin.c; path = ../../src/lib/mindtct/getmin.c; sourceTree = "<group>"; };
+		9CA1D43417E518A400935678 /* globals.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = globals.c; path = ../../src/lib/mindtct/globals.c; sourceTree = "<group>"; };
+		9CA1D43517E518A400935678 /* imgutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = imgutil.c; path = ../../src/lib/mindtct/imgutil.c; sourceTree = "<group>"; };
+		9CA1D43617E518A400935678 /* init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = init.c; path = ../../src/lib/mindtct/init.c; sourceTree = "<group>"; };
+		9CA1D43717E518A400935678 /* isempty.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = isempty.c; path = ../../src/lib/mindtct/isempty.c; sourceTree = "<group>"; };
+		9CA1D43817E518A400935678 /* line.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = line.c; path = ../../src/lib/mindtct/line.c; sourceTree = "<group>"; };
+		9CA1D43917E518A400935678 /* link.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = link.c; path = ../../src/lib/mindtct/link.c; sourceTree = "<group>"; };
+		9CA1D43A17E518A400935678 /* log.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = log.c; path = ../../src/lib/mindtct/log.c; sourceTree = "<group>"; };
+		9CA1D43B17E518A400935678 /* loop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = loop.c; path = ../../src/lib/mindtct/loop.c; sourceTree = "<group>"; };
+		9CA1D43C17E518A400935678 /* maps.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = maps.c; path = ../../src/lib/mindtct/maps.c; sourceTree = "<group>"; };
+		9CA1D43D17E518A400935678 /* matchpat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = matchpat.c; path = ../../src/lib/mindtct/matchpat.c; sourceTree = "<group>"; };
+		9CA1D43E17E518A400935678 /* minutia.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = minutia.c; path = ../../src/lib/mindtct/minutia.c; sourceTree = "<group>"; };
+		9CA1D43F17E518A400935678 /* morph.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = morph.c; path = ../../src/lib/mindtct/morph.c; sourceTree = "<group>"; };
+		9CA1D44017E518A400935678 /* mytime.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mytime.c; path = ../../src/lib/mindtct/mytime.c; sourceTree = "<group>"; };
+		9CA1D44117E518A400935678 /* quality.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = quality.c; path = ../../src/lib/mindtct/quality.c; sourceTree = "<group>"; };
+		9CA1D44217E518A400935678 /* remove.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = remove.c; path = ../../src/lib/mindtct/remove.c; sourceTree = "<group>"; };
+		9CA1D44317E518A400935678 /* results.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = results.c; path = ../../src/lib/mindtct/results.c; sourceTree = "<group>"; };
+		9CA1D44417E518A400935678 /* ridges.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ridges.c; path = ../../src/lib/mindtct/ridges.c; sourceTree = "<group>"; };
+		9CA1D44517E518A400935678 /* shape.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = shape.c; path = ../../src/lib/mindtct/shape.c; sourceTree = "<group>"; };
+		9CA1D44617E518A400935678 /* sort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sort.c; path = ../../src/lib/mindtct/sort.c; sourceTree = "<group>"; };
+		9CA1D44717E518A400935678 /* to_type9.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = to_type9.c; path = ../../src/lib/mindtct/to_type9.c; sourceTree = "<group>"; };
+		9CA1D44817E518A400935678 /* update.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = update.c; path = ../../src/lib/mindtct/update.c; sourceTree = "<group>"; };
+		9CA1D44917E518A400935678 /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = util.c; path = ../../src/lib/mindtct/util.c; sourceTree = "<group>"; };
+		9CA1D44A17E518A400935678 /* xytreps.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = xytreps.c; path = ../../src/lib/mindtct/xytreps.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CA1D41817E5187E00935678 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CA1D41217E5187E00935678 = {
+			isa = PBXGroup;
+			children = (
+				9CA1D42017E5187E00935678 /* nbis-mindtct */,
+				9CA1D41D17E5187E00935678 /* Frameworks */,
+				9CA1D41C17E5187E00935678 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CA1D41C17E5187E00935678 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CA1D41B17E5187E00935678 /* libnbis-mindtct.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CA1D41D17E5187E00935678 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CA1D42017E5187E00935678 /* nbis-mindtct */ = {
+			isa = PBXGroup;
+			children = (
+				9CA1D42C17E518A400935678 /* binar.c */,
+				9CA1D42D17E518A400935678 /* block.c */,
+				9CA1D42E17E518A400935678 /* chaincod.c */,
+				9CA1D42F17E518A400935678 /* contour.c */,
+				9CA1D43017E518A400935678 /* detect.c */,
+				9CA1D43117E518A400935678 /* dft.c */,
+				9CA1D43217E518A400935678 /* free.c */,
+				9CA1D43317E518A400935678 /* getmin.c */,
+				9CA1D43417E518A400935678 /* globals.c */,
+				9CA1D43517E518A400935678 /* imgutil.c */,
+				9CA1D43617E518A400935678 /* init.c */,
+				9CA1D43717E518A400935678 /* isempty.c */,
+				9CA1D43817E518A400935678 /* line.c */,
+				9CA1D43917E518A400935678 /* link.c */,
+				9CA1D43A17E518A400935678 /* log.c */,
+				9CA1D43B17E518A400935678 /* loop.c */,
+				9CA1D43C17E518A400935678 /* maps.c */,
+				9CA1D43D17E518A400935678 /* matchpat.c */,
+				9CA1D43E17E518A400935678 /* minutia.c */,
+				9CA1D43F17E518A400935678 /* morph.c */,
+				9CA1D44017E518A400935678 /* mytime.c */,
+				9CA1D44117E518A400935678 /* quality.c */,
+				9CA1D44217E518A400935678 /* remove.c */,
+				9CA1D44317E518A400935678 /* results.c */,
+				9CA1D44417E518A400935678 /* ridges.c */,
+				9CA1D44517E518A400935678 /* shape.c */,
+				9CA1D44617E518A400935678 /* sort.c */,
+				9CA1D44717E518A400935678 /* to_type9.c */,
+				9CA1D44817E518A400935678 /* update.c */,
+				9CA1D44917E518A400935678 /* util.c */,
+				9CA1D44A17E518A400935678 /* xytreps.c */,
+			);
+			path = "nbis-mindtct";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CA1D41A17E5187E00935678 /* nbis-mindtct */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA1D42917E5187E00935678 /* Build configuration list for PBXNativeTarget "nbis-mindtct" */;
+			buildPhases = (
+				9CA1D41717E5187E00935678 /* Sources */,
+				9CA1D41817E5187E00935678 /* Frameworks */,
+				9CA1D41917E5187E00935678 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "nbis-mindtct";
+			productName = "nbis-mindtct";
+			productReference = 9CA1D41B17E5187E00935678 /* libnbis-mindtct.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CA1D41317E5187E00935678 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Brian Nagel";
+			};
+			buildConfigurationList = 9CA1D41617E5187E00935678 /* Build configuration list for PBXProject "nbis-mindtct" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9CA1D41217E5187E00935678;
+			productRefGroup = 9CA1D41C17E5187E00935678 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CA1D41A17E5187E00935678 /* nbis-mindtct */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CA1D41717E5187E00935678 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA1D44B17E518A400935678 /* binar.c in Sources */,
+				9CA1D44C17E518A400935678 /* block.c in Sources */,
+				9CA1D44D17E518A400935678 /* chaincod.c in Sources */,
+				9CA1D44E17E518A400935678 /* contour.c in Sources */,
+				9CA1D44F17E518A400935678 /* detect.c in Sources */,
+				9CA1D45017E518A400935678 /* dft.c in Sources */,
+				9CA1D45117E518A400935678 /* free.c in Sources */,
+				9CA1D45217E518A400935678 /* getmin.c in Sources */,
+				9CA1D45317E518A400935678 /* globals.c in Sources */,
+				9CA1D45417E518A400935678 /* imgutil.c in Sources */,
+				9CA1D45517E518A400935678 /* init.c in Sources */,
+				9CA1D45617E518A400935678 /* isempty.c in Sources */,
+				9CA1D45717E518A400935678 /* line.c in Sources */,
+				9CA1D45817E518A400935678 /* link.c in Sources */,
+				9CA1D45917E518A400935678 /* log.c in Sources */,
+				9CA1D45A17E518A400935678 /* loop.c in Sources */,
+				9CA1D45B17E518A400935678 /* maps.c in Sources */,
+				9CA1D45C17E518A400935678 /* matchpat.c in Sources */,
+				9CA1D45D17E518A400935678 /* minutia.c in Sources */,
+				9CA1D45E17E518A400935678 /* morph.c in Sources */,
+				9CA1D45F17E518A400935678 /* mytime.c in Sources */,
+				9CA1D46017E518A400935678 /* quality.c in Sources */,
+				9CA1D46117E518A400935678 /* remove.c in Sources */,
+				9CA1D46217E518A400935678 /* results.c in Sources */,
+				9CA1D46317E518A400935678 /* ridges.c in Sources */,
+				9CA1D46417E518A400935678 /* shape.c in Sources */,
+				9CA1D46517E518A400935678 /* sort.c in Sources */,
+				9CA1D46617E518A400935678 /* to_type9.c in Sources */,
+				9CA1D46717E518A400935678 /* update.c in Sources */,
+				9CA1D46817E518A400935678 /* util.c in Sources */,
+				9CA1D46917E518A400935678 /* xytreps.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9CA1D42717E5187E00935678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../include,
+					../../an2k/include,
+					../../commonnbis/include,
+					../../imgtools/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-D__android__",
+					"-D__NBISLE__",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9CA1D42817E5187E00935678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../include,
+					../../an2k/include,
+					../../commonnbis/include,
+					../../imgtools/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = (
+					"-D__android__",
+					"-D__NBISLE__",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CA1D42A17E5187E00935678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/nbis_mindtct.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nbis-mindtct/nbis-mindtct-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = (
+					../include,
+					../../an2k/include,
+					../../commonnbis/include,
+					../../imgtools/include,
+				);
+				OTHER_CFLAGS = (
+					"-D__android__",
+					"-D__NBISLE__",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9CA1D42B17E5187E00935678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/nbis_mindtct.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nbis-mindtct/nbis-mindtct-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = (
+					../include,
+					../../an2k/include,
+					../../commonnbis/include,
+					../../imgtools/include,
+				);
+				OTHER_CFLAGS = (
+					"-D__android__",
+					"-D__NBISLE__",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CA1D41617E5187E00935678 /* Build configuration list for PBXProject "nbis-mindtct" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA1D42717E5187E00935678 /* Debug */,
+				9CA1D42817E5187E00935678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA1D42917E5187E00935678 /* Build configuration list for PBXNativeTarget "nbis-mindtct" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA1D42A17E5187E00935678 /* Debug */,
+				9CA1D42B17E5187E00935678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CA1D41317E5187E00935678 /* Project object */;
+}

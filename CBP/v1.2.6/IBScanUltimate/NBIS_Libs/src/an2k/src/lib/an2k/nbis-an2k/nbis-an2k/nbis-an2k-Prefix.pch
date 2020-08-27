@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'nbis-an2k' target in the 'nbis-an2k' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
