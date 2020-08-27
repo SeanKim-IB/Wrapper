@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'nbis-cblas' target in the 'nbis-cblas' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

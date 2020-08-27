@@ -1,0 +1,589 @@
+//===========================================================================
+//
+//  File Name:    Setup.rul
+//
+//  Description:  Blank setup main script file
+//
+//  Comments:     Blank setup is an empty setup project. If you want to
+//				  create a new project via. step-by step instructions use the
+//				  Project Assistant.
+//
+//===========================================================================
+
+// Included header files ----------------------------------------------------
+#include "ifx.h"
+#include "FeatureEvents.rul"
+
+
+prototype DeletePreviousFiles();
+
+//---------------------------------------------------------------------------                                                                        
+// OnFirstUIBefore
+//
+// First Install UI Sequence - Before Move Data
+//
+// The OnFirstUIBefore event is called by OnShowUI when the setup is
+// running in first install mode. By default this event displays UI allowing
+// the end user to specify installation parameters.
+//
+// Note: This event will not be called automatically in a
+// program...endprogram style setup.
+//---------------------------------------------------------------------------
+function OnFirstUIBefore()
+    number  nResult, nLevel, nSize, nSetupType;
+    string  szTitle, szMsg, szOpt1, szOpt2, szLicenseFile;
+    string  szName, szCompany, szTargetPath, szDir, szFeatures, szTargetdir;
+    BOOL    bLicenseAccepted;	
+    string	szInfoString;	
+begin	
+   
+    nSetupType = COMPLETE;	
+    szDir = TARGETDIR;
+    szName = "";
+    szCompany = "";
+    bLicenseAccepted = FALSE;
+
+// Beginning of UI Sequence
+Dlg_Start:
+    nResult = 0;
+
+Dlg_SdWelcome:
+    szTitle = "";
+    szMsg = "";
+    szInfoString = SUPPORTDIR^"top.bmp" +";1;1;;0,0,0";
+    DialogSetInfo(DLG_INFO_ALTIMAGE,szInfoString,TRUE); 
+   //{{IS_SCRIPT_TAG(Dlg_SdWelcome)
+    nResult = SdWelcome( szTitle, szMsg );
+    //}}IS_SCRIPT_TAG(Dlg_SdWelcome)
+    if (nResult = BACK) goto Dlg_Start;
+
+Dlg_SdLicense2:
+    szTitle = "";
+    szOpt1 = "";
+    szOpt2 = "";
+    //{{IS_SCRIPT_TAG(License_File_Path)
+    szLicenseFile = SUPPORTDIR ^ "INTEGRATED BIOMETRICS EULA Agreement.rtf";
+    //}}IS_SCRIPT_TAG(License_File_Path)
+    //{{IS_SCRIPT_TAG(Dlg_SdLicense2)
+    nResult = SdLicense2Rtf( szTitle, szOpt1, szOpt2, szLicenseFile, bLicenseAccepted );
+    //}}IS_SCRIPT_TAG(Dlg_SdLicense2)
+    if (nResult = BACK) then
+        goto Dlg_SdWelcome;
+    else
+        bLicenseAccepted = TRUE;
+    endif;
+
+Dlg_SdRegisterUser:
+    szMsg = "";
+    szTitle = "";
+    //{{IS_SCRIPT_TAG(Dlg_SdRegisterUser)	
+  // // nResult = SdRegisterUser( szTitle, szMsg, szName, szCompany );
+    //}}IS_SCRIPT_TAG(Dlg_SdRegisterUser)
+    if (nResult = BACK) goto Dlg_SdLicense2;
+
+Dlg_SetupType2:   
+    szTitle = "";
+    szMsg = "";
+    //{{IS_SCRIPT_TAG(Dlg_SetupType2)	
+   // nResult = SetupType2( szTitle, szMsg, "", nSetupType, 0 );
+    //}}IS_SCRIPT_TAG(Dlg_SetupType2)
+    if (nResult = BACK) then
+        goto Dlg_SdRegisterUser;
+    else
+        nSetupType = nResult;
+        if (nSetupType != CUSTOM) then
+            szTargetPath = TARGETDIR;
+            nSize = 0;
+            FeatureCompareSizeRequired( MEDIA, szTargetPath, nSize );
+            if (nSize != 0) then      
+                MessageBox( szSdStr_NotEnoughSpace, WARNING );
+                goto Dlg_SetupType2;
+            endif;
+        endif;   
+    endif;
+
+Dlg_SdAskDestPath2:
+    if ((nResult = BACK) && (nSetupType != CUSTOM)) goto Dlg_SetupType2;
+	szTitle = "";
+    szMsg = "";
+    if (nSetupType = CUSTOM) then
+                //{{IS_SCRIPT_TAG(Dlg_SdAskDestPath2)	
+//		nResult = SdAskDestPath2( szTitle, szMsg, szDir );
+                //}}IS_SCRIPT_TAG(Dlg_SdAskDestPath2)
+        TARGETDIR = szDir;
+    endif;
+    if (nResult = BACK) goto Dlg_SetupType2;
+
+Dlg_SdFeatureTree: 
+    if ((nResult = BACK) && (nSetupType != CUSTOM)) goto Dlg_SdAskDestPath2;
+    szTitle = "";
+    szMsg = "";
+    szTargetdir = TARGETDIR;
+    szFeatures = "";
+    nLevel = 2;
+    if (nSetupType = CUSTOM) then
+        //{{IS_SCRIPT_TAG(Dlg_SdFeatureTree)	
+       // nResult = SdFeatureTree( szTitle, szMsg, szTargetdir, szFeatures, nLevel );
+        //}}IS_SCRIPT_TAG(Dlg_SdFeatureTree)
+        if (nResult = BACK) goto Dlg_SdAskDestPath2;  
+    endif;
+
+Dlg_SQLServer:
+    nResult = OnSQLServerInitialize( nResult );
+    if( nResult = BACK ) goto Dlg_SdFeatureTree;
+
+Dlg_ObjDialogs:
+    nResult = ShowObjWizardPages( nResult );
+    if (nResult = BACK) goto Dlg_SQLServer;
+    
+Dlg_SdStartCopy2:
+    szTitle = "";
+    szMsg = "";
+    //{{IS_SCRIPT_TAG(Dlg_SdStartCopy2)	
+    nResult = SdStartCopy2( szTitle, szMsg );	
+    //}}IS_SCRIPT_TAG(Dlg_SdStartCopy2)
+    if (nResult = BACK) goto Dlg_ObjDialogs;
+ 
+    return 0;
+end;
+
+//---------------------------------------------------------------------------
+// The Installed event is sent after the feature %FULL_FEATURE_PATH%
+// is installed.
+//---------------------------------------------------------------------------
+function OnFirstUIAfter()  
+	STRING szTitle, szMsg1, szMsg2, szOption1, szOption2;
+    NUMBER bOpt1, bOpt2;
+	STRING szInfoString;
+begin     
+	Disable(STATUSEX);
+
+    szInfoString = SUPPORTDIR^"top.bmp" +";1;1;;0,0,0";
+    DialogSetInfo(DLG_INFO_ALTIMAGE,szInfoString,TRUE); 
+
+    ShowObjWizardPages(NEXT);
+
+	bOpt1  = FALSE;
+    bOpt2  = FALSE;
+    szMsg1 = SdLoadString(IFX_SDFINISH_MSG1);
+	
+    SdFinishEx(szTitle, szMsg1, szMsg2, szOption1, szOption2, bOpt1, bOpt2); 
+end;
+
+//---------------------------------------------------------------------------
+// OnSetUpdateMode
+//
+// OnSetUpdateMode is called directly by the framework to set the UPDATEMODE
+// InstallShield system variable appropriately to control which UI events
+// are called by OnShowUI.
+//
+// Note: This event is called for all setups.
+//---------------------------------------------------------------------------
+function OnSetUpdateMode()
+	number	nIgnore, nMediaFlags, nInstalledVersion, nUpdateVersion, nResult;
+	string	szVersion, szIgnore, szMsg;
+	string	szInfoString;
+begin
+	
+    szInfoString = SUPPORTDIR^"top.bmp" +";1;1;;0,0,0";
+    DialogSetInfo(DLG_INFO_ALTIMAGE,szInfoString,TRUE); 
+
+	UPDATEMODE = FALSE; // Non-update mode by default.
+
+	// Added 11.5 - Don't set UPDATEMODE when running from Add/Remove
+	if( ADDREMOVE ) then
+		return ISERR_SUCCESS;
+	endif;
+
+	// Added 11.5 - Don't set UPDATEMODE when REMOVEONLY is specified
+	if( REMOVEONLY ) then
+		return ISERR_SUCCESS;
+	endif;
+	
+	// Get the media flags.
+	MediaGetData( MEDIA, MEDIA_FIELD_MEDIA_FLAGS, nMediaFlags, szIgnore );
+
+	// TODO: If you are updating an application that was installed by a previous
+	// version of InstallShield, IFX_INSTALLED_VERSION will be empty, and
+	// VERSION_COMPARE_RESULT_NOT_INSTALLED will be returned by
+	// VerProductCompareVersions. Change the value of IFX_INSTALLED_VERSION (and
+	// IFX_INSTALLED_DISPLAY_VERSION) here based on application specific version
+	// information determined by the setup. Only do this if IFX_INSTALLED_VERSION
+	// is empty.
+	//if ( !StrLengthChars( IFX_INSTALLED_VERSION ) && MAINTENANCE ) then
+	//	IFX_INSTALLED_VERSION = "X.XX.XXX";
+	//	IFX_INSTALLED_DISPLAY_VERSION = IFX_INSTALLED_VERSION;
+	//endif;
+
+	// Verify that the installed version is valid.
+	if( !StrLengthChars( IFX_INSTALLED_VERSION ) && MAINTENANCE ) then
+		// If this error occurs, IFX_INSTALLED_VERSION needs to be set manually.
+		szMsg = SdLoadString( IDS_IFX_ERROR_UPDATE_NO_INSTALLED_VERSION );
+		MessageBox( szMsg, SEVERE );
+		abort;
+	endif;
+
+	// Verify that the product version is valid.
+	if( !StrLengthChars( IFX_PRODUCT_VERSION ) ) then
+		// If this error occures, IFX_PRODUCT_VERSION was not initialized correctly.
+		szMsg = SdLoadString( IDS_IFX_ERROR_UPDATE_NO_PRODUCT_VERSION );
+		MessageBox( szMsg, SEVERE );
+		abort;
+	endif;
+
+	// Do the version comparison.
+	nResult = VerProductCompareVersions();
+
+	// Make sure that valid data was returned by VerProductCompareVersions
+	if( nResult < ISERR_SUCCESS ) then
+		szMsg = SdLoadString( IDS_IFX_ERROR_UPDATE_VERSION_COMPARE_FAILURE );
+		MessageBox( szMsg, SEVERE );
+		abort;
+	endif;
+
+	// Set update mode if this is a differential media or the product is already installed and the versions do not match.
+	UPDATEMODE = ( nMediaFlags & MEDIA_FLAG_FORMAT_DIFFERENTIAL || ( MAINTENANCE && ( nResult != VERSION_COMPARE_RESULT_SAME ) ) );
+
+end;
+
+//---------------------------------------------------------------------------
+// OnSetTARGETDIR
+//
+// OnSetTARGETDIR is called directly by the framework to initialize
+// TARGETDIR to it's default value.
+//
+// Note: This event is called for all setups.
+//---------------------------------------------------------------------------
+function OnSetTARGETDIR()
+number nId, nIgnore, nResult;
+string szId, szTARGETDIR;
+string szInfoString;
+begin
+
+    szInfoString = SUPPORTDIR^"top.bmp" +";1;1;;0,0,0";
+    DialogSetInfo(DLG_INFO_ALTIMAGE,szInfoString,TRUE); 
+
+    // In maintenance mode the value of TARGETDIR is read from the log file.
+    if( MAINTENANCE ) then
+        return ISERR_SUCCESS;
+    endif;
+
+    // Set TARGETDIR to script default.
+    TARGETDIR = "<FOLDER_APPLICATIONS>\\<IFX_COMPANY_NAME>\\<IFX_PRODUCT_NAME>";
+
+    // Read TARGETDIR from the media.
+    nResult = MediaGetData( MEDIA, MEDIA_FIELD_TARGETDIR, nIgnore, szTARGETDIR );
+
+    // Use the TARGETDIR from the media if anything was read.
+    if( nResult >= ISERR_SUCCESS && StrLengthChars( szTARGETDIR ) ) then
+        TARGETDIR = szTARGETDIR;
+    endif;
+        
+	// Customize the default TARGETDIR for multi-instance application.
+	// TODO: If you want something different customize the code below.	
+	if( MAINT_OPTION = MAINT_OPTION_MULTI_INSTANCE  && MULTI_INSTANCE_COUNT > 0) then
+
+		// Start with the current multi-instance count plus one.
+		nId = MULTI_INSTANCE_COUNT + 1;
+
+		// Find a unique TARGETDIR.
+		while( ExistsDir( TARGETDIR ) = EXISTS )
+			
+			// Convert to string.
+			NumToStr( szId, nId );
+			
+			// Update IFX_MULTI_INSTANCE_SUFFIX
+			IFX_MULTI_INSTANCE_SUFFIX = "_" + szId;
+		
+			// Update TARGETDIR
+			TARGETDIR = TARGETDIR + IFX_MULTI_INSTANCE_SUFFIX;
+			
+			// Update nId
+			nId = nId + 1;
+
+		endwhile;
+
+	endif;
+
+end;
+
+// this function will remove the 64 bit feature group if installed on a 32-bit only system.
+export prototype CheckRemove64();
+function CheckRemove64()
+	STRING szData;
+	begin
+	
+	szData="";
+	if( !(SYSINFO.bIsWow64) ) then
+	    // Running on 32 bit
+		FeatureSetData (MEDIA, "SDK64", FEATURE_FIELD_SELECTED, FALSE, szData);
+	endif;
+end; 
+
+//---------------------------------------------------------------------------
+// OnShowUI
+//
+// This function drives the UI sequence and file transfer of the setup.
+// 
+// The OnShowUI event is called directly by the framework to initiate
+// the UI sequence and file transfer of the setup. By default this event
+// displays UI that informs the end user that the maintenance setup has been
+// completed successfully.
+// 
+// Note: This event will not be called automatically in a
+// program...endprogram style setup.
+//---------------------------------------------------------------------------
+function OnShowUI()
+BOOL	bMaintenanceMode, bUpdateMode;
+string	szIgnore, szTitle;
+string szInfoString;
+string svVersionInstalled;
+number nResult;
+string szMessage;
+begin
+		
+//		CheckRemove64();
+//		szInfoString = SUPPORTDIR^"top.bmp"; 
+//		DialogSetInfo(DLG_INFO_ALTIMAGE,szInfoString,TRUE);
+
+		// Enable dialog caching
+		Enable( DIALOGCACHE );
+		
+		// Determine what events to show.
+		bUpdateMode	= FALSE;
+		bMaintenanceMode = FALSE;
+	
+		if( !(SYSINFO.bIsWow64) ) then
+			// Running on 32 bit
+			szMessage = "This setup can only be installed on 64bit Windows system!";
+			MessageBox(szMessage, SEVERE);
+			abort;
+		endif;
+			
+		// Remove this to disabled update mode.
+		if( UPDATEMODE ) then
+			/*
+			nResult = VerProductGetInstalledVersion ( svVersionInstalled );
+			if( nResult >= ISERR_SUCCESS && svVersionInstalled < "1.07.001" ) then
+				szMessage = "The setup has detected that version " + svVersionInstalled +
+				" of IBScanUltimateSDK is already installed.\nYou will have to uninstall the previous version before installing this version";
+				MessageBox(szMessage, SEVERE);
+				abort;
+			endif;
+			*/
+			bUpdateMode = TRUE;
+		endif;
+
+		// Remove this to disable maintenance mode.
+		if ( MAINTENANCE ) then
+			bMaintenanceMode = TRUE;
+		endif;
+
+		// Show appropriate UI
+
+		// TODO: Enable if you want to enable background etc.
+		//if ( LoadStringFromStringTable( "TITLE_MAIN", szTitle ) < ISERR_SUCCESS ) then // Load the title string.
+		//	szTitle = IFX_SETUP_TITLE;
+		//endif;
+		//SetTitle( szTitle, 24, WHITE );
+		//Enable( FULLWINDOWMODE );						   
+		//Enable( BACKGROUND );
+		//SetColor( BACKGROUND, RGB( 0, 128, 128 ) );
+
+		if( bUpdateMode ) then
+			OnUpdateUIBefore();
+		else
+			if ( bMaintenanceMode ) then
+				OnMaintUIBefore();
+			else
+				OnFirstUIBefore();
+			endif;
+		endif;
+
+		// Move Data
+		OnMoveData();
+		
+		if( bUpdateMode ) then
+			OnUpdateUIAfter();
+		else
+			if ( bMaintenanceMode ) then
+				OnMaintUIAfter();
+			else
+				OnFirstUIAfter();
+			endif;
+		endif;
+
+		// Disable dialog caching
+		Disable(DIALOGCACHE);
+
+end;
+
+
+
+//---------------------------------------------------------------------------
+// OnUpdateUIBefore
+//
+// Update UI Sequence - Before Move Data
+//
+// The OnUpdateUIBefore event is called when the setup is running in update
+// mode. By default this event displays UI that allows the end user to
+// update the application to the current version.
+//
+// Note: This event will not be called automatically in a
+// program...endprogram style setup.
+//---------------------------------------------------------------------------
+function OnUpdateUIBefore()
+	string szTitle, szMsg, szIgnore, szVersionInstalled, szVersionSupported, szVersionUpdate;
+	number nVersionInstalled;
+	number nIgnore, nId, nMediaFlags;
+	number nResult;
+begin
+
+	// Determine the update media type.	
+	MediaGetData( MEDIA, MEDIA_FIELD_MEDIA_FLAGS, nMediaFlags, szIgnore );
+
+	// Compare Versions
+	nResult = VerProductCompareVersions();
+
+	// Make sure that valid data was returned by VerProductCompareVersions
+	if( nResult < ISERR_SUCCESS ) then
+		szMsg = SdLoadString( IDS_IFX_ERROR_UPDATE_VERSION_COMPARE_FAILURE );
+		MessageBox( szMsg, SEVERE );
+		abort;
+	endif;
+
+	// Make sure that the product is installed.
+	if( nResult = VERSION_COMPARE_RESULT_NOT_INSTALLED ) then
+		// Note: This result should occur only for differential media, since OnFirstUIBefore
+		// will be called by default for non-differential media in this case.
+		szMsg = SdLoadString( IDS_IFX_ERROR_UPDATE_PRODUCT_NOT_INSTALLED );
+		SdSubstituteProductInfo( szMsg );
+		MessageBox( szMsg, SEVERE );
+		abort;
+	endif;	
+
+	// Check whether the update is older than the currently installed version.
+	if( nResult = VERSION_COMPARE_RESULT_OLDER ) then
+		szMsg = SdLoadString( IDS_IFX_ERROR_UPDATE_NOT_APPROPRIATE );
+		SdSubstituteProductInfo( szMsg );
+		MessageBox( szMsg, SEVERE );
+		abort;
+	endif;
+
+	// Verify that this update is appropriate for the version of the application that is installed.
+	if( nResult = VERSION_COMPARE_RESULT_NEWER_NOT_SUPPORTED ) then
+		szMsg = SdLoadString( IDS_IFX_ERROR_UPDATE_NOT_SUPPORTED );
+		SdSubstituteProductInfo( szMsg );
+		MessageBox( szMsg, SEVERE );
+		abort;
+	endif;
+
+	// Check whether the update is needed.
+	if( nResult = VERSION_COMPARE_RESULT_SAME ) then
+		// Note: This result should occur only for differential media, since the setup
+		// will display OnMaintUIBefore or OnFirstUIBefore by default if the versions match
+		// for full setup media.
+		szMsg = SdLoadString( IDS_IFX_WARNING_UPDATE_NOT_NEEDED );
+		SdSubstituteProductInfo( szMsg );
+		if( MessageBox( szMsg, MB_ICONEXCLAMATION | MB_YESNO ) != IDYES ) then
+			abort;
+		endif;
+	endif;
+
+	// Automatically select newly added features, do this before UI sequence in case so that
+	// if a feature dialog is added, it reflects newly selected features.
+	FeatureSelectNew( MEDIA, TRUE );
+
+	// TODO: Enable this line if you want the update to to automatically uninstall
+	// any features that are not contained in the media but are listed in the 
+	// log file.
+	// FeatureRemoveAllInLogOnly();
+
+    //Initialize SQL
+    OnSQLServerInitializeMaint();
+
+// Beginning of UI Sequence
+Dlg_Start:
+
+Dlg_SdWelcome:
+	szTitle = "";
+    szMsg = SdLoadString( IDS_IFX_SDWELCOMMESSAGE_UPDATE_WELCOME );
+    nResult = SdWelcome( szTitle, szMsg );
+    if (nResult = BACK) goto Dlg_Start;
+    
+    
+    DeletePreviousFiles();
+    
+
+Dlg_ObjDialogs:
+    nResult = ShowObjWizardPages( nResult );
+    if (nResult = BACK) goto Dlg_SdWelcome; 
+
+	if( nMediaFlags & MEDIA_FLAG_FORMAT_DIFFERENTIAL ) then
+		// Differential installs patch media.
+		FeaturePatch();
+	else
+		// Update reinstalls (updates) all features in media.
+		FeatureReinstall();
+	endif;
+
+    // Added in 11.0 - Set appropriate StatusEx static text.
+    szMsg = SdLoadString( IDS_IFX_STATUSEX_STATICTEXT_UPDATEUI );
+	SdSubstituteProductInfo( szMsg );
+    SetStatusExStaticText( szMsg );
+
+end;
+
+
+
+
+
+function DeletePreviousFiles()
+	STRING szTemp, szPrgDirName, svVersionInstalled, szMessage;
+	NUMBER nResult;	
+begin
+
+	nResult = VerProductGetInstalledVersion ( svVersionInstalled );
+		
+	if( nResult >= ISERR_SUCCESS && svVersionInstalled < "1.03.000" ) then
+		szMessage = "The setup has detected that version " + svVersionInstalled +
+		" of IBScanUltimateSDK is already installed.\nYou will have to uninstall the previous version before installing this version";
+		MessageBox(szMessage, SEVERE);
+		abort;
+	endif;
+	
+	if( nResult >= ISERR_SUCCESS && svVersionInstalled < "1.09.007" ) then
+		szTemp = TARGETDIR + "\\Driver\\IBScanDriver Setup 1.0.0.msi";
+		if( DeleteFile(szTemp) < 0 ) then
+			//MessageBox ("Unable to delete file.\n" + szTemp, SEVERE);
+		endif;
+	endif;	
+	
+	if( nResult >= ISERR_SUCCESS && svVersionInstalled < "1.09.000" ) then
+		szTemp = TARGETDIR + "\\Bin\\IBScanUltimate_TenScanSampleForVC.exe";
+		if( DeleteFile(szTemp) < 0 ) then
+			//MessageBox ("Unable to delete file.\n" + szTemp, SEVERE);
+		endif;
+		
+		szTemp = TARGETDIR + "\\Data\\COLUMBO_SAMPLE-*.um";
+		if( DeleteFile(szTemp) < 0 ) then
+			//MessageBox ("Unable to delete file.\n" + szTemp, SEVERE);
+		endif;
+		
+		szTemp = TARGETDIR + "\\Documents\\IBScanUltimate Documentation for All Users.chm";
+		if( DeleteFile(szTemp) < 0 ) then
+			//MessageBox ("Unable to delete file.\n" + szTemp, SEVERE);
+		endif;
+		
+		szTemp = TARGETDIR + "\\Sample sources\\VisualC++\\IBScanUltimate_TenScanSampleForVC";
+		if( DeleteDir(szTemp, ALLCONTENTS) < 0 ) then
+			//MessageBox ("Unable to delete directory.\n" + szTemp, SEVERE);
+		endif;
+		
+		// Delete icon folder.
+		szPrgDirName = "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Integrated Biometrics\\IBScanUltimateSDK"; 		
+		if (DeleteProgramFolder (szPrgDirName) < 0) then
+			//MessageBox ("Unable to delete directory.\n" + szPrgDirName, SEVERE);
+		endif;	
+	endif;	
+end;

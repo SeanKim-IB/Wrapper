@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'nbis_clapck' target in the 'nbis_clapck' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

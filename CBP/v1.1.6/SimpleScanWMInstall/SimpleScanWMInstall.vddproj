@@ -1,0 +1,498 @@
+"DeployProject"
+{
+"VSVersion" = "3:701"
+"ProjectType" = "8:{AB322303-2255-48EF-A496-5904EB18DA55}"
+"IsWebType" = "8:FALSE"
+"ProjectName" = "8:SimpleScanWMInstall"
+"LanguageId" = "3:1033"
+"CodePage" = "3:1252"
+"SccProjectName" = "8:"
+"SccLocalPath" = "8:"
+"SccAuxPath" = "8:"
+"SccProvider" = "8:"
+    "Hierarchy"
+    {
+        "Entry"
+        {
+        "MsmKey" = "8:_47BE15C2810347BE9D41C60C91A74C98"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4F6ADA721BC446B19F1D7D4137EFD68C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_66DC3BDEC81E4DCC87A9A6A92D0A4B6C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7011C82701B2427AAA5F0A05BAB0FD61"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_BD861D6A777A46349F5DC31F05406605"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E25CBFD15FBD4D20BC45D8E05D06AF10"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_EE50ABE6F3A6465E91304DBF4586393C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F649E13FE3244F9F93878D17EB3AB210"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+    }
+    "Configurations"
+    {
+        "Debug"
+        {
+        "DisplayName" = "8:Debug"
+        "IsDebugOnly" = "11:TRUE"
+        "IsReleaseOnly" = "11:FALSE"
+        "OutputFilename" = "8:..\\Build\\WM6\\Debug\\SimpleScanWMInstall.cab"
+        "PackageFileSize" = "3:-2147483648"
+        "CabType" = "3:1"
+        "SignOutput" = "11:FALSE"
+        "CertificateHash" = "8:"
+        "TimeStampServer" = "8:"
+        }
+        "Release"
+        {
+        "DisplayName" = "8:Release"
+        "IsDebugOnly" = "11:FALSE"
+        "IsReleaseOnly" = "11:TRUE"
+        "OutputFilename" = "8:..\\Build\\WM6\\Release\\SimpleScanWMInstall.cab"
+        "PackageFileSize" = "3:-2147483648"
+        "CabType" = "3:1"
+        "SignOutput" = "11:FALSE"
+        "CertificateHash" = "8:"
+        "TimeStampServer" = "8:"
+        }
+    }
+    "Deployable"
+    {
+        "File"
+        {
+            "{BA458234-9B71-4F46-8107-E91156377184}:_66DC3BDEC81E4DCC87A9A6A92D0A4B6C"
+            {
+            "SourcePath" = "8:C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\VC\\ce\\dll\\armv4\\MFC90U.DLL"
+            "TargetName" = "8:MFC90U.DLL"
+            "Tag" = "8:"
+            "Folder" = "8:_B154B81EA9614BFB8C0BD7C420057517"
+            "Condition" = "8:"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "Register" = "3:0"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{BA458234-9B71-4F46-8107-E91156377184}:_7011C82701B2427AAA5F0A05BAB0FD61"
+            {
+            "SourcePath" = "8:C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\VC\\ce\\dll\\armv4\\msvcr90.dll"
+            "TargetName" = "8:msvcr90.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_B154B81EA9614BFB8C0BD7C420057517"
+            "Condition" = "8:"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "Register" = "3:0"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{BA458234-9B71-4F46-8107-E91156377184}:_BD861D6A777A46349F5DC31F05406605"
+            {
+            "SourcePath" = "8:C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\VC\\ce\\dll\\armv4\\atl90.dll"
+            "TargetName" = "8:atl90.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_B154B81EA9614BFB8C0BD7C420057517"
+            "Condition" = "8:"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "Register" = "3:0"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+        }
+        "Folder"
+        {
+            "{F6DFDB62-1DD1-498B-89B7-27BAC542EE5A}:_6EBFE63E039447BFAE9C128C2FE70BE3"
+            {
+            "Name" = "8:#1911"
+            "Condition" = "8:"
+            "Property" = "8:%CE1%"
+                "Folders"
+                {
+                    "{5943FCFD-5B64-4EE4-96C9-4618EC95352A}:_A88B1EF9010D4454AF29EAB7DED8EC1D"
+                    {
+                    "Name" = "8:IB"
+                    "Condition" = "8:"
+                    "Property" = "8:_325DC37ECE2544C8838EF6523F5533B9"
+                        "Folders"
+                        {
+                        }
+                    }
+                }
+            }
+            "{F6DFDB62-1DD1-498B-89B7-27BAC542EE5A}:_B154B81EA9614BFB8C0BD7C420057517"
+            {
+            "Name" = "8:#1912"
+            "Condition" = "8:"
+            "Property" = "8:%CE2%"
+                "Folders"
+                {
+                }
+            }
+            "{D5B00AC1-E6C3-4CC5-90FF-8E0F53D9E5E0}:_D8BD8360A3E64314A0DFE53B0ACCB7AD"
+            {
+            "DefaultLocation" = "8:%InstallDir%"
+            "Name" = "8:#1920"
+            "Condition" = "8:"
+            "Property" = "8:%InstallDir%"
+                "Folders"
+                {
+                }
+            }
+        }
+        "Product"
+        {
+        "Name" = "8:Microsoft Visual Studio"
+        "ProductName" = "8:SimpleScan WM"
+        "Manufacturer" = "8:Microsoft"
+        "OSVersionMin" = "8:4.0"
+        "OSVersionMax" = "8:6.99"
+        "NoUninstall" = "11:FALSE"
+        "Compress" = "11:FALSE"
+        "CESetupDLL" = "8:"
+        }
+        "ProjectOutput"
+        {
+            "{605BE39E-5046-48BD-AEC0-63C3A46626D5}:_47BE15C2810347BE9D41C60C91A74C98"
+            {
+            "SourcePath" = "8:..\\Build\\WM6\\Release\\CEUSBKWrapperDrv.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_B154B81EA9614BFB8C0BD7C420057517"
+            "Condition" = "8:"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "Register" = "3:0"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:0"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{4D50CF9D-5207-4F26-8B01-4D283A18E07F}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{605BE39E-5046-48BD-AEC0-63C3A46626D5}:_4F6ADA721BC446B19F1D7D4137EFD68C"
+            {
+            "SourcePath" = "8:..\\Build\\WM6\\Release\\IBScanUltimate_WM6.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_B154B81EA9614BFB8C0BD7C420057517"
+            "Condition" = "8:"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "Register" = "3:0"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:0"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{6761D29A-C7CF-4B88-B76B-04D2652FE7C3}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{605BE39E-5046-48BD-AEC0-63C3A46626D5}:_E25CBFD15FBD4D20BC45D8E05D06AF10"
+            {
+            "SourcePath" = "8:..\\Build\\WM6\\Release\\IBSimpleScanWM.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_A88B1EF9010D4454AF29EAB7DED8EC1D"
+            "Condition" = "8:"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "Register" = "3:0"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:0"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{3C2EDED7-E4B7-40D6-88AD-121FE55EEE0C}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{605BE39E-5046-48BD-AEC0-63C3A46626D5}:_EE50ABE6F3A6465E91304DBF4586393C"
+            {
+            "SourcePath" = "8:..\\Build\\WM6\\Release\\ceusbkwrapper.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_B154B81EA9614BFB8C0BD7C420057517"
+            "Condition" = "8:"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "Register" = "3:0"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:0"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{03E78F17-B826-467D-88B1-06D8F520781B}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{605BE39E-5046-48BD-AEC0-63C3A46626D5}:_F649E13FE3244F9F93878D17EB3AB210"
+            {
+            "SourcePath" = "8:..\\Build\\WM6\\Release\\libusb-1.0.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_B154B81EA9614BFB8C0BD7C420057517"
+            "Condition" = "8:"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "Register" = "3:0"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:0"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{00D15FFF-133C-41B0-8D72-B57302D267D5}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+        }
+        "Registry"
+        {
+            "HKLM"
+            {
+                "Keys"
+                {
+                    "{B1EBC968-6B66-4532-A885-748B79AF4477}:_14A7FF5B974C44928646924FC9627497"
+                    {
+                    "Name" = "8:Drivers"
+                    "Condition" = "8:"
+                        "Keys"
+                        {
+                            "{B1EBC968-6B66-4532-A885-748B79AF4477}:_737C4D61DB7C46689C3BAAE9812A625D"
+                            {
+                            "Name" = "8:USB"
+                            "Condition" = "8:"
+                                "Keys"
+                                {
+                                    "{B1EBC968-6B66-4532-A885-748B79AF4477}:_64C15EE62DE84EF68657DE59DADD5BD1"
+                                    {
+                                    "Name" = "8:ClientDrivers"
+                                    "Condition" = "8:"
+                                        "Keys"
+                                        {
+                                            "{B1EBC968-6B66-4532-A885-748B79AF4477}:_B44903351FD0416D9BB256661404C5E2"
+                                            {
+                                            "Name" = "8:Usb_Kernel_Wrapper"
+                                            "Condition" = "8:"
+                                                "Keys"
+                                                {
+                                                }
+                                                "Values"
+                                                {
+                                                    "{C3684F64-58E2-4092-8E3C-D7483080DE5A}:_B5679F78E4084980B84D98F09F68A0D0"
+                                                    {
+                                                    "Name" = "8:Flags"
+                                                    "Condition" = "8:"
+                                                    "ValueTypes" = "3:3"
+                                                    "Value" = "3:8"
+                                                    }
+                                                    "{C3684F64-58E2-4092-8E3C-D7483080DE5A}:_ED9F6C5B16D34B7E95CDDDA58D695AB9"
+                                                    {
+                                                    "Name" = "8:Dll"
+                                                    "Condition" = "8:"
+                                                    "ValueTypes" = "3:1"
+                                                    "Value" = "8:ceusbkwrapperdrv.dll"
+                                                    }
+                                                    "{C3684F64-58E2-4092-8E3C-D7483080DE5A}:_F72D2AE16F934C7D977A9AED301CA566"
+                                                    {
+                                                    "Name" = "8:Prefix"
+                                                    "Condition" = "8:"
+                                                    "ValueTypes" = "3:1"
+                                                    "Value" = "8:UKW"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        "Values"
+                                        {
+                                        }
+                                    }
+                                    "{B1EBC968-6B66-4532-A885-748B79AF4477}:_7407ED25BCCB49179E62996CAF2828C3"
+                                    {
+                                    "Name" = "8:LoadClients"
+                                    "Condition" = "8:"
+                                        "Keys"
+                                        {
+                                            "{B1EBC968-6B66-4532-A885-748B79AF4477}:_12F2710A791B4E1D9DD8158980922F74"
+                                            {
+                                            "Name" = "8:4415"
+                                            "Condition" = "8:"
+                                                "Keys"
+                                                {
+                                                    "{B1EBC968-6B66-4532-A885-748B79AF4477}:_85FBC2DAA0974A30BAE89622AEFB3F94"
+                                                    {
+                                                    "Name" = "8:Default"
+                                                    "Condition" = "8:"
+                                                        "Keys"
+                                                        {
+                                                            "{B1EBC968-6B66-4532-A885-748B79AF4477}:_68C87285399E48F48ACACEE4833C57A8"
+                                                            {
+                                                            "Name" = "8:Default"
+                                                            "Condition" = "8:"
+                                                                "Keys"
+                                                                {
+                                                                    "{B1EBC968-6B66-4532-A885-748B79AF4477}:_07984AF563CC43BBA0FC457FC0465DD4"
+                                                                    {
+                                                                    "Name" = "8:Usb_Kernel_Wrapper"
+                                                                    "Condition" = "8:"
+                                                                        "Keys"
+                                                                        {
+                                                                        }
+                                                                        "Values"
+                                                                        {
+                                                                            "{C3684F64-58E2-4092-8E3C-D7483080DE5A}:_983646CB70F44137ADE50635324DE267"
+                                                                            {
+                                                                            "Name" = "8:Dll"
+                                                                            "Condition" = "8:"
+                                                                            "ValueTypes" = "3:1"
+                                                                            "Value" = "8:ceusbkwrapperdrv.dll"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                "Values"
+                                                                {
+                                                                }
+                                                            }
+                                                        }
+                                                        "Values"
+                                                        {
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                        }
+                                        "Values"
+                                        {
+                                        }
+                                    }
+                                }
+                                "Values"
+                                {
+                                }
+                            }
+                        }
+                        "Values"
+                        {
+                        }
+                    }
+                }
+            }
+            "HKCU"
+            {
+                "Keys"
+                {
+                }
+            }
+            "HKCR"
+            {
+                "Keys"
+                {
+                }
+            }
+            "HKU"
+            {
+                "Keys"
+                {
+                }
+            }
+            "HKPU"
+            {
+                "Keys"
+                {
+                }
+            }
+        }
+        "Shortcut"
+        {
+        }
+    }
+}

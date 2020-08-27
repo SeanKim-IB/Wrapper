@@ -1,0 +1,297 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\IBSDKFunctionTester.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\IBSDKFunctionTester.ico"
+IDI_ICON_ON             ICON                    "res\\LedOn.ico"
+IDI_ICON_OFF            ICON                    "res\\LedOff.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_IBSDKFUNCTIONTESTER_DIALOG DIALOGEX 0, 0, 683, 481
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "IBScanUltimate_FunctionTester"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "IBSU_OpenDevice",IDC_BUTTON_OPENDEVICE,125,102,103,14
+    PUSHBUTTON      "IBSU_CloseDevice",IDC_BUTTON_DEVICECLOSE,126,122,103,14
+    PUSHBUTTON      "IBSU_GetSDKVersion",IDC_BUTTON_SDKVERSION,12,54,103,14
+    PUSHBUTTON      "IBSU_GetDeviceCount",IDC_BUTTON_GETDEVICECOUNT,126,54,103,14
+    CONTROL         "",IDC_LIST_MAIN,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,468,270,210,102
+    PUSHBUTTON      "IBSU_GetDeviceDescription",IDC_BUTTON_DEVICEDESCRIPTION,126,84,103,14
+    PUSHBUTTON      "IBSU_IsDeviceOpened",IDC_BUTTON_ISDEVICEOPEN,126,140,103,14
+    PUSHBUTTON      "IBSU_GetProperty",IDC_BUTTON_GETPROPERTY,12,180,103,14
+    COMBOBOX        IDC_COMBO_PROPERTY,14,162,216,174,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "IBSU_SetProperty",IDC_BUTTON_SETPROPERTY,12,197,103,14
+    GROUPBOX        "Image Acquisition",IDC_STATIC_IMAGE,240,54,222,114
+    PUSHBUTTON      "IBSU_IsCaptureAvailable",IDC_BUTTON_ISCAPTUREAVAILABLE,246,186,103,14
+    PUSHBUTTON      "IBSU_BeginCaptureImage",IDC_BUTTON_START,246,126,103,14
+    PUSHBUTTON      "IBSU_CancelCaptureImage",IDC_BUTTON_STOP,354,126,103,14
+    LTEXT           "",IDC_FRAME_IMAGE,240,294,222,180,SS_SUNKEN
+    CONTROL         "Use IBSU_ClientWindow",IDC_CHECK_CLIENT_WINDOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,360,94,10
+    CONTROL         "Automatic contrast optimization",IDC_CHECK__AUTO_CONTRAST,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,246,84,117,10
+    CONTROL         "Automatic capture for fingerprints",IDC_CHECK_AUTO_CAPTURE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,246,96,125,10
+    COMBOBOX        IDC_COMBO_ISCAPTUREAVAILABLE,324,66,134,60,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Image Type",IDC_STATIC_IMAGETYPE,246,66,43,8
+    PUSHBUTTON      "IBSU_IsCaptureActive",IDC_BUTTON_ISCAPTUREACTIVE,354,186,103,14
+    PUSHBUTTON      "IBSU_GetContrast",IDC_BUTTON_GETCONTRAST,246,246,103,14
+    PUSHBUTTON      "IBSU_SetContrast",IDC_BUTTON_SETCONTRAST,246,264,103,14
+    EDITTEXT        IDC_EDIT_SETCONTRAST,360,264,66,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "IBSU_GetLEOperationMode",IDC_BUTTON_GETLEOPERATIONMODE,12,239,103,14
+    PUSHBUTTON      "IBSU_SetLEOperationMode",IDC_BUTTON_SETLEOPERATION,12,257,103,14
+    COMBOBOX        IDC_COMBO_SETLEOPERATIONMODE,126,257,103,41,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "IsTouchedFinger",IDC_BUTTON_ISTOUCHFINGER,354,204,103,14
+    PUSHBUTTON      "IBSU_GetOperableLEDs",IDC_BUTTON_GETOPERABLELEDS,12,299,103,14
+    PUSHBUTTON      "IBSU_GetLEDs",IDC_BUTTON_GETLEDS,126,299,103,14
+    PUSHBUTTON      "IBSU_SetLEDs",IDC_BUTTON_SETLEDS,12,317,103,14
+    LTEXT           "Device Index",IDC_STATIC_DEVICE,14,84,43,8
+    GROUPBOX        "Callbcak fired",IDC_STATIC_CALLBACK,468,54,210,198
+    ICON            IDI_ICON_OFF,IDC_ICON_DCOMBRE_OFF,474,192,20,20
+    LTEXT           "DeviceCommunicationBreak",IDC_STATIC_DCOMBRE,504,192,88,8
+    ICON            IDI_ICON_OFF,IDC_ICON_PREVIEWIMAGE_OFF,474,84,20,20
+    LTEXT           "PreviewImage",IDC_STATIC_PREVIEWIMAGE,504,84,46,8
+    ICON            IDI_ICON_OFF,IDC_ICON_TAKINGACQUISITION_OFF,474,102,20,20
+    LTEXT           "TakingAcquisition",IDC_STATIC_TAKINGACQUISITION,504,102,56,8
+    ICON            IDI_ICON_OFF,IDC_ICON_RESULTIMAGE_OFF,474,138,20,20
+    LTEXT           "ResultImageEx",IDC_STATIC_RESULTIMAGE,504,138,49,8
+    ICON            IDI_ICON_OFF,IDC_ICON_COMPLETEACQUISITION_OFF,474,120,20,20
+    LTEXT           "CompleteAcquisition",IDC_STATIC_COMPLETEACQUISITION,504,120,65,8
+    ICON            IDI_ICON_OFF,IDC_ICON_FINGERCOUNT_OFF,474,156,20,20
+    LTEXT           "FingerCount",IDC_STATIC_FINGERCOUNT,504,156,40,8
+    ICON            IDI_ICON_OFF,IDC_ICON_FINGERQUALITY_OFF,474,174,20,20
+    LTEXT           "FingerQuality",IDC_STATIC_FINGERQUALITY,504,174,44,8
+    ICON            IDI_ICON_OFF,IDC_ICON_DEVICECOUNT_OFF,474,210,20,20
+    LTEXT           "DeviceCount",IDC_STATIC_DEVICECOUNT,504,210,42,8
+    ICON            IDI_ICON_OFF,IDC_ICON_INITPROGRESS_OFF,474,66,20,20
+    LTEXT           "InitProgress",IDC_STATIC_INITPROGRESS,504,66,40,8
+    CONTROL         "Use Roll Guide Line",IDC_CHECK_GUIDELINE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,396,76,10
+    LTEXT           "X",IDC_STATIC_POSX,126,414,8,8
+    LTEXT           "Y",IDC_STATIC_POSY,186,414,8,8
+    EDITTEXT        IDC_EDIT_POSX,132,414,36,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_POSY,192,414,36,15,ES_AUTOHSCROLL
+    LTEXT           "Fore Color ",IDC_STATIC_TEXTCOLOR,12,432,36,8
+    EDITTEXT        IDC_EDIT_TEXTCOLOR,86,432,24,14,ES_AUTOHSCROLL
+    GROUPBOX        "User defined visualization",IDC_STATIC_DISPLAY,6,348,228,126
+    EDITTEXT        IDC_EDIT_INITPROGRESS,618,66,52,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FINGERCOUNT,618,156,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FINGERQUALITY,618,174,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DEVICECOUNT,618,204,40,14,ES_AUTOHSCROLL
+    LTEXT           "(0 ~ 34)",IDC_STATIC_SETCONTRAST,432,264,28,8
+    LTEXT           "R ",IDC_STATIC_RED,78,432,8,8
+    LTEXT           "G",IDC_STATIC_GREEN,120,432,8,8
+    EDITTEXT        IDC_EDIT_GREEN,126,432,24,14,ES_AUTOHSCROLL
+    LTEXT           "B",IDC_STATIC_BLACK,162,432,8,8
+    EDITTEXT        IDC_EDIT_BLACK,168,432,24,14,ES_AUTOHSCROLL
+    LTEXT           "(0~255)",IDC_STATIC_BETWEEN,198,432,28,8
+    EDITTEXT        IDC_EDIT_DEVICE,63,84,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ADDTEXT,78,450,151,12,ES_AUTOHSCROLL
+    LTEXT           "Overlay Text",IDC_STATIC_ADDTEXT,12,450,43,8
+    CONTROL         "Trigger invalid finger count on auto-capture mode",IDC_CHECK_FINGERCOUNT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,246,108,175,10
+    GROUPBOX        "Main Interface Function",IDC_STATIC_MAININTERFACE,6,71,228,151
+    GROUPBOX        "Set and Get LE Operation",IDC_STATIC_LEOPERATION,6,227,228,55
+    GROUPBOX        "Set and Get LED Operation",IDC_STATIC_LED,6,286,228,56
+    ICON            IDI_ICON_OFF,IDC_ICON_CLEARPLATE_OFF,474,228,20,20
+    LTEXT           "ClearPlatenAtCapture",IDC_STATIC_CLEARPLATE,504,228,71,8
+    EDITTEXT        IDC_EDIT_CLEARPLATE,618,228,40,14,ES_AUTOHSCROLL
+    CONTROL         134,IDC_STATIC_LOGO,"Static",SS_BITMAP,0,0,683,46
+    CONTROL         "",IDC_LIST_ETC,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,468,378,210,96
+    LTEXT           "R",IDC_STATIC_BKRED,126,378,8,8
+    EDITTEXT        IDC_EDIT_BKRED,132,378,24,14,ES_AUTOHSCROLL
+    LTEXT           "G",IDC_STATIC_BKGREEN,162,378,8,8
+    EDITTEXT        IDC_EDIT_BKGREEN,168,378,24,14,ES_AUTOHSCROLL
+    LTEXT           "B",IDC_STATIC_BKBLUE,198,378,8,8
+    EDITTEXT        IDC_EDIT_BKBLUE,204,378,24,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "IBSU_TakeResultImageManually",IDC_BUTTON_MANUALCAPTURE,348,144,109,14
+    CONTROL         "Append Fuction Result ('Addtional Result' is not appended)",IDC_CHECK_APPENDRESULT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,468,258,203,10
+    EDITTEXT        IDC_EDIT_SETLED,125,317,55,14,ES_AUTOHSCROLL
+    LTEXT           "(HEX Value)",IDC_STATIC_HEX,186,318,38,8
+    EDITTEXT        IDC_EDIT_SETPROPERTY,126,198,104,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "SetBackgroundColor",IDC_BUTTON_BACKCL,12,378,103,14
+    LTEXT           "(0~255)",IDC_STATIC_BKRANGE,198,396,28,8
+    PUSHBUTTON      "IBSU_SetClientWindowOverlayText",IDC_BUTTON_SET_DISPLAY_OVERLAY_TEXT,12,414,103,14
+    GROUPBOX        "Set and Get Contrast value",IDC_STATIC_CONTRAST,240,234,222,54
+    GROUPBOX        "Capture Status",IDC_STATIC_CAPTURE,240,174,222,54
+    LTEXT           "Device Handle",IDC_STATIC_HANDLE,14,122,46,8
+    EDITTEXT        IDC_EDIT_HANDLE,63,122,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PREVIEWIMAGE,618,83,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RESULTIMAGE,618,137,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Aging Test",IDC_BUTTON_AGING_TEST,14,140,103,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,9,0,0
+ PRODUCTVERSION 1,9,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Integrated Biometrics, LLC"
+            VALUE "FileDescription", "IBScanUltimate_FunctionTester "
+            VALUE "FileVersion", "1, 9, 0, 0"
+            VALUE "InternalName", "IBScanUltimate_FunctionTester.exe"
+            VALUE "LegalCopyright", "Copyright (c) 2011-2014 Integrated Biometrics.  All rights reserved."
+            VALUE "OriginalFilename", "IBScanUltimate_FunctionTester.exe"
+            VALUE "ProductName", "IBScanUltimate_FunctionTester "
+            VALUE "ProductVersion", "1, 9, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_IBSDKFUNCTIONTESTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 676
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 474
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_LOGO         BITMAP                  "res\\Logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About IBSDKFunctionTester..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\IBSDKFunctionTester.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

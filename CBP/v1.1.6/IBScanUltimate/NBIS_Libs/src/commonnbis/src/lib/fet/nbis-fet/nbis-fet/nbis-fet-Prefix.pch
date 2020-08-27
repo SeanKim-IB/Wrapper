@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'nbis-fet' target in the 'nbis-fet' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

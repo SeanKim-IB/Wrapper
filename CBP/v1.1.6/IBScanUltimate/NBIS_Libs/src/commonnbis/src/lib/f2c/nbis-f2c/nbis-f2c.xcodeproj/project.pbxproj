@@ -1,0 +1,257 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CF3EA1617E205AD00311827 /* pow_ri.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA1117E205AD00311827 /* pow_ri.c */; };
+		9CF3EA1717E205AD00311827 /* r_sign.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA1217E205AD00311827 /* r_sign.c */; };
+		9CF3EA1817E205AD00311827 /* s_cat.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA1317E205AD00311827 /* s_cat.c */; };
+		9CF3EA1917E205AD00311827 /* s_cmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA1417E205AD00311827 /* s_cmp.c */; };
+		9CF3EA1A17E205AD00311827 /* s_copy.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA1517E205AD00311827 /* s_copy.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9CF3E9FE17E2058600311827 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9CF3EA0017E2058600311827 /* libnbis-f2c.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libnbis-f2c.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF3EA1117E205AD00311827 /* pow_ri.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pow_ri.c; path = ../../pow_ri.c; sourceTree = "<group>"; };
+		9CF3EA1217E205AD00311827 /* r_sign.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = r_sign.c; path = ../../r_sign.c; sourceTree = "<group>"; };
+		9CF3EA1317E205AD00311827 /* s_cat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = s_cat.c; path = ../../s_cat.c; sourceTree = "<group>"; };
+		9CF3EA1417E205AD00311827 /* s_cmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = s_cmp.c; path = ../../s_cmp.c; sourceTree = "<group>"; };
+		9CF3EA1517E205AD00311827 /* s_copy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = s_copy.c; path = ../../s_copy.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CF3E9FD17E2058600311827 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CF3E9F717E2058600311827 = {
+			isa = PBXGroup;
+			children = (
+				9CF3EA0517E2058600311827 /* nbis-f2c */,
+				9CF3EA0217E2058600311827 /* Frameworks */,
+				9CF3EA0117E2058600311827 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CF3EA0117E2058600311827 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CF3EA0017E2058600311827 /* libnbis-f2c.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CF3EA0217E2058600311827 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CF3EA0517E2058600311827 /* nbis-f2c */ = {
+			isa = PBXGroup;
+			children = (
+				9CF3EA1117E205AD00311827 /* pow_ri.c */,
+				9CF3EA1217E205AD00311827 /* r_sign.c */,
+				9CF3EA1317E205AD00311827 /* s_cat.c */,
+				9CF3EA1417E205AD00311827 /* s_cmp.c */,
+				9CF3EA1517E205AD00311827 /* s_copy.c */,
+			);
+			path = "nbis-f2c";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CF3E9FF17E2058600311827 /* nbis-f2c */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CF3EA0E17E2058600311827 /* Build configuration list for PBXNativeTarget "nbis-f2c" */;
+			buildPhases = (
+				9CF3E9FC17E2058600311827 /* Sources */,
+				9CF3E9FD17E2058600311827 /* Frameworks */,
+				9CF3E9FE17E2058600311827 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "nbis-f2c";
+			productName = "nbis-f2c";
+			productReference = 9CF3EA0017E2058600311827 /* libnbis-f2c.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CF3E9F817E2058600311827 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Brian Nagel";
+			};
+			buildConfigurationList = 9CF3E9FB17E2058600311827 /* Build configuration list for PBXProject "nbis-f2c" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9CF3E9F717E2058600311827;
+			productRefGroup = 9CF3EA0117E2058600311827 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CF3E9FF17E2058600311827 /* nbis-f2c */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CF3E9FC17E2058600311827 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF3EA1617E205AD00311827 /* pow_ri.c in Sources */,
+				9CF3EA1717E205AD00311827 /* r_sign.c in Sources */,
+				9CF3EA1817E205AD00311827 /* s_cat.c in Sources */,
+				9CF3EA1917E205AD00311827 /* s_cmp.c in Sources */,
+				9CF3EA1A17E205AD00311827 /* s_copy.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9CF3EA0C17E2058600311827 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../../../include;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-D__android__",
+					"-D__NBISLE__",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9CF3EA0D17E2058600311827 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../../../include;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = (
+					"-D__android__",
+					"-D__NBISLE__",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CF3EA0F17E2058600311827 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/nbis_f2c.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nbis-f2c/nbis-f2c-Prefix.pch";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9CF3EA1017E2058600311827 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/nbis_f2c.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nbis-f2c/nbis-f2c-Prefix.pch";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CF3E9FB17E2058600311827 /* Build configuration list for PBXProject "nbis-f2c" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF3EA0C17E2058600311827 /* Debug */,
+				9CF3EA0D17E2058600311827 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CF3EA0E17E2058600311827 /* Build configuration list for PBXNativeTarget "nbis-f2c" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF3EA0F17E2058600311827 /* Debug */,
+				9CF3EA1017E2058600311827 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CF3E9F817E2058600311827 /* Project object */;
+}

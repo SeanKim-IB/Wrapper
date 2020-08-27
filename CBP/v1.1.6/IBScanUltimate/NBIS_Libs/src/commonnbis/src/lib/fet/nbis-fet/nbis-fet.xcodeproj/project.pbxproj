@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CF3EA4617E2079100311827 /* allocfet.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA3B17E2079100311827 /* allocfet.c */; };
+		9CF3EA4717E2079100311827 /* delfet.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA3C17E2079100311827 /* delfet.c */; };
+		9CF3EA4817E2079100311827 /* extrfet.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA3D17E2079100311827 /* extrfet.c */; };
+		9CF3EA4917E2079100311827 /* freefet.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA3E17E2079100311827 /* freefet.c */; };
+		9CF3EA4A17E2079100311827 /* lkupfet.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA3F17E2079100311827 /* lkupfet.c */; };
+		9CF3EA4B17E2079100311827 /* nistcom.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA4017E2079100311827 /* nistcom.c */; };
+		9CF3EA4C17E2079100311827 /* printfet.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA4117E2079100311827 /* printfet.c */; };
+		9CF3EA4D17E2079100311827 /* readfet.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA4217E2079100311827 /* readfet.c */; };
+		9CF3EA4E17E2079100311827 /* strfet.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA4317E2079100311827 /* strfet.c */; };
+		9CF3EA4F17E2079100311827 /* updatfet.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA4417E2079100311827 /* updatfet.c */; };
+		9CF3EA5017E2079100311827 /* writefet.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA4517E2079100311827 /* writefet.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9CF3EA2217E206E900311827 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9CF3EA2417E206E900311827 /* libnbis-fet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libnbis-fet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF3EA3B17E2079100311827 /* allocfet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = allocfet.c; path = ../../allocfet.c; sourceTree = "<group>"; };
+		9CF3EA3C17E2079100311827 /* delfet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = delfet.c; path = ../../delfet.c; sourceTree = "<group>"; };
+		9CF3EA3D17E2079100311827 /* extrfet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = extrfet.c; path = ../../extrfet.c; sourceTree = "<group>"; };
+		9CF3EA3E17E2079100311827 /* freefet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = freefet.c; path = ../../freefet.c; sourceTree = "<group>"; };
+		9CF3EA3F17E2079100311827 /* lkupfet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lkupfet.c; path = ../../lkupfet.c; sourceTree = "<group>"; };
+		9CF3EA4017E2079100311827 /* nistcom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = nistcom.c; path = ../../nistcom.c; sourceTree = "<group>"; };
+		9CF3EA4117E2079100311827 /* printfet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = printfet.c; path = ../../printfet.c; sourceTree = "<group>"; };
+		9CF3EA4217E2079100311827 /* readfet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = readfet.c; path = ../../readfet.c; sourceTree = "<group>"; };
+		9CF3EA4317E2079100311827 /* strfet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = strfet.c; path = ../../strfet.c; sourceTree = "<group>"; };
+		9CF3EA4417E2079100311827 /* updatfet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = updatfet.c; path = ../../updatfet.c; sourceTree = "<group>"; };
+		9CF3EA4517E2079100311827 /* writefet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = writefet.c; path = ../../writefet.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CF3EA2117E206E900311827 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CF3EA1B17E206E900311827 = {
+			isa = PBXGroup;
+			children = (
+				9CF3EA2917E206E900311827 /* nbis-fet */,
+				9CF3EA2617E206E900311827 /* Frameworks */,
+				9CF3EA2517E206E900311827 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CF3EA2517E206E900311827 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CF3EA2417E206E900311827 /* libnbis-fet.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CF3EA2617E206E900311827 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CF3EA2917E206E900311827 /* nbis-fet */ = {
+			isa = PBXGroup;
+			children = (
+				9CF3EA3B17E2079100311827 /* allocfet.c */,
+				9CF3EA3C17E2079100311827 /* delfet.c */,
+				9CF3EA3D17E2079100311827 /* extrfet.c */,
+				9CF3EA3E17E2079100311827 /* freefet.c */,
+				9CF3EA3F17E2079100311827 /* lkupfet.c */,
+				9CF3EA4017E2079100311827 /* nistcom.c */,
+				9CF3EA4117E2079100311827 /* printfet.c */,
+				9CF3EA4217E2079100311827 /* readfet.c */,
+				9CF3EA4317E2079100311827 /* strfet.c */,
+				9CF3EA4417E2079100311827 /* updatfet.c */,
+				9CF3EA4517E2079100311827 /* writefet.c */,
+			);
+			path = "nbis-fet";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CF3EA2317E206E900311827 /* nbis-fet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CF3EA3217E206E900311827 /* Build configuration list for PBXNativeTarget "nbis-fet" */;
+			buildPhases = (
+				9CF3EA2017E206E900311827 /* Sources */,
+				9CF3EA2117E206E900311827 /* Frameworks */,
+				9CF3EA2217E206E900311827 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "nbis-fet";
+			productName = "nbis-fet";
+			productReference = 9CF3EA2417E206E900311827 /* libnbis-fet.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CF3EA1C17E206E900311827 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Brian Nagel";
+			};
+			buildConfigurationList = 9CF3EA1F17E206E900311827 /* Build configuration list for PBXProject "nbis-fet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9CF3EA1B17E206E900311827;
+			productRefGroup = 9CF3EA2517E206E900311827 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CF3EA2317E206E900311827 /* nbis-fet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CF3EA2017E206E900311827 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF3EA4617E2079100311827 /* allocfet.c in Sources */,
+				9CF3EA4717E2079100311827 /* delfet.c in Sources */,
+				9CF3EA4817E2079100311827 /* extrfet.c in Sources */,
+				9CF3EA4917E2079100311827 /* freefet.c in Sources */,
+				9CF3EA4A17E2079100311827 /* lkupfet.c in Sources */,
+				9CF3EA4B17E2079100311827 /* nistcom.c in Sources */,
+				9CF3EA4C17E2079100311827 /* printfet.c in Sources */,
+				9CF3EA4D17E2079100311827 /* readfet.c in Sources */,
+				9CF3EA4E17E2079100311827 /* strfet.c in Sources */,
+				9CF3EA4F17E2079100311827 /* updatfet.c in Sources */,
+				9CF3EA5017E2079100311827 /* writefet.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9CF3EA3017E206E900311827 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../../imgtools/include,
+					../../../../include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-D__android__",
+					"-D__NBISLE__",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9CF3EA3117E206E900311827 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../../imgtools/include,
+					../../../../include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = (
+					"-D__android__",
+					"-D__NBISLE__",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CF3EA3317E206E900311827 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/nbis_fet.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nbis-fet/nbis-fet-Prefix.pch";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9CF3EA3417E206E900311827 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/nbis_fet.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nbis-fet/nbis-fet-Prefix.pch";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CF3EA1F17E206E900311827 /* Build configuration list for PBXProject "nbis-fet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF3EA3017E206E900311827 /* Debug */,
+				9CF3EA3117E206E900311827 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CF3EA3217E206E900311827 /* Build configuration list for PBXNativeTarget "nbis-fet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF3EA3317E206E900311827 /* Debug */,
+				9CF3EA3417E206E900311827 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CF3EA1C17E206E900311827 /* Project object */;
+}

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'nbis-util' target in the 'nbis-util' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

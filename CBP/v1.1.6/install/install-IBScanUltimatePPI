@@ -1,0 +1,41 @@
+#!/bin/bash
+d=$(dirname $0)
+if [ $d = "." ]; then d=$(pwd); fi
+
+# copy libIBScanUltimate.so and libIBScanUltimateJNI.so
+file=$d/libIBScanUltimate.so
+dest=/usr/lib
+if cp -f $file $dest ; then
+  echo "Copied $file to $dest"
+else
+  echo "Could not copy $file to $dest - check your permissions"
+  exit
+fi
+
+file=$d/libIBScanUltimateJNI.so
+dest=/usr/lib
+if cp -f $file $dest ; then
+  echo "Copied $file to $dest"
+else
+  echo "Could not copy $file to $dest - check your permissions"
+  exit
+fi
+
+file=$d/libDeviceParallel.so
+dest=/usr/lib
+if cp -f $file $dest ; then
+  echo "Copied $file to $dest"
+else
+  echo "Could not copy $file to $dest - check your permissions"
+  exit
+fi
+
+#Check that we're really running a 2.6 kernel or higher
+if [ "`uname -r | cut -f 1,2 -d .`" \< "2.6" ]; then
+  echo "A minimum kernel level of 2.6.x is required.  Aborting."
+  exit
+fi
+
+printf "\n"
+echo "IBScanUltimate for PPI - Install Done."
+printf "\n"

@@ -1,0 +1,31 @@
+/////////////////////////////////////////////////////////////////////////////
+/*
+DESCRIPTION:
+	CMainCapture - Class for getting image capture core from Live Scanner
+	http://www.integratedbiometrics.com/
+
+NOTES:
+	Copyright(C) Integrated Biometrics, 2011
+
+VERSION HISTORY:
+	19 April 2011 - First initialize
+*/
+/////////////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "IBAlgorithm.h"
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <vector>
+#ifdef __linux__
+#include <sys/time.h>
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////
+// Holmes Algorithm
+
+
