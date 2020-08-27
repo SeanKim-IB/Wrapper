@@ -1,0 +1,88 @@
+TEST REPORT
+
+KOJAK.1740-00046; IBSU DLL:<2.0.1.10>, WEBWR Ver:<1.0.8.3>
+
+
+
+================================================================
+< TEST 1 >
+
+Operating System : Windows 8
+>>> Search installed folder [ PASS ]
+
+C:\Program Files (x86)\Integrated Biometrics\CBP Wrapper\Driver
+   ¦¢
+   ¦¦ IBScanUsbDriver Setup.msi [FAIL]
+   ¦¦ IBScanUsbDriver(x64) Setup.msi [FAIL]
+   ¦¦ instalI_IBScanUsbDriver.bat [FAIL]
+   ¦¦ uninstall_IBScanUsbDriver.bat [FAIL]
+
+C:\Program Files (x86)\Integrated Biometrics\CBP Wrapper\Bin
+   ¦¢
+   ¦¦ CBP_FP_Wrapper.dll [PASS]
+   ¦¦ CBP_FP_Wrapper.ini [PASS]
+   ¦¦ IBScanUltimate.dll [PASS]
+
+C:\Program Files (x86)\Integrated Biometrics\CBP Wrapper\Documents
+   ¦¢
+   ¦¦ MSI-based IB USB Driver Deployment Guide.pdf [FAIL]
+   ¦¦ IBScanUltimate Version History.pdf [FAIL]
+
+< TEST 1 : FAIL >
+================================================================
+
+
+
+================================================================
+< TEST 2 >
+
+>>> cbp_fp_initialize() [ PASS ]
+>>> cbp_fp_enumDevices() [ PASS ]
+>>> cbp_fp_open() [ PASS ] Handle 0
+
+< TEST 2 : PASS >
+================================================================
+
+
+
+================================================================
+< TEST 3 >
+
+>>> cbp_fp_getProperty(CBP_FP_PROPERTY_MAKE) [ PASS ] - Integrated Biometrics
+>>> cbp_fp_getProperty(CBP_FP_PROPERTY_MODEL) [ PASS ] - KOJAK
+>>> cbp_fp_getProperty(CBP_FP_PROPERTY_SERIAL) [ PASS ] - 1740-00046
+>>> cbp_fp_getProperty(CBP_FP_PROPERTY_SOFTWARE_VERSION) [ PASS ] - 1.0.8.3
+>>> cbp_fp_getProperty(CBP_FP_PROPERTY_FIRMWARE_VERSION) [ PASS ] - 2.0.5
+>>> cbp_fp_lock() [ PASS ] Handle 0 PID 28452
+>>> cbp_fp_getLockInfo() [ PASS ] handle 0, PID 28452, duration 156
+>>> cbp_fp_unlock() [ PASS ] Handle 0
+
+< TEST 3 : PASS >
+================================================================
+
+
+
+================================================================
+< TEST 4 >
+
+>>> cbp_fp_startImaging() [ PASS ] Handle 0 image info(W 1600, H 1500 slap_rightThumb collection_flat)
+>>> cbp_fp_stopImaging() [ PASS ] Handle 0
+
+< TEST 4 : PASS >
+================================================================
+
+
+
+================================================================
+< TEST 5 >
+
+>>> cbp_fp_close() [ PASS ] Handle 0
+>>> cbp_fp_uninitialize() [ PASS ] requestID Diagnostic
+
+< TEST 5 : PASS >
+================================================================
+
+
+
+DONE !
+

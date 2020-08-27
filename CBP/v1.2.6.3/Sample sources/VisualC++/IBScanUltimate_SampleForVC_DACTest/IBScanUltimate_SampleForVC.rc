@@ -1,0 +1,246 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\IBScanUltimate_SampleForVC.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\IBScanUltimate_SampleForVC.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_SCANNER      BITMAP                  "res\\Scanner.bmp"
+IDB_BITMAP_IB_LOGO      BITMAP                  "res\\IB_logo.bmp"
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_IBSCANULTIMATE_SAMPLEFORVC_DIALOG DIALOGEX 0, 0, 697, 392
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "IBScanUltimate_SampleForVC"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_DEVICES,12,61,174,96,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_CAPTURE_SEQ,13,97,174,96,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Automatic contrast optimization",IDC_CHECK_AUTO_CONTRAST,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,114,174,12
+    PUSHBUTTON      "...",IDC_BTN_IMAGE_FOLDER,70,155,18,12
+    CONTROL         "Save images",IDC_CHECK_SAVE_IMAGES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,155,53,12
+    GROUPBOX        "Devices",IDC_STATIC,7,50,186,30
+    GROUPBOX        "Fingerprint Capture",IDC_STATIC,7,85,185,180,0,WS_EX_TRANSPARENT
+    GROUPBOX        "Device Quality",IDC_STATIC,7,273,90,92
+    LTEXT           "",IDC_FRAME_IMAGE,199,47,491,317,SS_SUNKEN
+    PUSHBUTTON      "Start",IDC_BTN_CAPTURE_START,110,172,72,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Stop",IDC_BTN_CAPTURE_STOP,13,172,72,12,NOT WS_TABSTOP
+    CONTROL         "Automatic capture for fingerprints",IDC_CHECK_AUTO_CAPTURE,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,13,126,174,12
+    CONTROL         " Ready",IDC_TXT_STATUS,"Static",SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP,7,374,683,11
+    CONTROL         "Trigger invalid finger count on auto-capture mode",IDC_CHECK_IGNORE_FINGER_COUNT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,138,174,12
+    CONTROL         "",IDC_SLIDER_CONTRAST,"msctls_trackbar32",TBS_AUTOTICKS | WS_DISABLED,43,190,112,13
+    EDITTEXT        IDC_EDIT_CONTRAST,158,190,24,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "Contrast",IDC_STATIC_CONTRAST,13,191,29,11,WS_DISABLED
+    CONTROL         133,IDC_PIC_SCANNER,"Static",SS_BITMAP,13,284,77,76
+    CONTROL         "Detect clear platen",IDC_CHECK_CLEAR_PLATEN,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,104,284,93,12
+    CONTROL         134,IDC_PIC_IB_LOGO,"Static",SS_BITMAP,7,0,697,47
+    CONTROL         "Async",IDC_CHECK_ASYNC_OPEN_DEVICE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,94,155,33,12
+    LTEXT           "Static",IDC_STATIC_COPYRIGHT,392,34,298,10
+    LTEXT           "Static",IDC_STATIC_DLL_VER,392,18,298,16
+    LTEXT           "",IDC_STATIC_QUALITY_1,24,303,12,42
+    LTEXT           "",IDC_STATIC_QUALITY_2,38,303,12,42
+    LTEXT           "",IDC_STATIC_QUALITY_3,52,303,12,42
+    LTEXT           "",IDC_STATIC_QUALITY_4,66,303,12,42
+    CONTROL         "Original image (100%)",IDC_CHECK_ACTUALWINDOW,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,104,356,93,11
+    CONTROL         "OpenDeviceEx",IDC_CHECK_OPEN_DEVICE_EX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,155,58,12
+    CONTROL         "NFIQ",IDC_CHECK_NFIQ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,104,318,31,10
+    EDITTEXT        IDC_EDIT_NFIQ,140,318,49,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Draw quadrangle for segment image",IDC_CHECK_DRAW_SEGMENT_IMAGE,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,104,298,86,17
+    CONTROL         "Invalid area",IDC_CHECK_INVALID_AREA,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,104,329,86,11
+    CONTROL         "Detect Smear",IDC_CHECK_SMEAR,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,104,343,59,11
+    COMBOBOX        IDC_COMBO_SMEAR_LEVEL,161,342,33,44,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Enable StartVpp",IDC_CHECK_ENABLE_STARTING_VOLTAGE,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,104,271,93,12
+    CONTROL         "",IDC_SLIDER_STARTING_VOLTAGE,"msctls_trackbar32",TBS_AUTOTICKS | NOT WS_VISIBLE,252,274,112,13
+    EDITTEXT        IDC_EDIT_STARTING_VOLTAGE,367,274,24,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE | NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "StartVpp",IDC_STATIC_STARTING_VOLTAGE,222,275,29,11,NOT WS_VISIBLE
+    LTEXT           "Sharpen",IDC_STATIC_STARTING_VOLTAGE2,222,304,29,11,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_STARTING_VOLTAGE2,220,314,32,12,ES_CENTER | ES_AUTOHSCROLL | NOT WS_VISIBLE | NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    CONTROL         "",IDC_SLIDER_WET_DETECT_LEVEL,"msctls_trackbar32",TBS_AUTOTICKS | NOT WS_VISIBLE,252,287,112,13
+    EDITTEXT        IDC_EDIT_WET_DETECT_LEVEL,367,287,24,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE | NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "WetLevel",IDC_STATIC_WET_DETECT_LEVEL,222,287,29,11,NOT WS_VISIBLE
+    PUSHBUTTON      "Aging Test",IDC_BUTTON_AGING_TEST,274,313,96,14,NOT WS_VISIBLE
+    CONTROL         "Enable TOF",IDC_RADIO_TOF_ON,"Button",BS_AUTORADIOBUTTON | WS_GROUP,29,224,53,10
+    CONTROL         "Disable TOF",IDC_RADIO_TOF_OFF,"Button",BS_AUTORADIOBUTTON,29,236,54,10
+    CONTROL         "Enable TOF roll",IDC_RADIO_TOF_ON_ROLL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,112,224,64,10
+    CONTROL         "Disable TOF roll",IDC_RADIO_TOF_OFF_ROLL,"Button",BS_AUTORADIOBUTTON,112,236,65,10
+    GROUPBOX        "Overall TOF setting",IDC_STATIC,14,210,82,43
+    GROUPBOX        "TOF Roll setting",IDC_STATIC,103,211,82,43
+    PUSHBUTTON      "GetFinal By Native",IDC_BUTTON_GET_FINAL_IMAGE_BY_NATIVE,35,252,80,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,9,0,0
+ PRODUCTVERSION 1,9,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Integrated Biometrics, LLC"
+            VALUE "FileDescription", "IntegrationSample for VC++"
+            VALUE "FileVersion", "1, 9, 0, 0"
+            VALUE "InternalName", "IBScanUltimate_SampleForVC.exe"
+            VALUE "LegalCopyright", "Copyright (c) 2011-2015 Integrated Biometrics.  All rights reserved."
+            VALUE "OriginalFilename", "IBScanUltimate_SampleForVC.exe"
+            VALUE "ProductName", "IntegrationSample for VC++"
+            VALUE "ProductVersion", "1, 9, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_IBSCANULTIMATE_SAMPLEFORVC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 690
+        BOTTOMMARGIN, 385
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\IBScanUltimate_SampleForVC.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

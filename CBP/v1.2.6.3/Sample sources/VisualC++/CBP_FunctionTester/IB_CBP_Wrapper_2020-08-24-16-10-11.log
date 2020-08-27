@@ -1,0 +1,8 @@
+[2020-08-24 16:10:05.936]	>>> fingerAttribute	FINGER [3] Wrong slap, score 50	
+[2020-08-24 16:10:05.940]	>>> fingerAttribute	FINGER [3] Too light, score 50	
+[2020-08-24 16:10:05.965]	Exit	cbp_fp_onPreviewAnalysis	
+[2020-08-24 16:10:05.972]	Enter	cbp_fp_stopImaging	handle (0)
+[2020-08-24 16:10:05.976]	Exit	cbp_fp_stopImaging	
+[2020-08-24 16:10:07.421]	>>>	StopPreview - Received Final image	
+[2020-08-24 16:10:07.433]	Enter	cbp_fp_onStopPreview	
+[2020-08-24 16:10:07.442]	Exit	cbp_fp_onStopPreview	

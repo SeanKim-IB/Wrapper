@@ -1,0 +1,4 @@
+[2020-08-24 16:10:11.347]	Enter	cbp_fp_capture	handle (0), slapType (0,slap_rightHand), collectionType (1,collection_flat)
+[2020-08-24 16:10:11.352]	Exit	cbp_fp_capture	
+[2020-08-24 16:10:11.365]	Enter	cbp_fp_onCapture	
+[2020-08-24 16:10:11.385]	Exit	cbp_fp_onCapture	

@@ -1,0 +1,263 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CF0344B17E5253D00274ADF /* nfiq.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0344717E5253D00274ADF /* nfiq.c */; };
+		9CF0344C17E5253D00274ADF /* nfiqgbls.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0344817E5253D00274ADF /* nfiqgbls.c */; };
+		9CF0344D17E5253D00274ADF /* nfiqread.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0344917E5253D00274ADF /* nfiqread.c */; };
+		9CF0344E17E5253D00274ADF /* znorm.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0344A17E5253D00274ADF /* znorm.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9CF0343417E5251900274ADF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9CF0343617E5251900274ADF /* libnbis-nfiq.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libnbis-nfiq.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF0344717E5253D00274ADF /* nfiq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = nfiq.c; path = ../../src/lib/nfiq/nfiq.c; sourceTree = "<group>"; };
+		9CF0344817E5253D00274ADF /* nfiqgbls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = nfiqgbls.c; path = ../../src/lib/nfiq/nfiqgbls.c; sourceTree = "<group>"; };
+		9CF0344917E5253D00274ADF /* nfiqread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = nfiqread.c; path = ../../src/lib/nfiq/nfiqread.c; sourceTree = "<group>"; };
+		9CF0344A17E5253D00274ADF /* znorm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = znorm.c; path = ../../src/lib/nfiq/znorm.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CF0343317E5251900274ADF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CF0342D17E5251900274ADF = {
+			isa = PBXGroup;
+			children = (
+				9CF0343B17E5251900274ADF /* nbis-nfiq */,
+				9CF0343817E5251900274ADF /* Frameworks */,
+				9CF0343717E5251900274ADF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CF0343717E5251900274ADF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CF0343617E5251900274ADF /* libnbis-nfiq.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CF0343817E5251900274ADF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CF0343B17E5251900274ADF /* nbis-nfiq */ = {
+			isa = PBXGroup;
+			children = (
+				9CF0344717E5253D00274ADF /* nfiq.c */,
+				9CF0344817E5253D00274ADF /* nfiqgbls.c */,
+				9CF0344917E5253D00274ADF /* nfiqread.c */,
+				9CF0344A17E5253D00274ADF /* znorm.c */,
+			);
+			path = "nbis-nfiq";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CF0343517E5251900274ADF /* nbis-nfiq */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CF0344417E5251900274ADF /* Build configuration list for PBXNativeTarget "nbis-nfiq" */;
+			buildPhases = (
+				9CF0343217E5251900274ADF /* Sources */,
+				9CF0343317E5251900274ADF /* Frameworks */,
+				9CF0343417E5251900274ADF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "nbis-nfiq";
+			productName = "nbis-nfiq";
+			productReference = 9CF0343617E5251900274ADF /* libnbis-nfiq.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CF0342E17E5251900274ADF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Brian Nagel";
+			};
+			buildConfigurationList = 9CF0343117E5251900274ADF /* Build configuration list for PBXProject "nbis-nfiq" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9CF0342D17E5251900274ADF;
+			productRefGroup = 9CF0343717E5251900274ADF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CF0343517E5251900274ADF /* nbis-nfiq */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CF0343217E5251900274ADF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF0344B17E5253D00274ADF /* nfiq.c in Sources */,
+				9CF0344C17E5253D00274ADF /* nfiqgbls.c in Sources */,
+				9CF0344D17E5253D00274ADF /* nfiqread.c in Sources */,
+				9CF0344E17E5253D00274ADF /* znorm.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9CF0344217E5251900274ADF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../include,
+					../../commonnbis/include,
+					../../mindtct/include,
+					../../an2k/include,
+					../../imgtools/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-D__android__",
+					"-D__NBISLE__",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9CF0344317E5251900274ADF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../include,
+					../../commonnbis/include,
+					../../mindtct/include,
+					../../an2k/include,
+					../../imgtools/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = (
+					"-D__android__",
+					"-D__NBISLE__",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CF0344517E5251900274ADF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/nbis_nfiq.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nbis-nfiq/nbis-nfiq-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9CF0344617E5251900274ADF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/nbis_nfiq.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nbis-nfiq/nbis-nfiq-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CF0343117E5251900274ADF /* Build configuration list for PBXProject "nbis-nfiq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF0344217E5251900274ADF /* Debug */,
+				9CF0344317E5251900274ADF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CF0344417E5251900274ADF /* Build configuration list for PBXNativeTarget "nbis-nfiq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF0344517E5251900274ADF /* Debug */,
+				9CF0344617E5251900274ADF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CF0342E17E5251900274ADF /* Project object */;
+}

@@ -1,0 +1,9 @@
+[2020-08-24 16:10:02.419]	Exit	cbp_fp_startImaging	
+[2020-08-24 16:10:03.004]	Enter	cbp_fp_onPreview	
+[2020-08-24 16:10:03.027]	Exit	cbp_fp_onPreview	
+[2020-08-24 16:10:03.031]	Enter	cbp_fp_onPreviewAnalysis	
+[2020-08-24 16:10:03.034]	>>> CollectionType	1 ( collection_flat )	
+[2020-08-24 16:10:03.037]	>>> SlapType	0 ( slap_rightHand )	
+[2020-08-24 16:10:03.040]	>>> fingerAttribute	FINGER [0] Too light, score 50	
+[2020-08-24 16:10:03.055]	Exit	cbp_fp_onPreviewAnalysis	
+[2020-08-24 16:10:03.132]	Enter	cbp_fp_onPreview	

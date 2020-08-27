@@ -1,0 +1,8 @@
+[2020-08-24 16:09:52.901]	>>> fingerAttribute	FINGER [1] Too light, score 75	
+[2020-08-24 16:09:52.906]	>>> fingerAttribute	FINGER [2] Too light, score 75	
+[2020-08-24 16:09:52.909]	>>> fingerAttribute	FINGER [3] Wrong slap, score 75	
+[2020-08-24 16:09:52.912]	>>> fingerAttribute	FINGER [3] Too light, score 75	
+[2020-08-24 16:09:52.936]	Exit	cbp_fp_onPreviewAnalysis	
+[2020-08-24 16:09:52.995]	Enter	cbp_fp_onPreview	
+[2020-08-24 16:09:53.007]	Exit	cbp_fp_onPreview	
+[2020-08-24 16:09:53.011]	Enter	cbp_fp_onPreviewAnalysis	

@@ -1,0 +1,7 @@
+[2020-08-24 16:09:55.550]	>>> fingerAttribute	FINGER [0] Good print, score 100	
+[2020-08-24 16:09:55.554]	>>> fingerAttribute	FINGER [1] Good print, score 100	
+[2020-08-24 16:09:55.557]	>>> fingerAttribute	FINGER [2] Good print, score 100	
+[2020-08-24 16:09:55.560]	>>> fingerAttribute	FINGER [3] Wrong slap, score 100	
+[2020-08-24 16:09:55.563]	>>> fingerAttribute	FINGER [3] Good print, score 100	
+[2020-08-24 16:09:55.588]	Exit	cbp_fp_onPreviewAnalysis	
+[2020-08-24 16:09:57.073]	>>>	StopPreview - Received Final image	

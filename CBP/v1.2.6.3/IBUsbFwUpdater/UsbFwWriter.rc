@@ -1,0 +1,299 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\UsbFwWriter.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\IBISDKSampleForVC.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\_main_img.bmp"
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "res\\icon1.ico"
+IDI_ICON_TOOL           ICON                    "res\\Tools4.ico"
+IDI_ICON_EDIT           ICON                    "res\\Journal.ico"
+IDI_ICON_OK             ICON                    "res\\Ok3_32x32x256.ico"
+IDI_ICON_NO             ICON                    "res\\No3_32x32x256.ico"
+IDI_ICON_DIR            ICON                    "res\\foldergreen.ico"
+IDI_ICON_FPGA           ICON                    "res\\ram.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP2             BITMAP                  "res\\s_main.bmp"
+IDB_BITMAP3             BITMAP                  "res\\bitmap3.bmp"
+IDB_BITMAP_LOGO80       BITMAP                  "res\\IB_80.bmp"
+IDB_BITMAP_LOGOS80      BITMAP                  "res\\IB_80(80).bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_USBFWWRITER_DIALOG DIALOGEX 0, 0, 457, 305
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "IB Firmware Updater"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Firmware Update",IDC_BTN_FW_UPDATE,267,265,82,29
+    PUSHBUTTON      "Edit Property",IDC_BTN_EDIT_PROPERTY,360,265,82,29
+    LTEXT           "Ready",IDC_TXT_STATUS,7,231,443,13,NOT WS_VISIBLE,WS_EX_STATICEDGE
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,14,190,427,74
+    CTEXT           "",IDC_STATIC_PROGRESS,17,186,22,13,NOT WS_VISIBLE,WS_EX_STATICEDGE
+    GROUPBOX        "Device List (Please Click word not a box)",IDC_STATIC,7,179,443,118
+    GROUPBOX        "Firmware Files (Please Click word not a box)",IDC_STATIC,7,55,443,123
+    CONTROL         "",IDC_LIST_FILE,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,14,66,427,77
+    PUSHBUTTON      "Change Firmware Directory",IDC_BUTTON1,318,144,124,32
+    CONTROL         147,IDC_STATIC_PIC,"Static",SS_BITMAP,0,0,467,46
+    LTEXT           "Static",IDC_STATIC_COPYRIGHT,281,26,169,16
+    LTEXT           "Static",IDC_STATIC_DLL_VER,281,10,169,16
+END
+
+IDD_DIALOG_EDITPRO DIALOGEX 0, 0, 262, 276
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Preperty"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDC_BTN_CANCEL,146,246,76,23
+    EDITTEXT        IDC_EDIT_SERIAL_NUMBER,107,39,130,14,ES_AUTOHSCROLL
+    GROUPBOX        "Device Property Infomation",IDC_STATIC,7,7,248,231
+    EDITTEXT        IDC_EDIT_PRODUCT_ID,107,21,130,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "PRODUCT_ID",IDC_STATIC_PRODUCT_ID,28,24,44,8
+    LTEXT           "SERIAL_NUMBER",IDC_STATIC_PRODUCT_ID2,28,41,56,8
+    EDITTEXT        IDC_EDIT_VENDOR_ID,107,56,130,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "VENDOR_ID",IDC_STATIC_PRODUCT_ID3,28,59,40,8
+    EDITTEXT        IDC_EDIT_IBIA_VENDOR_ID,107,74,130,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "IBIA_VENDOR_ID",IDC_STATIC_IBIA_VENDOR_ID,28,77,58,8
+    EDITTEXT        IDC_EDIT_IBIA_VERSION,107,91,130,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "IBIA_VERSION",IDC_STATIC_IBIA_VERSION,28,95,48,8
+    EDITTEXT        IDC_EDIT_IBIA_DEVICE_ID,107,108,130,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "IBIA_DEVICE_ID",IDC_STATIC_IBIA_DEVICE_ID,28,111,54,8
+    EDITTEXT        IDC_EDIT_FIRMWARE,107,126,130,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "FIRMWARE",IDC_STATIC_FIRMWARE,28,128,38,8
+    DEFPUSHBUTTON   "Set Property",IDC_BTN_SET_PROPERTY,39,246,76,23
+    EDITTEXT        IDC_EDIT_REVISION,107,144,130,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "REVISION",IDC_STATIC_REVISION,28,146,33,8
+    EDITTEXT        IDC_EDIT_PRODUCTION_DATE,107,162,130,14,ES_AUTOHSCROLL
+    LTEXT           "PRODUCTION_DATE",IDC_STATIC_PRODUCTION_DATE,28,163,67,8
+    EDITTEXT        IDC_EDIT_SERVICE_DATE,107,179,130,14,ES_AUTOHSCROLL
+    LTEXT           "SERVICE_DATE",IDC_STATIC_SERVICE_DATE,27,181,50,8
+    EDITTEXT        IDC_EDIT_RESERVED_1,107,196,130,33,ES_AUTOHSCROLL
+    LTEXT           "RESERVED_1",IDC_STATIC_RESERVED_1,27,198,43,8
+END
+
+IDD_DIALOG_PRO DIALOGEX 0, 0, 294, 126
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,24,100,50,19,NOT WS_VISIBLE
+    CONTROL         "",IDC_PROGRESS_WATSON,"msctls_progress32",PBS_SMOOTH | WS_BORDER,39,60,241,14
+    CONTROL         "",IDC_PROGRESS_TOTAL,"msctls_progress32",PBS_SMOOTH | WS_BORDER,39,81,241,14
+    LTEXT           "Please do not power off or stop the application.  \nIt causes serious problems!! ",IDC_STATIC,21,33,259,23
+    CTEXT           "-----Warning-----",IDC_STATIC_MESSAGE,77,14,144,17
+    LTEXT           "Each",IDC_STATIC_EACH,10,64,18,12
+    LTEXT           "Overall",IDC_STATIC_OVERALL,10,83,24,8
+    DEFPUSHBUTTON   "OK",IDOK,231,98,50,19,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_USBFWWRITER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 450
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 298
+    END
+
+    IDD_DIALOG_EDITPRO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 269
+    END
+
+    IDD_DIALOG_PRO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,8,3,0
+ PRODUCTVERSION 1,8,3,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Integrated Biometrics, LLC"
+            VALUE "FileDescription", "IBScanUltimate Firmware Updater"
+            VALUE "FileVersion", "1, 8, 3, 0"
+            VALUE "InternalName", "IBUsbFwUpdater.exe"
+            VALUE "LegalCopyright", "Copyright (c) 2011-2015 Integrated Biometrics.  All rights reserved."
+            VALUE "OriginalFilename", "IBUsbFwUpdater.exe"
+            VALUE "ProductName", "IB Firmware Updater"
+            VALUE "ProductVersion", "1, 8, 3, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About UsbFwWriter..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\UsbFwWriter.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

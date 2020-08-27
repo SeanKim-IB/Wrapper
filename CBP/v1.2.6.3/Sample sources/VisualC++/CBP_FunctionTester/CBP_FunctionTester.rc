@@ -1,0 +1,222 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\CBP_FunctionTester.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CBP_FunctionTester.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CBP_FUNCTIONTESTER_DIALOG DIALOGEX 0, 0, 594, 411
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CBP_FunctionTester"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         129,IDC_STATIC_LOGO,"Static",SS_BITMAP,0,0,587,46
+    PUSHBUTTON      "cbp_fp_initialize",IDC_BUTTON_CBP_FP_INITIALIZE,99,57,86,21
+    PUSHBUTTON      "cbp_fp_enumDevices",IDC_BUTTON_CBP_FP_ENUMDEVICES,11,98,86,21
+    PUSHBUTTON      "cbp_fp_open",IDC_BUTTON_CBP_FP_OPEN,11,122,86,21
+    COMBOBOX        IDC_COMBO_DEVICES,99,99,174,115,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "cbp_fp_lock",IDC_BUTTON_CBP_FP_LOCK,11,229,86,21
+    PUSHBUTTON      "cbp_fp_registerCallBacks",IDC_BUTTON_CBP_FP_REGISTER_CALLBACKS,11,57,86,21
+    PUSHBUTTON      "cbp_fp_calibrate",IDC_BUTTON_CBP_FP_CALIBRATE,11,253,86,21
+    PUSHBUTTON      "cbp_fp_getLockInfo",IDC_BUTTON_CBP_FP_GET_LOCKINFO,187,229,86,21
+    PUSHBUTTON      "cbp_fp_startImaging",IDC_BUTTON_CBP_FP_START_IMAGING,11,187,86,21
+    PUSHBUTTON      "cbp_fp_capture",IDC_BUTTON_CBP_FP_CAPTURE,187,187,86,21
+    PUSHBUTTON      "cbp_fp_unlock",IDC_BUTTON_CBP_FP_UNLOCK,99,229,86,21
+    PUSHBUTTON      "cbp_fp_close",IDC_BUTTON_CBP_FP_CLOSE,188,121,86,21
+    PUSHBUTTON      "cbp_fp_uninitialize",IDC_BUTTON_CBP_FP_UNINITIALIZE,187,57,86,21
+    CONTROL         "",IDC_STATIC_VIEW,"Static",SS_BLACKFRAME,288,57,299,233
+    CONTROL         "",IDC_LIST_LOG,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,288,295,299,109
+    PUSHBUTTON      "cbp_fp_stopImaging",IDC_BUTTON_CBP_FP_STOP_IMAGING,99,187,86,21
+    PUSHBUTTON      "cbp_fp_configure",IDC_BUTTON_CBP_FP_CONFIGURE,99,253,86,21
+    PUSHBUTTON      "cbp_fp_getDirtiness",IDC_BUTTON_CBP_FP_GET_DIRTINESS,11,277,86,21
+    PUSHBUTTON      "cbp_fp_getProperty",IDC_BUTTON_CBP_FP_GET_PROPERTY,11,336,86,21
+    PUSHBUTTON      "cbp_fp_setProperty",IDC_BUTTON_CBP_FP_SET_PROPERTY,99,336,86,21
+    COMBOBOX        IDC_COMBO_PROPERTY,12,320,128,161,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_PROPERTY,144,320,128,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "cbp_fp_powerSave",IDC_BUTTON_CBP_FP_POWER_SAVE,99,277,86,21
+    COMBOBOX        IDC_COMBO_SEQUENCE,12,171,128,161,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_COLLECT_TYPE,144,171,128,161,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Capture",IDC_STATIC,6,160,273,53
+    GROUPBOX        "Properties",IDC_STATIC,5,311,273,53
+    GROUPBOX        "Device Open/Close",IDC_STATIC,6,84,273,70
+    GROUPBOX        "Control Functions",IDC_STATIC,6,217,273,88
+    CONTROL         "Open (Null)",IDC_RADIO_MODE1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,101,120,52,10
+    CONTROL         "Open (Model)",IDC_RADIO_MODE2,"Button",BS_AUTORADIOBUTTON,101,130,59,10
+    CONTROL         "Open (Model,SN)",IDC_RADIO_MODE3,"Button",BS_AUTORADIOBUTTON,101,140,71,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "CBP_FunctionTester.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "CBP_FunctionTester.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CBP_FUNCTIONTESTER_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 587
+        BOTTOMMARGIN, 404
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_LOGO         BITMAP                  "res\\Logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Save Image...",               ID_MENU_SAVE_IMAGE
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\CBP_FunctionTester.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

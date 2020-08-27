@@ -1,0 +1,7 @@
+[2020-08-24 16:10:04.915]	>>> SlapType	0 ( slap_rightHand )	
+[2020-08-24 16:10:04.919]	>>> fingerAttribute	FINGER [0] Too light, score 50	
+[2020-08-24 16:10:04.922]	>>> fingerAttribute	FINGER [1] Too light, score 50	
+[2020-08-24 16:10:04.925]	>>> fingerAttribute	FINGER [2] Too light, score 50	
+[2020-08-24 16:10:04.928]	>>> fingerAttribute	FINGER [3] Wrong slap, score 50	
+[2020-08-24 16:10:04.930]	>>> fingerAttribute	FINGER [3] Too light, score 50	
+[2020-08-24 16:10:04.955]	Exit	cbp_fp_onPreviewAnalysis	

@@ -1,0 +1,510 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\IBSU_NewFunctionTester.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\IBSU_NewFunctionTester.ico"
+IDI_ICON_ON             ICON                    "res\\LedOn.ico"
+IDI_ICON_OFF            ICON                    "res\\LedOff.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_LOGO         BITMAP                  "res\\Logo.bmp"
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_MFUNCTION DIALOGEX 0, 0, 437, 333
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "IBSU_GetSDKVersion",IDC_BUTTON_GETSDKVERSION,7,7,110,14
+    PUSHBUTTON      "IBSU_GetDeviceCount",IDC_BUTTON_GETDEVICECOUNT,124,7,110,14
+    GROUPBOX        "Function by Index",IDC_STATIC,8,25,422,139
+    LTEXT           "Device Index",IDC_STATIC_DEVICEINDEX,19,39,43,8
+    EDITTEXT        IDC_EDIT_INDEX,68,38,38,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "IBSU_GetDeviceDescription",IDC_BUTTON_GETDEVICEDESCRIPTION,124,38,110,14
+    PUSHBUTTON      "IBSU_OpenDevice",IDC_BUTTON_OPENDEVICE,124,54,110,14
+    GROUPBOX        "Function by Handle",IDC_STATIC_FUNCTIONBYHANDLE,8,172,422,120
+    LTEXT           "Device Handle",IDC_STATIC_DEVICEHANDLE,18,187,46,8
+    EDITTEXT        IDC_EDIT_DEVICEHANDLE,68,185,38,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "IBSU_CloseDevice",IDC_BUTTON_CLOSEDEVICE,124,185,110,14
+    PUSHBUTTON      "IBSU_IsDeviceOpened",IDC_BUTTON_ISDEVICEOPENED,124,201,110,14
+    COMBOBOX        IDC_COMBO_PROPERTY,124,224,225,128,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "IBSU_GetProperty",IDC_BUTTON_GETPROPERTY,124,240,110,14
+    PUSHBUTTON      "IBSU_SetProperty",IDC_BUTTON_SETPROPERTY,124,257,110,14
+    EDITTEXT        IDC_EDIT_SETPROPERTY,240,257,109,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "IBSU_AsyncOpenDevice",IDC_BUTTON_ASYNCOPENDEVICE,124,96,110,14
+    PUSHBUTTON      "IBSU_CloseAllDevice",IDC_BUTTON_CLOSEALLDEVICE,240,185,110,14
+    PUSHBUTTON      "IBSU_BGetInitProgress",IDC_BUTTON_BGETINITPROGRESS,240,104,110,14
+    PUSHBUTTON      "IBSU_OpenDeviceEx",IDC_BUTTON_OPENDEVICE_EX,124,112,110,14
+    LTEXT           "UniformityMask Path",IDC_STATIC,125,141,67,12
+    EDITTEXT        IDC_EDIT_UMASK_PATH,199,139,191,14,ES_AUTOHSCROLL
+    CONTROL         "Async",IDC_CHECK_ASYNC_OPENDEVICE_EX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,125,127,41,13
+    PUSHBUTTON      "...",IDC_BUTTON_IMAGE_UMASKPATH,395,139,22,14
+    LTEXT           ">> Extension Functions for OpenDevice << ------------------------- ",IDC_STATIC,23,83,272,8
+    CONTROL         "IBSU_EnableTraceLog",IDC_CHECK_IBSU_ENABLETRACELOG,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,124,277,86,10
+END
+
+IDD_DIALOG_CAPTUREFUNCTIONS DIALOGEX 0, 0, 436, 320
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Image Acquisition",IDC_STATIC,7,41,422,109
+    LTEXT           "Image Type",IDC_STATIC,16,56,39,8
+    COMBOBOX        IDC_COMBO_IMAGETYPE,69,54,177,88,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Automatic contrast optimization",IDC_CHECK_AUTOCONTRAST,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,71,117,10
+    CONTROL         "Automatic capture for fingerprints",IDC_CHECK_AUTOCAPTURE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,82,125,10
+    CONTROL         "Trigger invalid finger count on auto-capture mode",IDC_CHECK_TRIGGER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,93,175,10
+    PUSHBUTTON      "IBSU_BeginCaptureImage",IDC_BUTTON_BEGINCAPTURE,16,112,113,14
+    PUSHBUTTON      "IBSU_CancelCaptureImage",IDC_BUTTON_CANCELCAPTURE,135,112,113,14
+    PUSHBUTTON      "IBSU_TakeResultImageManually",IDC_BUTTON_TAKERESULTIMAGE,16,128,113,14
+    PUSHBUTTON      "IBSU_IsCaptureAvailable",IDC_BUTTON_ISCAPTUREAVAILABLE,254,54,113,14
+    PUSHBUTTON      "IBSU_IsCaptureActive",IDC_BUTTON_ISCAPTUREACTIVE,16,25,113,14
+    PUSHBUTTON      "IsTouchedFinger",IDC_BUTTON_ISTOUCHFINGER,135,25,113,14
+    GROUPBOX        "Get and Set Contrast",IDC_STATIC,7,157,422,50
+    PUSHBUTTON      "IBSU_GetContrast",IDC_BUTTON_GETCONTRAST,16,168,113,14
+    PUSHBUTTON      "IBSU_SetContrast",IDC_BUTTON_SETCONTRAST,16,184,113,14
+    EDITTEXT        IDC_EDIT_CONTRAST,135,184,44,14,ES_AUTOHSCROLL
+    LTEXT           "( 0 ~ 34 )",IDC_STATIC,184,187,32,8
+    LTEXT           "Device Handle",IDC_STATIC,16,9,46,8
+    EDITTEXT        IDC_EDIT_DEVICEHANDLE,66,7,37,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_IMAGE DIALOGEX 0, 0, 194, 217
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_THICKFRAME
+CAPTION "Image"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_STATIC_VIEW,0,0,182,182,SS_SUNKEN
+END
+
+IDD_IBSU_NEWFUNCTIONTESTER_DIALOG DIALOGEX 0, 0, 697, 486
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "IBSU_NewFunctionTester"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         129,IDC_STATIC_LOGO,"Static",SS_BITMAP,0,0,683,46
+    GROUPBOX        "Callback Fired",IDC_STATIC_CALLBACK,463,54,218,290
+    ICON            IDI_ICON_OFF,IDC_ICON_INITPROGRESS_OFF,473,67,20,20
+    LTEXT           "InitProgress",IDC_STATIC_INITPROGRESS,503,72,40,8
+    EDITTEXT        IDC_EDIT_INITPROGRESS,571,70,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    ICON            IDI_ICON_OFF,IDC_ICON_PREVIEWIMAGE_OFF,473,90,20,20
+    LTEXT           "PreviewImage",IDC_STATIC_PREVIEWIMAGE,503,95,46,8
+    ICON            IDI_ICON_OFF,IDC_ICON_TAKINGACQUISITION_OFF,473,111,20,20
+    LTEXT           "TakingAcquisition",IDC_STATIC_TAKINGACQUISITION,503,117,56,8
+    ICON            IDI_ICON_OFF,IDC_ICON_COMPLETEACQUISITION_OFF,473,133,20,20
+    LTEXT           "CompleteAcquisition",IDC_STATIC_COMPLETEACQUISITION,503,138,65,8
+    ICON            IDI_ICON_OFF,IDC_ICON_RESULTIMAGE_OFF,473,154,20,20
+    LTEXT           "ResultImageEx",IDC_STATIC_RESULTIMAGE,503,158,49,8
+    ICON            IDI_ICON_OFF,IDC_ICON_FINGERCOUNT_OFF,473,175,20,20
+    LTEXT           "FingerCount",IDC_STATIC_FINGERCOUNT,503,179,40,8
+    EDITTEXT        IDC_EDIT_FINGERCOUNT,557,175,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    ICON            IDI_ICON_OFF,IDC_ICON_FINGERQUALITY_OFF,473,196,20,20
+    LTEXT           "FingerQuality",IDC_STATIC_FINGERQUALITY,503,200,44,8
+    EDITTEXT        IDC_EDIT_FINGERQUALITY,557,197,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    ICON            IDI_ICON_OFF,IDC_ICON_DEVICECOMMUNICATIONBREAK_OFF,475,216,20,20
+    LTEXT           "DeviceCommunicationBreak",IDC_STATIC_DEVICECOMMUNICATIONBREAK,503,221,88,8
+    ICON            IDI_ICON_OFF,IDC_ICON_DEVICECOUNT_OFF,473,237,20,20
+    LTEXT           "DeviceCount",IDC_STATIC_DEVICECOUNT,503,243,42,8
+    EDITTEXT        IDC_EDIT_DEVICECOUNT,553,237,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    ICON            IDI_ICON_OFF,IDC_ICON_CLEARPLATENATCAPTURE_OFF,475,257,20,20
+    LTEXT           "ClearPlatenAtCapture",IDC_STATIC_CLEARPLATENATCAPTURE,503,264,71,8
+    EDITTEXT        IDC_EDIT_CLEARPLATENATCAPTURE,575,261,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Append Fuction Result ('Addtional Information' is not appended)",IDC_CHECK_APPENDRESULT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,464,350,221,10
+    CONTROL         "",IDC_LIST_MAIN,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,465,363,192,54
+    CONTROL         "",IDC_LIST_ETC,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,465,420,194,50
+    CONTROL         "",IDC_TEST_TAB,"SysTabControl32",TCS_RAGGEDRIGHT,7,50,442,343
+    ICON            IDI_ICON_OFF,IDC_ICON_ASYNCOPENDEVICE_OFF,474,278,20,20
+    LTEXT           "AsyncOpenDevice",IDC_STATIC_ASYNCOPENDEVICE,504,283,59,8
+    EDITTEXT        IDC_EDIT_ASYNCOPENDEVICE,572,281,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_PREVIEWIMAGE,571,92,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    ICON            IDI_ICON_OFF,IDC_ICON_NOTIFYMESSAGE_OFF,474,299,20,20
+    LTEXT           "NotifyMessage",IDC_STATIC_NOTIFYMESSAGE,504,304,48,8
+    EDITTEXT        IDC_EDIT_NOTIFYMESSAGE,572,302,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Use image viewer",IDC_CHECK_IMAGE_VIEWER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,397,72,12
+    LTEXT           "If you want to see fingerprint image on image viewer, please enable the checkbox ""use IBSU_ClientWindow"" in the tab ""Client Window""",IDC_STATIC,7,411,451,12
+    EDITTEXT        IDC_EDIT_RESULTIMAGE,570,155,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    ICON            IDI_ICON_OFF,IDC_ICON_KEYBUTTON_OFF,474,320,20,20
+    LTEXT           "KeyButton",IDC_STATIC_KEYBUTTON,504,325,34,8
+    EDITTEXT        IDC_EDIT_KEYBUTTON,572,323,40,14,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+IDD_DIALOG_CONTROL DIALOGEX 0, 0, 436, 277
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "LE Operation",IDC_STATIC,7,31,422,54
+    PUSHBUTTON      "IBSU_GetLEOperationMode",IDC_BUTTON_GETLEOPERATIONMODE,17,45,110,14
+    PUSHBUTTON      "IBSU_SetLEOperationMode",IDC_BUTTON_SETLEOPERATIONMODE,235,61,110,14
+    COMBOBOX        IDC_COMBO_OPERATIONMODE,17,62,200,53,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "LED Operation",IDC_STATIC,7,93,422,55
+    PUSHBUTTON      "IBSU_GetOperableLEDs",IDC_BUTTON_GETOPERABLELEDS,15,107,110,14
+    PUSHBUTTON      "IBSU_GetLEDs",IDC_BUTTON_GETLEDS,135,107,110,14
+    PUSHBUTTON      "IBSU_SetLEDs",IDC_BUTTON_SETLEDS,15,123,110,14
+    EDITTEXT        IDC_EDIT_SETLED,137,123,52,14,ES_AUTOHSCROLL
+    LTEXT           "(HEX Value)",IDC_STATIC,195,126,38,8
+    LTEXT           "Device Handle",IDC_STATIC,16,9,46,8
+    EDITTEXT        IDC_EDIT_DEVICEHANDLE,66,7,37,14,ES_AUTOHSCROLL
+    GROUPBOX        "Beeper Operation",IDC_STATIC,7,156,422,85
+    PUSHBUTTON      "IBSU_GetOperableBeeper",IDC_BUTTON_GETOPERABLEBEEPER,15,170,110,14
+    PUSHBUTTON      "IBSU_SetBeeper",IDC_BUTTON_SETBEEPER,15,186,110,14
+    EDITTEXT        IDC_EDIT_SETBEEPER1,187,201,34,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_BEEPPATTERN,187,186,174,53,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Beep Pattern",IDC_STATIC,139,186,43,11
+    RTEXT           "Sound Tone",IDC_STATIC,139,201,43,11
+    EDITTEXT        IDC_EDIT_SETBEEPER2,327,201,34,14,ES_AUTOHSCROLL
+    RTEXT           "Duration",IDC_STATIC,291,201,31,11
+    EDITTEXT        IDC_EDIT_SETBEEPER3,187,218,34,14,ES_AUTOHSCROLL
+    RTEXT           "Reserved_1",IDC_STATIC,138,218,44,11
+    EDITTEXT        IDC_EDIT_SETBEEPER4,327,218,34,14,ES_AUTOHSCROLL
+    RTEXT           "Reserved_2",IDC_STATIC,277,218,44,11
+    LTEXT           "(0 ~ 2)",IDC_STATIC,228,202,32,11
+    LTEXT           "(in 25ms)",IDC_STATIC,368,201,32,11
+    LTEXT           "",IDC_STATIC,228,219,32,11
+END
+
+IDD_DIALOG_NONCALLBACK DIALOGEX 0, 0, 436, 329
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "OpenDevice",IDC_STATIC,7,7,422,70
+    LTEXT           ">> You can use IBSU_AsyncOpenDevice() or IBSU_OpenDeviceEx() with Async mode for Non-Callback routine",IDC_STATIC,23,42,396,8
+    LTEXT           "      - For this, you do not need to register callback function using IBSU_RegisterCallbacks()",IDC_STATIC,24,52,396,8
+    LTEXT           "         And you can refer to IBSU_NonCallbackSampleForVC project for your understanding",IDC_STATIC,24,61,396,8
+    LTEXT           "Device Index",IDC_STATIC_DEVICEINDEX,19,20,43,8
+    EDITTEXT        IDC_EDIT_INDEX,68,19,38,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "IBSU_AsyncOpenDevice",IDC_BUTTON_ASYNCOPENDEVICE,124,19,110,14
+    PUSHBUTTON      "IBSU_BGetInitProgress",IDC_BUTTON_BGETINITPROGRESS,240,19,110,14
+    EDITTEXT        IDC_EDIT_BGETINITPREOGRESS,354,19,38,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "%",IDC_STATIC_DEVICEINDEX2,397,22,8,8
+    LTEXT           "Device Handle",IDC_STATIC_DEVICEHANDLE,18,99,46,8
+    EDITTEXT        IDC_EDIT_DEVICEHANDLE,68,97,38,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "IBSU_CloseAllDevice",IDC_BUTTON_CLOSEALLDEVICE,240,97,110,14
+    PUSHBUTTON      "IBSU_CloseDevice",IDC_BUTTON_CLOSEDEVICE2,124,97,110,14
+    GROUPBOX        "Image Acquisition and Control",IDC_STATIC,7,84,422,223
+    LTEXT           "Image Type",IDC_STATIC,124,122,39,8
+    COMBOBOX        IDC_COMBO_IMAGETYPE,173,120,177,87,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Automatic contrast optimization",IDC_CHECK_AUTOCONTRAST,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,124,137,117,10
+    CONTROL         "Automatic capture for fingerprints",IDC_CHECK_AUTOCAPTURE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,124,148,125,10
+    CONTROL         "Trigger invalid finger count on auto-capture mode",IDC_CHECK_TRIGGER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,124,159,175,10
+    PUSHBUTTON      "IBSU_BeginCaptureImage",IDC_BUTTON_BEGINCAPTURE,124,178,113,14
+    PUSHBUTTON      "IBSU_CancelCaptureImage",IDC_BUTTON_CANCELCAPTURE,240,178,113,14
+    PUSHBUTTON      "IBSU_TakeResultImageManually",IDC_BUTTON_TAKERESULTIMAGE,124,226,113,14
+    LTEXT           ">> Comment, we just use import functions to show non-callback routine << ------------------------- ",IDC_STATIC,23,250,349,8
+    PUSHBUTTON      "IBSU_GetContrast",IDC_BUTTON_GETCONTRAST,124,265,113,14
+    PUSHBUTTON      "IBSU_SetContrast",IDC_BUTTON_SETCONTRAST,124,281,113,14
+    EDITTEXT        IDC_EDIT_BCONTRAST,243,281,44,14,ES_AUTOHSCROLL
+    LTEXT           "( 0 ~ 34 )",IDC_STATIC,292,284,32,8
+    PUSHBUTTON      "IBSU_BGetImageEX",IDC_BUTTON_BGETIMAGE,124,194,113,14
+    PUSHBUTTON      "IBSU_BGetClearPlatenAtCapture",IDC_BUTTON_BGETCLEARPLATENATCAPTURE,124,210,113,14
+    EDITTEXT        IDC_EDIT_BFLAG,241,194,51,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_BFINGERCOUNT,297,194,51,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_BFINGERQUALITY,353,194,51,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_BCLEARPLATENATCAPTURE,241,210,51,14,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+IDD_DIALOG_CLIENTWINDOW DIALOGEX 0, 0, 435, 303
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Visualization Window",IDC_STATIC,7,29,422,247
+    CONTROL         "Use IBSU_ClientWindow",IDC_CHECK_CLIENT_WINDOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,43,93,10
+    PUSHBUTTON      "SetBackgroundColor",IDC_BUTTON_SETBACKGROUNDCOLOR,18,60,125,14
+    LTEXT           "R",IDC_STATIC_BKRED,148,63,8,8
+    EDITTEXT        IDC_EDIT_BKRED,156,61,27,14,ES_AUTOHSCROLL
+    LTEXT           "G",IDC_STATIC_BKGREEN,193,63,8,8
+    EDITTEXT        IDC_EDIT_BKGREEN,201,61,27,14,ES_AUTOHSCROLL
+    LTEXT           "B",IDC_STATIC_BKBLUE,237,63,8,8
+    EDITTEXT        IDC_EDIT_BKBLUE,245,61,27,14,ES_AUTOHSCROLL
+    CONTROL         "Use Roll Guide Line",IDC_CHECK_GUIDELINE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,121,43,76,10
+    PUSHBUTTON      "IBSU_SetClientWindowOverlayText",IDC_BUTTON_SETCLIENTWINDOWOVERLAYTEXT,303,282,125,14,NOT WS_VISIBLE
+    LTEXT           "X1",IDC_STATIC_POSX,15,123,8,8
+    EDITTEXT        IDC_EDIT_POSX,24,121,27,14,ES_AUTOHSCROLL
+    LTEXT           "Y1",IDC_STATIC_POSY,180,123,8,8
+    EDITTEXT        IDC_EDIT_POSY,189,121,27,14,ES_AUTOHSCROLL
+    LTEXT           "R",IDC_STATIC_RED,63,148,8,8
+    EDITTEXT        IDC_EDIT_TEXTRED,71,146,27,14,ES_AUTOHSCROLL
+    LTEXT           "G",IDC_STATIC_GREEN,102,148,8,8
+    EDITTEXT        IDC_EDIT_TEXTGREEN,112,146,27,14,ES_AUTOHSCROLL
+    LTEXT           "B",IDC_STATIC_BLUE,147,148,8,8
+    EDITTEXT        IDC_EDIT_TEXTBLUE,155,146,27,14,ES_AUTOHSCROLL
+    LTEXT           "(0 ~ 255)",IDC_STATIC_TEXTRANGE,186,148,32,8
+    LTEXT           "Fore Color :",IDC_STATIC_TEXTCOLOR,16,148,39,8
+    LTEXT           "Overlay Text :",IDC_STATIC_ADDTEXT,15,171,48,8
+    EDITTEXT        IDC_EDIT_ADDTEXT,67,168,217,14,ES_AUTOHSCROLL
+    LTEXT           "Device Handle",IDC_STATIC,16,9,46,8
+    EDITTEXT        IDC_EDIT_DEVICEHANDLE,66,7,37,14,ES_AUTOHSCROLL
+    LTEXT           "Overlay Handle",IDC_STATIC_OVERLAYHANDLE,16,84,50,8
+    EDITTEXT        IDC_EDIT_OVERLAYHANDLE,66,81,37,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "IBSU_ShowOverlayObject",IDC_BUTTON_SHOWOVERLAYOBJECT,19,282,107,14,NOT WS_VISIBLE
+    PUSHBUTTON      "IBSU_ShowAllOverlayObject",IDC_BUTTON_SHOWALLOVERLAYOBJECT,128,282,107,14,NOT WS_VISIBLE
+    PUSHBUTTON      "IBSU_RemoveOverlayObject",IDC_BUTTON_REMOVEOVERLAYOBJECT,119,99,107,14
+    PUSHBUTTON      "IBSU_RemoveAllOverlayObject",IDC_BUTTON_REMOVEALLOVERLAYOBJECT,228,99,107,14
+    LTEXT           "X2",IDC_STATIC_POSX2,55,123,8,8
+    EDITTEXT        IDC_EDIT_POSX2,64,121,27,14,ES_AUTOHSCROLL
+    LTEXT           "X3",IDC_STATIC_POSX3,96,124,8,8
+    EDITTEXT        IDC_EDIT_POSX3,105,121,27,14,ES_AUTOHSCROLL
+    LTEXT           "X4",IDC_STATIC_POSX4,136,124,8,8
+    EDITTEXT        IDC_EDIT_POSX4,146,121,27,14,ES_AUTOHSCROLL
+    LTEXT           "Y1",IDC_STATIC_POSX5,261,284,8,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_POSY1,269,282,27,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Y2",IDC_STATIC_POSY2,219,123,8,8
+    EDITTEXT        IDC_EDIT_POSY2,227,121,27,14,ES_AUTOHSCROLL
+    LTEXT           "Y3",IDC_STATIC_POSY3,259,124,8,8
+    EDITTEXT        IDC_EDIT_POSY3,269,121,27,14,ES_AUTOHSCROLL
+    LTEXT           "Y4",IDC_STATIC_POSY4,299,124,8,8
+    EDITTEXT        IDC_EDIT_POSY4,309,121,27,14,ES_AUTOHSCROLL
+    LTEXT           "Line Width :",IDC_STATIC_LINEWIDTH,241,148,39,8
+    EDITTEXT        IDC_EDIT_LINEWIDTH,283,146,27,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "IBSU_AddOverlayText",IDC_BUTTON_ADDOVERLAYTEXT,120,186,107,14
+    PUSHBUTTON      "IBSU_ModifyOverlayText",IDC_BUTTON_MODIFYOVERLAYTEXT,229,186,107,14
+    PUSHBUTTON      "IBSU_AddOverlayLine",IDC_BUTTON_ADDOVERLAYLINE,120,204,107,14
+    PUSHBUTTON      "IBSU_ModifyOverlayLine",IDC_BUTTON_MODIFYOVERLAYLINE,229,204,107,14
+    PUSHBUTTON      "IBSU_AddOverlayQuadrangle",IDC_BUTTON_ADDOVERLAYQUADRANGLE,120,223,107,14
+    PUSHBUTTON      "IBSU_ModifyOverlayQuadrangle",IDC_BUTTON_MODIFYOVERLAYQUADRANGLE,229,223,107,14
+    PUSHBUTTON      "IBSU_AddOverlayShape",IDC_BUTTON_ADDOVERLAYSHAPE,120,242,107,14,NOT WS_VISIBLE
+    PUSHBUTTON      "IBSU_ModifyOverlayShape",IDC_BUTTON_MODIFYOVERLAYSHAPE,229,242,107,14,NOT WS_VISIBLE
+    CONTROL         "IBSU_ShowOverlayObject",IDC_CHECK_SHOWOVERLAYOBJECT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,121,83,99,10
+    CONTROL         "IBSU_ShowAllOverlayObject",IDC_CHECK_SHOWALLOVERLAYOBJECT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,231,83,107,10
+    CONTROL         "Use check invalid area",IDC_CHECK_INVALIDAREA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,254,43,87,10
+    COMBOBOX        IDC_COMBO_ROLL_GUIDE_LINE_WIDTH,200,42,40,54,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_MFUNCTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 430
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 325
+    END
+
+    IDD_DIALOG_CAPTUREFUNCTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 429
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 313
+    END
+
+    IDD_DIALOG_IMAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_IBSU_NEWFUNCTIONTESTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 690
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 479
+    END
+
+    IDD_DIALOG_CONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 429
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_DIALOG_NONCALLBACK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 429
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 322
+    END
+
+    IDD_DIALOG_CLIENTWINDOW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 428
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 296
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,9,0,0
+ PRODUCTVERSION 1,9,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Integrated Biometrics, LLC"
+            VALUE "FileDescription", "IBSU_NewFunctionTester for VC++"
+            VALUE "FileVersion", "1, 9, 0, 0"
+            VALUE "InternalName", "IBSU_NewFunctionTester.exe"
+            VALUE "LegalCopyright", "Copyright (c) 2011-2014 Integrated Biometrics.  All rights reserved."
+            VALUE "OriginalFilename", "IBSU_NewFunctionTester.exe"
+            VALUE "ProductName", "IBSU_NewFunctionTester for VC++"
+            VALUE "ProductVersion", "1, 9, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About IBSU_NewFunctionTester..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\IBSU_NewFunctionTester.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
