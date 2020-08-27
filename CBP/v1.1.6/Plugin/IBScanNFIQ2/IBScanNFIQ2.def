@@ -1,0 +1,10 @@
+; IBScanNFIQ2.def : Declares the module parameters for the DLL.
+
+LIBRARY      "IBScanNFIQ2"
+
+EXPORTS
+    ; Explicit exports can go here
+    IBSU_NFIQ2_GetVersion										@1
+    IBSU_NFIQ2_Initialize										@2
+    IBSU_NFIQ2_IsInitialized									@3
+	IBSU_NFIQ2_ComputeScore									    @4

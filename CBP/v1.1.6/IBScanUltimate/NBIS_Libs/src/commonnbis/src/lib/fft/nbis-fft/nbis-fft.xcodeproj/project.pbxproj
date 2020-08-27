@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CF3EA7C17E208A200311827 /* cfftb.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA6B17E208A200311827 /* cfftb.c */; };
+		9CF3EA7D17E208A200311827 /* cfftb1.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA6C17E208A200311827 /* cfftb1.c */; };
+		9CF3EA7E17E208A200311827 /* cfftf.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA6D17E208A200311827 /* cfftf.c */; };
+		9CF3EA7F17E208A200311827 /* cfftf1.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA6E17E208A200311827 /* cfftf1.c */; };
+		9CF3EA8017E208A200311827 /* cffti.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA6F17E208A200311827 /* cffti.c */; };
+		9CF3EA8117E208A200311827 /* cffti1.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA7017E208A200311827 /* cffti1.c */; };
+		9CF3EA8217E208A200311827 /* fft2dr.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA7117E208A200311827 /* fft2dr.c */; };
+		9CF3EA8317E208A200311827 /* passb.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA7217E208A200311827 /* passb.c */; };
+		9CF3EA8417E208A200311827 /* passb2.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA7317E208A200311827 /* passb2.c */; };
+		9CF3EA8517E208A200311827 /* passb3.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA7417E208A200311827 /* passb3.c */; };
+		9CF3EA8617E208A200311827 /* passb4.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA7517E208A200311827 /* passb4.c */; };
+		9CF3EA8717E208A200311827 /* passb5.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA7617E208A200311827 /* passb5.c */; };
+		9CF3EA8817E208A200311827 /* passf.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA7717E208A200311827 /* passf.c */; };
+		9CF3EA8917E208A200311827 /* passf2.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA7817E208A200311827 /* passf2.c */; };
+		9CF3EA8A17E208A200311827 /* passf3.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA7917E208A200311827 /* passf3.c */; };
+		9CF3EA8B17E208A200311827 /* passf4.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA7A17E208A200311827 /* passf4.c */; };
+		9CF3EA8C17E208A200311827 /* passf5.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3EA7B17E208A200311827 /* passf5.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9CF3EA5817E2086E00311827 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9CF3EA5A17E2086E00311827 /* libnbis-fft.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libnbis-fft.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF3EA6B17E208A200311827 /* cfftb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cfftb.c; path = ../../cfftb.c; sourceTree = "<group>"; };
+		9CF3EA6C17E208A200311827 /* cfftb1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cfftb1.c; path = ../../cfftb1.c; sourceTree = "<group>"; };
+		9CF3EA6D17E208A200311827 /* cfftf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cfftf.c; path = ../../cfftf.c; sourceTree = "<group>"; };
+		9CF3EA6E17E208A200311827 /* cfftf1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cfftf1.c; path = ../../cfftf1.c; sourceTree = "<group>"; };
+		9CF3EA6F17E208A200311827 /* cffti.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cffti.c; path = ../../cffti.c; sourceTree = "<group>"; };
+		9CF3EA7017E208A200311827 /* cffti1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cffti1.c; path = ../../cffti1.c; sourceTree = "<group>"; };
+		9CF3EA7117E208A200311827 /* fft2dr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fft2dr.c; path = ../../fft2dr.c; sourceTree = "<group>"; };
+		9CF3EA7217E208A200311827 /* passb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = passb.c; path = ../../passb.c; sourceTree = "<group>"; };
+		9CF3EA7317E208A200311827 /* passb2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = passb2.c; path = ../../passb2.c; sourceTree = "<group>"; };
+		9CF3EA7417E208A200311827 /* passb3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = passb3.c; path = ../../passb3.c; sourceTree = "<group>"; };
+		9CF3EA7517E208A200311827 /* passb4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = passb4.c; path = ../../passb4.c; sourceTree = "<group>"; };
+		9CF3EA7617E208A200311827 /* passb5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = passb5.c; path = ../../passb5.c; sourceTree = "<group>"; };
+		9CF3EA7717E208A200311827 /* passf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = passf.c; path = ../../passf.c; sourceTree = "<group>"; };
+		9CF3EA7817E208A200311827 /* passf2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = passf2.c; path = ../../passf2.c; sourceTree = "<group>"; };
+		9CF3EA7917E208A200311827 /* passf3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = passf3.c; path = ../../passf3.c; sourceTree = "<group>"; };
+		9CF3EA7A17E208A200311827 /* passf4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = passf4.c; path = ../../passf4.c; sourceTree = "<group>"; };
+		9CF3EA7B17E208A200311827 /* passf5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = passf5.c; path = ../../passf5.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CF3EA5717E2086E00311827 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CF3EA5117E2086E00311827 = {
+			isa = PBXGroup;
+			children = (
+				9CF3EA5F17E2086E00311827 /* nbis-fft */,
+				9CF3EA5C17E2086E00311827 /* Frameworks */,
+				9CF3EA5B17E2086E00311827 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CF3EA5B17E2086E00311827 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CF3EA5A17E2086E00311827 /* libnbis-fft.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CF3EA5C17E2086E00311827 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CF3EA5F17E2086E00311827 /* nbis-fft */ = {
+			isa = PBXGroup;
+			children = (
+				9CF3EA6B17E208A200311827 /* cfftb.c */,
+				9CF3EA6C17E208A200311827 /* cfftb1.c */,
+				9CF3EA6D17E208A200311827 /* cfftf.c */,
+				9CF3EA6E17E208A200311827 /* cfftf1.c */,
+				9CF3EA6F17E208A200311827 /* cffti.c */,
+				9CF3EA7017E208A200311827 /* cffti1.c */,
+				9CF3EA7117E208A200311827 /* fft2dr.c */,
+				9CF3EA7217E208A200311827 /* passb.c */,
+				9CF3EA7317E208A200311827 /* passb2.c */,
+				9CF3EA7417E208A200311827 /* passb3.c */,
+				9CF3EA7517E208A200311827 /* passb4.c */,
+				9CF3EA7617E208A200311827 /* passb5.c */,
+				9CF3EA7717E208A200311827 /* passf.c */,
+				9CF3EA7817E208A200311827 /* passf2.c */,
+				9CF3EA7917E208A200311827 /* passf3.c */,
+				9CF3EA7A17E208A200311827 /* passf4.c */,
+				9CF3EA7B17E208A200311827 /* passf5.c */,
+			);
+			path = "nbis-fft";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CF3EA5917E2086E00311827 /* nbis-fft */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CF3EA6817E2086E00311827 /* Build configuration list for PBXNativeTarget "nbis-fft" */;
+			buildPhases = (
+				9CF3EA5617E2086E00311827 /* Sources */,
+				9CF3EA5717E2086E00311827 /* Frameworks */,
+				9CF3EA5817E2086E00311827 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "nbis-fft";
+			productName = "nbis-fft";
+			productReference = 9CF3EA5A17E2086E00311827 /* libnbis-fft.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CF3EA5217E2086E00311827 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Brian Nagel";
+			};
+			buildConfigurationList = 9CF3EA5517E2086E00311827 /* Build configuration list for PBXProject "nbis-fft" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9CF3EA5117E2086E00311827;
+			productRefGroup = 9CF3EA5B17E2086E00311827 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CF3EA5917E2086E00311827 /* nbis-fft */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CF3EA5617E2086E00311827 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF3EA7C17E208A200311827 /* cfftb.c in Sources */,
+				9CF3EA7D17E208A200311827 /* cfftb1.c in Sources */,
+				9CF3EA7E17E208A200311827 /* cfftf.c in Sources */,
+				9CF3EA7F17E208A200311827 /* cfftf1.c in Sources */,
+				9CF3EA8017E208A200311827 /* cffti.c in Sources */,
+				9CF3EA8117E208A200311827 /* cffti1.c in Sources */,
+				9CF3EA8217E208A200311827 /* fft2dr.c in Sources */,
+				9CF3EA8317E208A200311827 /* passb.c in Sources */,
+				9CF3EA8417E208A200311827 /* passb2.c in Sources */,
+				9CF3EA8517E208A200311827 /* passb3.c in Sources */,
+				9CF3EA8617E208A200311827 /* passb4.c in Sources */,
+				9CF3EA8717E208A200311827 /* passb5.c in Sources */,
+				9CF3EA8817E208A200311827 /* passf.c in Sources */,
+				9CF3EA8917E208A200311827 /* passf2.c in Sources */,
+				9CF3EA8A17E208A200311827 /* passf3.c in Sources */,
+				9CF3EA8B17E208A200311827 /* passf4.c in Sources */,
+				9CF3EA8C17E208A200311827 /* passf5.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9CF3EA6617E2086E00311827 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../include,
+					../../../../../pcasys/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-D__android__",
+					"-D__NBISLE__",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9CF3EA6717E2086E00311827 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../include,
+					../../../../../pcasys/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = (
+					"-D__android__",
+					"-D__NBISLE__",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CF3EA6917E2086E00311827 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/nbis_fft.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nbis-fft/nbis-fft-Prefix.pch";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9CF3EA6A17E2086E00311827 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/nbis_fft.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nbis-fft/nbis-fft-Prefix.pch";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CF3EA5517E2086E00311827 /* Build configuration list for PBXProject "nbis-fft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF3EA6617E2086E00311827 /* Debug */,
+				9CF3EA6717E2086E00311827 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CF3EA6817E2086E00311827 /* Build configuration list for PBXNativeTarget "nbis-fft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF3EA6917E2086E00311827 /* Debug */,
+				9CF3EA6A17E2086E00311827 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CF3EA5217E2086E00311827 /* Project object */;
+}

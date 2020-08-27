@@ -1,0 +1,48 @@
+ 
+//---------------------------------------------------------------------------
+// The Installed event is sent after the feature IBScanSDK
+// is installed.
+//---------------------------------------------------------------------------
+ 
+export prototype SDK_Installed();
+function SDK_Installed()
+	NUMBER nvWinFamily;  
+	STRING svResult;    
+	STRING USB_FILE;
+//	STRING SDK_SHORTCUT;
+begin
+	///////////////////////////////////////////////////////////////////////////////////////////////////
+	// Install WinUsb Driver
+	USB_FILE="\""+TARGETDIR +"\\Driver\\IBScanDriverInstall.exe\"";
+
+	GetSystemInfo(OS, nvWinFamily, svResult); 
+	if ( nvWinFamily = IS_WINDOWSNT ) then // 운영체제가 NT 4 또는 Windows 2000 이나 XP 인지 검사합니다.
+	      if (LaunchAppAndWait (USB_FILE, "",WAIT) < 0) then
+	      	MessageBox ("Unable to launch "+USB_FILE+".\nPlease,Retry it or Install driver manually.", SEVERE);
+	      endif;
+	elseif ( nvWinFamily = IS_WINDOWS95 ) then // 윈도우가 Windows 95, Windows 98, , Windows Me 인지 검사합니다.
+		MessageBox ("SDK is required OS more than Windows NT.", SEVERE);
+	endif;  
+	///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////
+	// Install Curve Driver
+	USB_FILE="\""+TARGETDIR +"\\Driver\\CURVE_USB\\USBfpDriverInstall.exe\"";
+
+	GetSystemInfo(OS, nvWinFamily, svResult); 
+	if ( nvWinFamily = IS_WINDOWSNT ) then // 운영체제가 NT 4 또는 Windows 2000 이나 XP 인지 검사합니다.
+	      if (LaunchAppAndWait (USB_FILE, "",WAIT) < 0) then
+	      	MessageBox ("Unable to launch "+USB_FILE+".\nPlease,Retry it or Install driver manually.", SEVERE);
+	      endif;
+	elseif ( nvWinFamily = IS_WINDOWS95 ) then // 윈도우가 Windows 95, Windows 98, , Windows Me 인지 검사합니다.
+		MessageBox ("SDK is required OS more than Windows NT.", SEVERE);
+	endif;  
+	///////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Remove old shortcut from previous version if still installed
+//    SDK_SHORTCUT = "IBISDK 1.0"; 	
+//	if (FindFile(FOLDER_DESKTOP, SDK_SHORTCUT + ".lnk", svResult) == 0) then 
+//		DeleteFolderIcon(FOLDER_DESKTOP, SDK_SHORTCUT);
+//	endif;
+end;

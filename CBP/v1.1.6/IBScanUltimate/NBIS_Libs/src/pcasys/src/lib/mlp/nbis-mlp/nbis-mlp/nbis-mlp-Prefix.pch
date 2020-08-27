@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'nbis-mlp' target in the 'nbis-mlp' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CA1D1A317E4C94000935678 /* dataio.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D19A17E4C94000935678 /* dataio.c */; };
+		9CA1D1A417E4C94000935678 /* fileexst.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D19B17E4C94000935678 /* fileexst.c */; };
+		9CA1D1A517E4C94000935678 /* filehead.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D19C17E4C94000935678 /* filehead.c */; };
+		9CA1D1A617E4C94000935678 /* fileroot.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D19D17E4C94000935678 /* fileroot.c */; };
+		9CA1D1A717E4C94000935678 /* filesize.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D19E17E4C94000935678 /* filesize.c */; };
+		9CA1D1A817E4C94000935678 /* filetail.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D19F17E4C94000935678 /* filetail.c */; };
+		9CA1D1A917E4C94000935678 /* findfile.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D1A017E4C94000935678 /* findfile.c */; };
+		9CA1D1AA17E4C94000935678 /* newext.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D1A117E4C94000935678 /* newext.c */; };
+		9CA1D1AB17E4C94000935678 /* readutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1D1A217E4C94000935678 /* readutil.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9CA1D18717E4C8ED00935678 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9CA1D18917E4C8ED00935678 /* libnbis-ioutil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libnbis-ioutil.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA1D19A17E4C94000935678 /* dataio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = dataio.c; path = ../../dataio.c; sourceTree = "<group>"; };
+		9CA1D19B17E4C94000935678 /* fileexst.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fileexst.c; path = ../../fileexst.c; sourceTree = "<group>"; };
+		9CA1D19C17E4C94000935678 /* filehead.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = filehead.c; path = ../../filehead.c; sourceTree = "<group>"; };
+		9CA1D19D17E4C94000935678 /* fileroot.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fileroot.c; path = ../../fileroot.c; sourceTree = "<group>"; };
+		9CA1D19E17E4C94000935678 /* filesize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = filesize.c; path = ../../filesize.c; sourceTree = "<group>"; };
+		9CA1D19F17E4C94000935678 /* filetail.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = filetail.c; path = ../../filetail.c; sourceTree = "<group>"; };
+		9CA1D1A017E4C94000935678 /* findfile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = findfile.c; path = ../../findfile.c; sourceTree = "<group>"; };
+		9CA1D1A117E4C94000935678 /* newext.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = newext.c; path = ../../newext.c; sourceTree = "<group>"; };
+		9CA1D1A217E4C94000935678 /* readutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = readutil.c; path = ../../readutil.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CA1D18617E4C8ED00935678 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CA1D18017E4C8ED00935678 = {
+			isa = PBXGroup;
+			children = (
+				9CA1D18E17E4C8ED00935678 /* nbis-ioutil */,
+				9CA1D18B17E4C8ED00935678 /* Frameworks */,
+				9CA1D18A17E4C8ED00935678 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CA1D18A17E4C8ED00935678 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CA1D18917E4C8ED00935678 /* libnbis-ioutil.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CA1D18B17E4C8ED00935678 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CA1D18E17E4C8ED00935678 /* nbis-ioutil */ = {
+			isa = PBXGroup;
+			children = (
+				9CA1D19A17E4C94000935678 /* dataio.c */,
+				9CA1D19B17E4C94000935678 /* fileexst.c */,
+				9CA1D19C17E4C94000935678 /* filehead.c */,
+				9CA1D19D17E4C94000935678 /* fileroot.c */,
+				9CA1D19E17E4C94000935678 /* filesize.c */,
+				9CA1D19F17E4C94000935678 /* filetail.c */,
+				9CA1D1A017E4C94000935678 /* findfile.c */,
+				9CA1D1A117E4C94000935678 /* newext.c */,
+				9CA1D1A217E4C94000935678 /* readutil.c */,
+			);
+			path = "nbis-ioutil";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CA1D18817E4C8ED00935678 /* nbis-ioutil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA1D19717E4C8ED00935678 /* Build configuration list for PBXNativeTarget "nbis-ioutil" */;
+			buildPhases = (
+				9CA1D18517E4C8ED00935678 /* Sources */,
+				9CA1D18617E4C8ED00935678 /* Frameworks */,
+				9CA1D18717E4C8ED00935678 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "nbis-ioutil";
+			productName = "nbis-ioutil";
+			productReference = 9CA1D18917E4C8ED00935678 /* libnbis-ioutil.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CA1D18117E4C8ED00935678 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Brian Nagel";
+			};
+			buildConfigurationList = 9CA1D18417E4C8ED00935678 /* Build configuration list for PBXProject "nbis-ioutil" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9CA1D18017E4C8ED00935678;
+			productRefGroup = 9CA1D18A17E4C8ED00935678 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CA1D18817E4C8ED00935678 /* nbis-ioutil */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CA1D18517E4C8ED00935678 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA1D1A317E4C94000935678 /* dataio.c in Sources */,
+				9CA1D1A417E4C94000935678 /* fileexst.c in Sources */,
+				9CA1D1A517E4C94000935678 /* filehead.c in Sources */,
+				9CA1D1A617E4C94000935678 /* fileroot.c in Sources */,
+				9CA1D1A717E4C94000935678 /* filesize.c in Sources */,
+				9CA1D1A817E4C94000935678 /* filetail.c in Sources */,
+				9CA1D1A917E4C94000935678 /* findfile.c in Sources */,
+				9CA1D1AA17E4C94000935678 /* newext.c in Sources */,
+				9CA1D1AB17E4C94000935678 /* readutil.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9CA1D19517E4C8ED00935678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../../imgtools/include,
+					../../../../include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-D__android__",
+					"-D__NBISLE__",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9CA1D19617E4C8ED00935678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../../imgtools/include,
+					../../../../include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = (
+					"-D__android__",
+					"-D__NBISLE__",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CA1D19817E4C8ED00935678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/nbis_ioutil.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nbis-ioutil/nbis-ioutil-Prefix.pch";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9CA1D19917E4C8ED00935678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/nbis_ioutil.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nbis-ioutil/nbis-ioutil-Prefix.pch";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CA1D18417E4C8ED00935678 /* Build configuration list for PBXProject "nbis-ioutil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA1D19517E4C8ED00935678 /* Debug */,
+				9CA1D19617E4C8ED00935678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA1D19717E4C8ED00935678 /* Build configuration list for PBXNativeTarget "nbis-ioutil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA1D19817E4C8ED00935678 /* Debug */,
+				9CA1D19917E4C8ED00935678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CA1D18117E4C8ED00935678 /* Project object */;
+}

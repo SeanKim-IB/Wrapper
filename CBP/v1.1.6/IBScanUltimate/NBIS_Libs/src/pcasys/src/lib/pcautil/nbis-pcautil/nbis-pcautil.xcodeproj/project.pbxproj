@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CF034E717E5286400274ADF /* imgdec.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF034DF17E5286400274ADF /* imgdec.c */; };
+		9CF034E817E5286400274ADF /* io_c.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF034E017E5286400274ADF /* io_c.c */; };
+		9CF034E917E5286400274ADF /* io_m.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF034E117E5286400274ADF /* io_m.c */; };
+		9CF034EA17E5286400274ADF /* io_v.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF034E217E5286400274ADF /* io_v.c */; };
+		9CF034EB17E5286400274ADF /* little.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF034E317E5286400274ADF /* little.c */; };
+		9CF034EC17E5286400274ADF /* optrws_r.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF034E417E5286400274ADF /* optrws_r.c */; };
+		9CF034ED17E5286400274ADF /* swapbyte.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF034E517E5286400274ADF /* swapbyte.c */; };
+		9CF034EE17E5286400274ADF /* table.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF034E617E5286400274ADF /* table.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9CF034CC17E5283E00274ADF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9CF034CE17E5283E00274ADF /* libnbis-pcautil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libnbis-pcautil.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF034DF17E5286400274ADF /* imgdec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = imgdec.c; path = ../../imgdec.c; sourceTree = "<group>"; };
+		9CF034E017E5286400274ADF /* io_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = io_c.c; path = ../../io_c.c; sourceTree = "<group>"; };
+		9CF034E117E5286400274ADF /* io_m.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = io_m.c; path = ../../io_m.c; sourceTree = "<group>"; };
+		9CF034E217E5286400274ADF /* io_v.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = io_v.c; path = ../../io_v.c; sourceTree = "<group>"; };
+		9CF034E317E5286400274ADF /* little.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = little.c; path = ../../little.c; sourceTree = "<group>"; };
+		9CF034E417E5286400274ADF /* optrws_r.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = optrws_r.c; path = ../../optrws_r.c; sourceTree = "<group>"; };
+		9CF034E517E5286400274ADF /* swapbyte.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = swapbyte.c; path = ../../swapbyte.c; sourceTree = "<group>"; };
+		9CF034E617E5286400274ADF /* table.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = table.c; path = ../../table.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CF034CB17E5283E00274ADF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CF034C517E5283D00274ADF = {
+			isa = PBXGroup;
+			children = (
+				9CF034D317E5283E00274ADF /* nbis-pcautil */,
+				9CF034D017E5283E00274ADF /* Frameworks */,
+				9CF034CF17E5283E00274ADF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CF034CF17E5283E00274ADF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CF034CE17E5283E00274ADF /* libnbis-pcautil.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CF034D017E5283E00274ADF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CF034D317E5283E00274ADF /* nbis-pcautil */ = {
+			isa = PBXGroup;
+			children = (
+				9CF034DF17E5286400274ADF /* imgdec.c */,
+				9CF034E017E5286400274ADF /* io_c.c */,
+				9CF034E117E5286400274ADF /* io_m.c */,
+				9CF034E217E5286400274ADF /* io_v.c */,
+				9CF034E317E5286400274ADF /* little.c */,
+				9CF034E417E5286400274ADF /* optrws_r.c */,
+				9CF034E517E5286400274ADF /* swapbyte.c */,
+				9CF034E617E5286400274ADF /* table.c */,
+			);
+			path = "nbis-pcautil";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CF034CD17E5283E00274ADF /* nbis-pcautil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CF034DC17E5283E00274ADF /* Build configuration list for PBXNativeTarget "nbis-pcautil" */;
+			buildPhases = (
+				9CF034CA17E5283E00274ADF /* Sources */,
+				9CF034CB17E5283E00274ADF /* Frameworks */,
+				9CF034CC17E5283E00274ADF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "nbis-pcautil";
+			productName = "nbis-pcautil";
+			productReference = 9CF034CE17E5283E00274ADF /* libnbis-pcautil.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CF034C617E5283D00274ADF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Brian Nagel";
+			};
+			buildConfigurationList = 9CF034C917E5283D00274ADF /* Build configuration list for PBXProject "nbis-pcautil" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9CF034C517E5283D00274ADF;
+			productRefGroup = 9CF034CF17E5283E00274ADF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CF034CD17E5283E00274ADF /* nbis-pcautil */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CF034CA17E5283E00274ADF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF034E717E5286400274ADF /* imgdec.c in Sources */,
+				9CF034E817E5286400274ADF /* io_c.c in Sources */,
+				9CF034E917E5286400274ADF /* io_m.c in Sources */,
+				9CF034EA17E5286400274ADF /* io_v.c in Sources */,
+				9CF034EB17E5286400274ADF /* little.c in Sources */,
+				9CF034EC17E5286400274ADF /* optrws_r.c in Sources */,
+				9CF034ED17E5286400274ADF /* swapbyte.c in Sources */,
+				9CF034EE17E5286400274ADF /* table.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9CF034DA17E5283E00274ADF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../include,
+					../../../../../an2k/include,
+					../../../../../imgtools/include,
+					../../../../../commonnbis/include,
+					../../../../../ijg/src/lib/jpegb,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-D__android__",
+					"-D__NBISLE__",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9CF034DB17E5283E00274ADF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../include,
+					../../../../../an2k/include,
+					../../../../../imgtools/include,
+					../../../../../commonnbis/include,
+					../../../../../ijg/src/lib/jpegb,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = (
+					"-D__android__",
+					"-D__NBISLE__",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CF034DD17E5283E00274ADF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/nbis_pcautil.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nbis-pcautil/nbis-pcautil-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9CF034DE17E5283E00274ADF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/nbis_pcautil.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nbis-pcautil/nbis-pcautil-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CF034C917E5283D00274ADF /* Build configuration list for PBXProject "nbis-pcautil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF034DA17E5283E00274ADF /* Debug */,
+				9CF034DB17E5283E00274ADF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CF034DC17E5283E00274ADF /* Build configuration list for PBXNativeTarget "nbis-pcautil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF034DD17E5283E00274ADF /* Debug */,
+				9CF034DE17E5283E00274ADF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CF034C617E5283D00274ADF /* Project object */;
+}

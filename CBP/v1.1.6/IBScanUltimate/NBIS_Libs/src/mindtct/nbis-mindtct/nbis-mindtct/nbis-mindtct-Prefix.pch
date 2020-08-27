@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'nbis-mindtct' target in the 'nbis-mindtct' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
