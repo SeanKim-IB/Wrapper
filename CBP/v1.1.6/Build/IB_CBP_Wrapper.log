@@ -1,0 +1,15 @@
+[2018-12-14 21:28:40.064]	Enter	cbp_fp_registerCallBacks	
+[2018-12-14 21:28:40.064]	Exit	cbp_fp_registerCallBacks	Ret (0)
+[2018-12-14 21:28:40.080]	Enter	cbp_fp_initialize	requestID (Integrated Biometrics)
+[2018-12-14 21:28:40.096]	Exit	cbp_fp_initialize	
+[2018-12-14 21:28:40.096]	Enter	cbp_fp_onInitialize	Integrated Biometrics
+[2018-12-14 21:28:40.127]	Exit	cbp_fp_onInitialize	
+[2018-12-14 21:28:42.940]	Enter	cbp_fp_enumDevices	requestID (Integrated Biometrics)
+[2018-12-14 21:28:42.956]	Exit	cbp_fp_enumDevices	
+[2018-12-14 21:28:42.956]	Enter	cbp_fp_onEnumDevices	Integrated Biometrics
+[2018-12-14 21:28:42.956]	Exit	cbp_fp_onEnumDevices	
+[2018-12-14 21:28:48.723]	Enter	cbp_fp_uninitialize	requestID (Integrated Biometrics)
+[2018-12-14 21:28:48.738]	Exit	cbp_fp_uninitialize	
+[2018-12-14 21:28:48.754]	Enter	cbp_fp_onUninitialize	Integrated Biometrics
+[2019-01-03 13:08:08.635]	Enter	cbp_fp_unlock	handle (1965416544)
+[2019-01-03 13:08:08.979]	Exit	cbp_fp_unlock	Ret (0)
